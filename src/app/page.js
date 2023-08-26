@@ -1,7 +1,6 @@
-import Menu from "@/components/Menu/Menu";
 import Navbar from "@/components/Navbar/Navbar";
-import Image from "next/image";
 import styles from "./page.module.css";
+import HomeSeccion from "@/app/seccions/home/home.js"
 
 export default function Home() {
   return (
@@ -18,6 +17,8 @@ export default function Home() {
           <h1>Section 3</h1>
         </section>
       </div>
+      <HomeSeccion></HomeSeccion>
+
     </main>
   );
 }
