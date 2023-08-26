@@ -1,0 +1,17 @@
+.swiper-slide {
+  z-index: 1;
+}
+
+.swiper-button-prev {
+  color: #ffff !important;
+  margin-left: 14% !important;
+}
+
+.swiper-button-next {
+  color: #ffff !important;
+  margin-right: 14% !important;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  background-color: white;
+}

@@ -1,13 +1,10 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import HomeSeccion from "@/app/seccions/home/home.js"
 
 export default function Home() {
   return (
     <main>
-      <h1>arrancamos</h1>
-      {/*MENU*/}
-      {/*SECTIONS*/}
-      {/*FOOTER*/}
+      <HomeSeccion></HomeSeccion>
+
     </main>
   )
 }
