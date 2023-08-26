@@ -11,7 +11,6 @@ import "swiper/css/scrollbar";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
-import Video from "../video/video";
 
 import styles from "../home.module.css";
 
@@ -27,45 +26,45 @@ export default ({ showNavigation , hadleVideo }) => {
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
-        <div className={styles.divContenido}>
+        <article className={styles.divContenido}>
           <div className={styles.divTexto}>
-            <h1>
+            <h2>
               We are a big family working <br />
               together every day
-            </h1>
-            <p onClick={() => hadleVideo()}>
+            </h2>
+            <button onClick={() => hadleVideo()}>
               Watch the video <FontAwesomeIcon icon={faCirclePlay} />{" "}
-            </p>
+            </button>
 
 
           </div>
-        </div>
+        </article>
       </SwiperSlide>
       <SwiperSlide>
-        <div className={styles.divContenido2}>
+        <article className={styles.divContenido2}>
           <div className={styles.divTexto}>
-            <h1>
+            <h2>
               We feel truly connected <br />
               to the land we farm
-            </h1>
-            <p onClick={() => hadleVideo()}>
+            </h2>
+            <button onClick={() => hadleVideo()}>
               Watch the video <FontAwesomeIcon icon={faCirclePlay} />
-            </p>
+            </button>
           </div>
-        </div>
+        </article>
       </SwiperSlide>
       <SwiperSlide>
-        <div className={styles.divContenido3}>
+        <article className={styles.divContenido3}>
           <div className={styles.divTexto}>
-            <h1>
+            <h2>
               The land we cultivate is unique <br />
               and brings us unique fruits
-            </h1>
-            <p onClick={() => hadleVideo()}>
+            </h2>
+            <button onClick={() => hadleVideo()}>
               Watch the video <FontAwesomeIcon icon={faCirclePlay} />
-            </p>
+            </button>
           </div>
-        </div>
+        </article>
       </SwiperSlide>
     </Swiper>
   );
