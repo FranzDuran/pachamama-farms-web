@@ -70,9 +70,12 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <ul className={styles.menu}>
-          <li>Inicio</li>
-          <li>Servicios</li>
-          <li>Contacto</li>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Calendar</li>
+          <li>Certifications</li>
+          <li>Our fruits</li>
+          <li id={styles.borderLi}>Contact us</li>
         </ul>
       )}
     </nav>

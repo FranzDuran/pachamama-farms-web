@@ -68,7 +68,7 @@
   
   .menu {
     list-style: none;
-    background-color: #444;
+    background-color: #e0e0e0;
     position: absolute;
     top: 100%;
     left: 0;
@@ -83,7 +83,18 @@
     cursor: pointer;
     padding: 0.25rem;
     transition: background-color 0.3s;
+    color: #000;
     margin: auto;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 2px solid #000;
+    width: 95%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  #borderLi{
+    border-bottom: none;
   }
   
   .menu li:hover {
