@@ -3,6 +3,7 @@ import AboutUs from "./seccions/aboutUs/aboutUs";
 import Navbar from "@/components/Navbar/Navbar";
 import styles from "./page.module.css";
 import ContactUs from "./seccions/ContactUs/ContactUs";
+//import WhyPachamamaFarms from "./seccions/WhyPachamamaFarms/WhyPachamamaFarms";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar />
       <HomeSeccion></HomeSeccion>
       <AboutUs></AboutUs>
+      {/* <WhyPachamamaFarms/> */}
       <ContactUs />
 
       {/* <section data-text-color="white" className={styles.section1}>
