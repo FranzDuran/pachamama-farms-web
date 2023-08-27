@@ -21,9 +21,10 @@
   background-color: white;
 }
 
-.paginationSwiper{
+.paginationSwiper {
   display: none;
 }
+
 @media screen and (max-width:767px) {
   .paginationSwiper {
     display: flex;
@@ -34,7 +35,7 @@
     z-index: 3;
     bottom: 30% !important;
   }
-  
+
   .paginationSwiper .swiper-pagination-bullet {
     background: #707070;
     height: 10px;
@@ -44,10 +45,15 @@
     cursor: pointer;
     border-radius: 100%;
   }
-  
+
   .paginationSwiper .swiper-pagination-bullet-active {
     background: #fff;
     opacity: 1;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
   }
 }
 
