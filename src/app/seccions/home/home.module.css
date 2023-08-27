@@ -1,3 +1,4 @@
+
 .divContenido {
     width: 100vw;
     height: 100vh;
@@ -17,7 +18,7 @@
     width: auto;
 }
 
-.divTexto h1{
+.divTexto h2{
    font-size: 3rem;
    text-align: center; 
    font-weight: 300;
@@ -25,13 +26,16 @@
 }
 
 
-.divTexto p{
+.divTexto button{
     font-size: 1.4rem;
-    border-bottom: 2px solid #ffff;
     color: #ffff;
     display: inline;
     cursor:  pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffff;
  }
+
 
 .divContenido2 {
     width: 100vw;
@@ -41,7 +45,6 @@
     background-image: url('./assets/_DSC0320.JPG');
     position: relative;
 }
-
 
 
 .divContenido3 {
@@ -57,7 +60,7 @@
 
 
  @media (max-width: 1280px) {
-    .divTexto h1{
+    .divTexto h2{
         font-size: 2.5rem;
      }
 
@@ -79,11 +82,11 @@
     }
 
 
-    .divTexto h1{
+    .divTexto h2{
         font-size: 18px;
         width: 270px;
      }
-    .divTexto p{
+    .divTexto button{
         font-size: 12px;
         
      }

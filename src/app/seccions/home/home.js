@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import SwiperComponent from "./swiper/swiper.js";
 import Video from "./video/video.js";
 
+
+
+
 export default function HomeSeccion() {
   
 const [video, setVideo] = useState(false)
@@ -38,7 +41,6 @@ const [video, setVideo] = useState(false)
 
   return (
     <section id="home">
-
       <SwiperComponent
        showNavigation={showNavigation}
        hadleVideo={hadleVideo}>

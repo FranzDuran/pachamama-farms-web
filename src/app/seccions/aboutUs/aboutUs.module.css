@@ -1,0 +1,102 @@
+.sectionAboutUs {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fbf8f8;
+  position: relative;
+  padding: 3vw;
+}
+
+.article {
+  position: absolute;
+  top: 50%; /* Llevará la parte superior del h2 al 50% de altura del div */
+  left: 50%; /* Llevará la izquierda del h2 al 50% del ancho del div */
+  transform: translate(-50%, -50%); /* Centrar completamente el h2 */
+  width: auto;
+  width: 70vw;
+  height: auto;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+}
+
+.article h5 {
+  color: black;
+  /* margin-top: 8vh; */
+  font-size: 1.3vw;
+}
+
+.divisor {
+  margin-top: 2.5vw;
+  width: 5.3vw;
+  height: 0px;
+  border: 1.3px solid rgb(144, 138, 138);
+}
+
+.parrafo {
+  margin-top: 4.5vw;
+  width: 90%;
+  color: black;
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+.parrafo2 {
+  margin-top: 4.5vw;
+  width: 90%;
+  color: rgb(48, 48, 48);
+  font-size: 1vw;
+  text-align: center;
+}
+
+@media (max-width: 920px) {
+  .sectionAboutUs { 
+    height: 400px;
+  }
+
+  .article {
+    width: 90vw;
+    height: auto;
+    padding: 30px;
+  }
+
+  .article h5 {
+    font-size: 19px;
+  }
+
+  .divisor {
+    width: 80px;
+    margin-top: 18px;
+  }
+
+  .parrafo {
+    font-size: 16px;
+    width: auto;
+    margin-top: 33px;
+  }
+
+  .parrafo br {
+    display: none;
+  }
+
+  .parrafo2 {
+    font-size: 11px;
+    width: auto;
+    margin-top: 33px;
+    width: 80%;
+  }
+
+  .parrafo2 br {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 330px) {
+   .sectionAboutUs { 
+     height: 500px;
+   }
+ }
+ 
