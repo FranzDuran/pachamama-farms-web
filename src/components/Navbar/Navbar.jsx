@@ -42,25 +42,25 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.navbar} ${styles.sticky} ${styles[menuTextColor]}`}
+      className={`${styles.navbar} ${isMenuOpen ? styles.navbarToggleDer : ""} ${styles.sticky} ${styles[menuTextColor]}`}
     >
-      <div className={`${styles.logo}`}>Logo</div>
+      <div className={`${styles.logo} ${isMenuOpen ? styles.hide : ""}`}>Logo</div>
       <div className={styles.menuIzq}>
         <div className={`${styles.languageButtons} ${styles[menuTextColor]}`}>
           <button
             onClick={() => changeLanguage("en")}
             className={`${styles.languageButton} ${
               language === "en" ? styles.activeLanguage : ""
-            }`}
+            } ${isMenuOpen ? styles.hide : ""}`}
           >
             EN
           </button>
-          <span className={styles.languageSeparator}>|</span>
+          <span className={`${styles.languageSeparator} ${isMenuOpen ? styles.hide : ""}`}>|</span>
           <button
             onClick={() => changeLanguage("es")}
             className={`${styles.languageButton} ${
               language === "es" ? styles.activeLanguage : ""
-            }`}
+            } ${isMenuOpen ? styles.hide : ""}`}
           >
             ES
           </button>
@@ -83,7 +83,7 @@ const Navbar = () => {
           <li onClick={() => handleClickNav("calendar")}>Calendar</li>
           <li onClick={() => handleClickNav("certifications")}>Certifications</li>
           <li onClick={() => handleClickNav("fruits")}>Our fruits</li>
-          <li className={styles.borderLi} onClick={() => handleClickNav("contact")}>Contact us</li>
+          <li id={styles.borderLi} onClick={() => handleClickNav("contact")}>Contact us</li>
         </ul>
       )}
     </nav>
