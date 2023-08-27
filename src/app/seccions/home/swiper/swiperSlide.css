@@ -33,7 +33,7 @@
     margin-top: 30px;
     position: absolute;
     z-index: 3;
-    bottom: 30% !important;
+    bottom:4% !important;
   }
 
   .paginationSwiper .swiper-pagination-bullet {
