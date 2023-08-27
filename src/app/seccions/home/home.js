@@ -37,7 +37,7 @@ const [video, setVideo] = useState(false)
   const [showNavigation, setShowNavigation] = useState(true);
 
   return (
-    <section>
+    <section id="home">
 
       <SwiperComponent
        showNavigation={showNavigation}

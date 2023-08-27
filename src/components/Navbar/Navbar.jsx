@@ -6,6 +6,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [language, setLanguage] = useState("en"); // Default language is English
   const [menuTextColor, setMenuTextColor] = useState("white");
+  const [activeSection, setActiveSection] = useState(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -23,6 +24,13 @@ const Navbar = () => {
         setMenuTextColor(section.dataset.textColor || "white");
       }
     });
+  };
+
+
+  const handleClickNav = (scrollToId) => {
+    document.getElementById(scrollToId)?.scrollIntoView({ behavior: "smooth" });
+
+    setActiveSection(scrollToId);
   };
 
   useEffect(() => {
@@ -70,12 +78,12 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <ul className={styles.menu}>
-          <li>Home</li>
-          <li>About us</li>
-          <li>Calendar</li>
-          <li>Certifications</li>
-          <li>Our fruits</li>
-          <li id={styles.borderLi}>Contact us</li>
+          <li onClick={() => handleClickNav("home")}>Home</li>
+          <li onClick={() => handleClickNav("about")}>About us</li>
+          <li onClick={() => handleClickNav("calendar")}>Calendar</li>
+          <li onClick={() => handleClickNav("certifications")}>Certifications</li>
+          <li onClick={() => handleClickNav("fruits")}>Our fruits</li>
+          <li className={styles.borderLi} onClick={() => handleClickNav("contact")}>Contact us</li>
         </ul>
       )}
     </nav>

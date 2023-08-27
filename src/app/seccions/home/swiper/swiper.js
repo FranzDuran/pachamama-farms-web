@@ -15,58 +15,76 @@ import Video from "../video/video";
 
 import styles from "../home.module.css";
 
-export default ({ showNavigation , hadleVideo }) => {
+export default ({ showNavigation, hadleVideo }) => {
   return (
-    <Swiper
-      // install Swiper modules
-      modules={[Navigation, Pagination, A11y]}
-      spaceBetween={10}
-      slidesPerView={1}
-      navigation={showNavigation}
-      pagination={!showNavigation}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      <SwiperSlide>
-        <div className={styles.divContenido}>
-          <div className={styles.divTexto}>
-            <h1>
-              We are a big family working <br />
-              together every day
-            </h1>
-            <p onClick={() => hadleVideo()}>
-              Watch the video <FontAwesomeIcon icon={faCirclePlay} />{" "}
-            </p>
-
-
+    <section className="container">
+      <Swiper
+        // install Swiper modules
+        modules={[Navigation, Pagination, A11y]}
+        spaceBetween={10}
+        slidesPerView={1}
+        navigation={
+          showNavigation
+            ? {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              }
+            : false
+        }
+        
+        pagination={
+          !showNavigation
+            ? {
+                clickable: true,
+                el: ".paginationSwiper",
+              }
+            : false
+        }
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        <SwiperSlide>
+          <div className={styles.divContenido}>
+            <div className={styles.divTexto}>
+              <h1>
+                We are a big family working <br />
+                together every day
+              </h1>
+              <p onClick={() => hadleVideo()}>
+                Watch the video <FontAwesomeIcon icon={faCirclePlay} />{" "}
+              </p>
+            </div>
           </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.divContenido2}>
-          <div className={styles.divTexto}>
-            <h1>
-              We feel truly connected <br />
-              to the land we farm
-            </h1>
-            <p onClick={() => hadleVideo()}>
-              Watch the video <FontAwesomeIcon icon={faCirclePlay} />
-            </p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={styles.divContenido2}>
+            <div className={styles.divTexto}>
+              <h1>
+                We feel truly connected <br />
+                to the land we farm
+              </h1>
+              <p onClick={() => hadleVideo()}>
+                Watch the video <FontAwesomeIcon icon={faCirclePlay} />
+              </p>
+            </div>
           </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className={styles.divContenido3}>
-          <div className={styles.divTexto}>
-            <h1>
-              The land we cultivate is unique <br />
-              and brings us unique fruits
-            </h1>
-            <p onClick={() => hadleVideo()}>
-              Watch the video <FontAwesomeIcon icon={faCirclePlay} />
-            </p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={styles.divContenido3}>
+            <div className={styles.divTexto}>
+              <h1>
+                The land we cultivate is unique <br />
+                and brings us unique fruits
+              </h1>
+              <p onClick={() => hadleVideo()}>
+                Watch the video <FontAwesomeIcon icon={faCirclePlay} />
+              </p>
+            </div>
           </div>
-        </div>
-      </SwiperSlide>
-    </Swiper>
+        </SwiperSlide>
+      </Swiper>
+      <div className="swiper-button-next"></div>
+      <div className="swiper-button-prev"></div>
+      <div className="paginationSwiper"></div>
+    </section>
   );
 };
