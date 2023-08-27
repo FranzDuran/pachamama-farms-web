@@ -48,9 +48,9 @@ export default ({ showNavigation, hadleVideo }) => {
                 We are a big family working <br />
                 together every day
               </h2>
-              <p onClick={() => hadleVideo()}>
+              <button onClick={() => hadleVideo()}>
                 Watch the video <FontAwesomeIcon icon={faCirclePlay} />{" "}
-              </p>
+              </button>
             </div>
           </article>
         </SwiperSlide>
@@ -61,9 +61,9 @@ export default ({ showNavigation, hadleVideo }) => {
                 We feel truly connected <br />
                 to the land we farm
               </h2>
-              <p onClick={() => hadleVideo()}>
+              <button onClick={() => hadleVideo()}>
                 Watch the video <FontAwesomeIcon icon={faCirclePlay} />
-              </p>
+              </button>
             </div>
           </article>
         </SwiperSlide>
@@ -74,9 +74,9 @@ export default ({ showNavigation, hadleVideo }) => {
                 The land we cultivate is unique <br />
                 and brings us unique fruits
               </h2>
-              <p onClick={() => hadleVideo()}>
+              <button onClick={() => hadleVideo()}>
                 Watch the video <FontAwesomeIcon icon={faCirclePlay} />
-              </p>
+              </button>
             </div>
           </article>
         </SwiperSlide>
