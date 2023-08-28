@@ -12,7 +12,7 @@ import "swiper/css/scrollbar";
 
 export default ({ showNavigation, hadleVideo }) => {
   return (
-    <section className="container">
+    <div className="container">
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, A11y]}
@@ -51,6 +51,6 @@ export default ({ showNavigation, hadleVideo }) => {
         </SwiperSlide>
       </Swiper>
 
-    </section>
+    </div>
   );
 };

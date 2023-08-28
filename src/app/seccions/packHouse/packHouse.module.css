@@ -17,12 +17,15 @@
 .PackHouseArticle div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .PackHouseArticle button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 1.6rem;
 }
 
 .PackHouseArticle div p {
@@ -67,7 +70,12 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+
+    .sectionPackHouse {
+        height: 300px;
+  }
+
     .imagen {
         width: 85vw;
         height: 60vw;

@@ -21,7 +21,7 @@
   padding: 60px;
 }
 
-.article h5 {
+.article h3 {
   color: black;
   /* margin-top: 8vh; */
   font-size: 1.3vw;
@@ -61,7 +61,7 @@
     padding: 30px;
   }
 
-  .article h5 {
+  .article h3 {
     font-size: 19px;
   }
 

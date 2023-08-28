@@ -3,22 +3,26 @@ import { Navigation, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./swiperSlide.css";
 
-// Import Swiper stylesjj
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import PlayImg from '../assets/playcircleline.png';
+import Image from "next/image";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
+
+// import Img1 from './assets/_DSC9473.JPG';
+// import img2 from './assets/_DSC0320.JPG'
+// import img3 from './assets/DJI_0286.JPG'
 
 import styles from "../home.module.css";
+// import { Image } from "next/image";
 
 export default ({ showNavigation, hadleVideo }) => {
   return (
     <section className="container">
       <Swiper
-        // install Swiper modules
         modules={[Navigation, Pagination, A11y]}
         spaceBetween={10}
         slidesPerView={1}
@@ -42,16 +46,17 @@ export default ({ showNavigation, hadleVideo }) => {
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
-          <article className={styles.divContenido}>
+          <article className={styles.divContenido} aria-label="Contenido destacado">
             <div className={styles.divTexto}>
               <h2>
                 We are a big family working <br />
                 together every day
               </h2>
               <button onClick={() => hadleVideo()}>
-                Watch the video <FontAwesomeIcon icon={faCirclePlay} />{" "}
+                Watch the video <Image src={PlayImg} width={20} height={20} alt='play logo to start the video of quality fruits and agricultural products | logo de play para inciar el video de frutas y productos agropecuarios de calidad' className={styles.logoPlay}/>
               </button>
             </div>
+             {/* <Image src={Img1} className={styles.imgFondo}></Image> */}
           </article>
         </SwiperSlide>
         <SwiperSlide>
@@ -62,7 +67,7 @@ export default ({ showNavigation, hadleVideo }) => {
                 to the land we farm
               </h2>
               <button onClick={() => hadleVideo()}>
-                Watch the video <FontAwesomeIcon icon={faCirclePlay} />
+                Watch the video <Image src={PlayImg} width={20} height={20} alt='play logo to start the video of quality fruits and agricultural products | logo de play para inciar el video de frutas y productos agropecuarios de calidad' className={styles.logoPlay}/>
               </button>
             </div>
           </article>
@@ -75,14 +80,14 @@ export default ({ showNavigation, hadleVideo }) => {
                 and brings us unique fruits
               </h2>
               <button onClick={() => hadleVideo()}>
-                Watch the video <FontAwesomeIcon icon={faCirclePlay} />
+                Watch the video <Image src={PlayImg} width={20} height={20} alt='play logo to start the video of quality fruits and agricultural products | logo de play para inciar el video de frutas y productos agropecuarios de calidad' className={styles.logoPlay}/>
               </button>
             </div>
           </article>
         </SwiperSlide>
       </Swiper>
-      <div className="swiper-button-next"></div>
-      <div className="swiper-button-prev"></div>
+      <button className="swiper-button-next"></button>
+      <button className="swiper-button-prev"></button>
       <div className="paginationSwiper"></div>
     </section>
   );

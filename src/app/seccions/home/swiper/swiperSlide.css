@@ -10,11 +10,13 @@
 .swiper-button-prev {
   color: #ffff !important;
   margin-left: 14% !important;
+  border: none;
 }
 
 .swiper-button-next {
   color: #ffff !important;
   margin-right: 14% !important;
+  border: none;
 }
 
 .swiper-container .swiper-pagination-bullet-active {
@@ -80,4 +82,17 @@
 .swiper-button-prev:hover {
   background-color: transparent;
   color: #fff;
+}
+
+
+
+
+@media screen and (min-width: 1800px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 2rem;
+    height: 2rem;
+    --swiper-navigation-size: 2.5rem;
+  }
+  
 }

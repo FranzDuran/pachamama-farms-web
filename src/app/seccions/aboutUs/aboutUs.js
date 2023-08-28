@@ -5,7 +5,7 @@ const AboutUs = () => {
   return (
     <section data-text-color="black" className={styles.sectionAboutUs}>
       <article className={styles.article}>
-        <h5>What we do</h5>
+        <h3>What we do</h3>
         <div className={styles.divisor}></div>
         <p className={styles.parrafo}>
           Pachamama Farms is dedicated to research, development, <br />
