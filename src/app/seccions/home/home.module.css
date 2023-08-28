@@ -58,7 +58,7 @@
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: center; */
+  background-position: center;
   background-image: url("./assets/_DSC0320.JPG");
   position: relative;
 }
@@ -68,7 +68,7 @@
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: center; */
+  background-position: center;
   background-image: url("./assets/DJI_0286.JPG");
   position: relative;
 }
