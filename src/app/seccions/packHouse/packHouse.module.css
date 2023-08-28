@@ -24,8 +24,8 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  font-weight: 500;
-  font-size: 1.6rem;
+  /* font-weight: 300; */
+  font-size: 1.3rem;
 }
 
 .PackHouseArticle div p {
@@ -37,6 +37,23 @@
   width: 55vw;
   height: 30vw;
 }
+.divLogo{
+  height: 2px;
+  position: relative;
+}
+
+.LogoPackHouse{
+ position: absolute;
+ border-radius: 50%;
+ width: 7vw;
+ height: 7vw;
+ right: 0;
+ margin-right: -3.5vw;
+ top: -9vw;
+
+}
+
+
 
 @media screen and (min-width: 1800px) {
   .PackHouseArticle button {
@@ -59,7 +76,7 @@
   }
 
   .PackHouseArticle div p {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .imagen {
@@ -80,5 +97,15 @@
         width: 85vw;
         height: 60vw;
       }
+
+      .LogoPackHouse{
+        width: 15vw;
+        height: 15vw;
+        right: 0;
+        margin-right: -7vw;
+        top: -18vw;
+       
+       }
+       
 
 }
