@@ -1,0 +1,76 @@
+.sectionPackHouse {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fbf8f8;
+  position: relative;
+}
+
+.PackHouseArticle {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%; /* Llevará la parte superior del h2 al 50% de altura del div */
+  left: 50%; /* Llevará la izquierda del h2 al 50% del ancho del div */
+  transform: translate(-50%, -50%); /* Centrar completamente el h2 */
+}
+
+.PackHouseArticle div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.PackHouseArticle button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.PackHouseArticle div p {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.imagen {
+  width: 55vw;
+  height: 30vw;
+}
+
+@media screen and (min-width: 1800px) {
+  .PackHouseArticle button {
+    font-size: 3.4rem;
+  }
+
+  .PackHouseArticle div p {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .sectionPackHouse {
+        height: 400px;
+  }
+
+  .PackHouseArticle button {
+    font-size: 13px;
+  }
+
+  .PackHouseArticle div p {
+    font-size: 15px;
+  }
+
+  .imagen {
+    width: 60vw;
+    height: 35vw;
+  }
+  
+}
+
+
+@media (max-width: 600px) {
+    .imagen {
+        width: 85vw;
+        height: 60vw;
+      }
+
+}
