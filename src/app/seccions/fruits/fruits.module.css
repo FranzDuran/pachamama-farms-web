@@ -48,14 +48,14 @@
 @media screen and (min-width: 1800px) {
     /* Agrega aquí tus estilos personalizados */
     .divTexto h3{
-        font-size: 5.4rem;
+        font-size: 2.4rem;
      }
   
   }
 
 
   @media (max-width: 920px) {
-
+/* 
     .divContenido {
         height: 300px;
     }
@@ -65,7 +65,7 @@
 
     .divContenido3 {
         height: 300px;
-    }
+    } */
 
 
     .divTexto h3{
