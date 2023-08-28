@@ -1,0 +1,67 @@
+.floatingIconsContainer {
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  /* flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  left: 20px;
+  z-index: 1000;
+  background-color: transparent;
+}
+
+.linkedinIcon,
+.youtubeIcon {
+  /* width: 40px;
+  height: 40px; */
+  /* border-radius: 50%; */
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 25px;
+}
+
+.textIcon{
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.scrollButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Posiciona en la parte inferior derecha */
+}
+.scrollButton i{
+  font-size: 30px;
+}
+/* .scrollButton:hover {
+  background-color: #555;
+} */
+
+
+.white span {
+  color: white;
+}
+
+.black span {
+  color: black;
+}
+  
+.hide {
+  display: none;
+}

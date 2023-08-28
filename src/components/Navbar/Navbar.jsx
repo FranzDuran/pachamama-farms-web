@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import FloatingIcons from "../FloatingIcons/FloatingIcons";
 import styles from "./navbar.module.css";
 
 const Navbar = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
     const sections = document.querySelectorAll("section");
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
-      if (rect.top <= 80 && rect.bottom >= 80) {
+      if (rect.top <= 20 && rect.bottom >= 20) {
         setMenuTextColor(section.dataset.textColor || "white");
       }
     });
@@ -86,6 +87,7 @@ const Navbar = () => {
           <li id={styles.borderLi} onClick={() => handleClickNav("contact")}>Contact us</li>
         </ul>
       )}
+      {/* <FloatingIcons isMenuOpen={isMenuOpen}/> */}
     </nav>
   );
 };

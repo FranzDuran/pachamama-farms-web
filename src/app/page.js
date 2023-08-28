@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import ContactUs from "./seccions/ContactUs/ContactUs";
 import FruitsSeccion from "./seccions/fruits/fruits";
 import PackHouse from "./seccions/packHouse/packHouse";
+import FloatingIcons from "@/components/FloatingIcons/FloatingIcons";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <FruitsSeccion/>
       <PackHouse/>
       <ContactUs />
+      <FloatingIcons/>
     </main>
   );
 }
