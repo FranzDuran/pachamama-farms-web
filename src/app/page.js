@@ -15,8 +15,8 @@ export default function Home() {
       <AboutUs/>
       <FruitsSeccion/>
       <PackHouse/>
-      <ContactUs />
       <FloatingIcons/>
+      <ContactUs />
     </main>
   );
 }

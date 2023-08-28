@@ -10,12 +10,14 @@ const FloatingIcons = () => {
 
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
-    const breakpoint = window.innerWidth <= 768; // Definir tu propio punto de quiebre
+    const windowHeight = window.innerHeight;
   
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
-      const offset = breakpoint ? 350 : 610; // Ajustar el valor de offset para móvil
-      if (rect.top <= offset && rect.bottom >= 0) {
+      const topOffset = (windowHeight * 0.5) - (rect.height * 0.5);
+      const bottomOffset = (windowHeight * 0.49) + (rect.height * 0.49);
+  
+      if (rect.top <= bottomOffset && rect.bottom >= topOffset) {
         setMenuTextColor(section.dataset.textColor || "white");
       }
     });

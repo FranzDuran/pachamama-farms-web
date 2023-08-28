@@ -5,6 +5,7 @@
   padding: 1rem 2.5rem;
   background-color: transparent;
   color: white;
+  position: relative;
 }
 .navbarToggleDer{
   justify-content: flex-end;
@@ -70,6 +71,7 @@
   justify-content: space-between;
   width: 24px;
   height: 20px;
+  z-index: 200;
 }
 
 .icon {
@@ -82,28 +84,35 @@
   list-style: none;
   background-color: #e8e5e5;
   position: absolute;
-  top: 100%;
+  top: 0px;
   left: 0;
-  width: 100%;
-  height: 92vh;
+  width: 100vw;
+  height: 100vh;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
   /* gap: 0.5rem; */
-  z-index: 2000;
+  z-index: 100;
 }
 
 .menu li {
   cursor: pointer;
-  padding: 15px 0;
+  /* padding: 15px 0; */
   transition: background-color 0.3s;
   color: #291c05;
-  margin: 0 auto;
+  margin: auto;
   font-size: 48px;
   font-weight: 600;
   border-bottom: 2px solid #504633;
   width: 95%;
+  height: 16vh;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #borderLi {
