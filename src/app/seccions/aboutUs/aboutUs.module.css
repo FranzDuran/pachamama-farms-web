@@ -51,9 +51,7 @@
 }
 
 @media (max-width: 920px) {
-  .sectionAboutUs { 
-    height: 400px;
-  }
+
 
   .article {
     width: 90vw;
