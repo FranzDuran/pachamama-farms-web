@@ -14,7 +14,7 @@ const FloatingIcons = () => {
   
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
-      const topOffset = (windowHeight * 0.5) - (rect.height * 0.5);
+      const topOffset = (windowHeight * 0.49) - (rect.height * 0.49);
       const bottomOffset = (windowHeight * 0.49) + (rect.height * 0.49);
   
       if (rect.top <= bottomOffset && rect.bottom >= topOffset) {
