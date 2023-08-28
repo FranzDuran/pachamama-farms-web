@@ -10,9 +10,12 @@ const FloatingIcons = () => {
 
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
+    const breakpoint = window.innerWidth <= 768; // Definir tu propio punto de quiebre
+  
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
-      if (rect.top <= 600 && rect.bottom >= 0) {
+      const offset = breakpoint ? 510 : 610; // Ajustar el valor de offset para móvil
+      if (rect.top <= offset && rect.bottom >= 0) {
         setMenuTextColor(section.dataset.textColor || "white");
       }
     });
@@ -27,7 +30,6 @@ const FloatingIcons = () => {
 
   const scrollToNextSection = () => {
     // Lógica para desplazarse a la siguiente sección de la página
-    // Puedes usar métodos como `scrollIntoView` para lograrlo
     const sections = document.querySelectorAll("section"); // Selecciona todas las secciones
     let nextSectionIndex = -1;
 
@@ -47,7 +49,7 @@ const FloatingIcons = () => {
     <div
       className={`${styles.floatingIconsContainer} ${styles[menuTextColor]}`}
     >
-      <span className={`${styles.textIcon} `} >Find us in</span>
+      <span className={`${styles.textIcon} `}>Find us in</span>
       <span className={`${styles.linkedinIcon} `}>
         <Link
           href="https://www.linkedin.com/your-linkedin-url"
