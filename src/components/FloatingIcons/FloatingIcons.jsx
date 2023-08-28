@@ -14,7 +14,7 @@ const FloatingIcons = () => {
   
     sections.forEach((section) => {
       const rect = section.getBoundingClientRect();
-      const offset = breakpoint ? 510 : 610; // Ajustar el valor de offset para móvil
+      const offset = breakpoint ? 350 : 610; // Ajustar el valor de offset para móvil
       if (rect.top <= offset && rect.bottom >= 0) {
         setMenuTextColor(section.dataset.textColor || "white");
       }
