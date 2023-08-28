@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 
-export default ({ showNavigation, hadleVideo }) => {
+export default function SwiperCarrousel (){
   return (
     <div className="container">
       <Swiper

@@ -19,7 +19,7 @@ import Image from "next/image";
 import styles from "../home.module.css";
 // import { Image } from "next/image";
 
-export default ({ showNavigation, hadleVideo }) => {
+export default function SwiperComponent({ showNavigation, hadleVideo }){
   return (
     <section className="container">
       <Swiper

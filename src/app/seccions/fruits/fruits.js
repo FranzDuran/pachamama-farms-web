@@ -1,5 +1,5 @@
 "use client";
-import Swiper from "./swiper/swiper";
+import SwiperCarrousel from "./swiper/swiper";
 
 export default function FruitsSeccion() {
 
@@ -7,7 +7,7 @@ export default function FruitsSeccion() {
 
   return (
     <section id="home">
-      <Swiper></Swiper>
+      <SwiperCarrousel></SwiperCarrousel>
     </section>
   );
 }

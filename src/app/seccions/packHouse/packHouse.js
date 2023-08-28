@@ -56,8 +56,8 @@ export default function PackHouse() {
         <Image
          className={styles.LogoPackHouse} 
          src={ImagenLogo} 
-         alt=""
-         title=""
+         alt="Illustration with information about the 7000 square meters of pachamama farms where the best fruits of Peru are grown | Ilustracion con informacion sobre los 7000 Metros cuadrados de pachamama farms donde se cultivan las mejores frutas de Perú"
+         title="Information about the territory of Pachamama Farms | Informacion sobre el territorio de Pachamama Farms  "
          />
         </div>
 
