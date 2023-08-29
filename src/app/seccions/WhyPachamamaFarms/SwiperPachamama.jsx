@@ -8,14 +8,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-//import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "./SwiperPachamama.css";
 
 export default function SwiperPachamama() {
   return (
-    <div className={styles.swiperContainer}>
+    <div className={styles.swiperContainer} >
       <div className={styles.slideContent}>
         <Swiper
           // install Swiper modules
@@ -31,14 +30,19 @@ export default function SwiperPachamama() {
               slidesPerView: 1.1,
               spaceBetween: 0,
             },
-            425: {
-              slidesPerView: 1.25,
-              spaceBetween: 5,
-            },
-            768: {
-              slidesPerView: 2,
+            390: {
+              slidesPerView: 1.13,
               spaceBetween: 0,
             },
+            400: {
+              slidesPerView: 1.25,
+              spaceBetween: 10,
+            },
+            425: {
+              slidesPerView: 1.25,
+              spaceBetween: 0,
+            },
+            
           }}
           pagination={{
             clickable: true,

@@ -1,0 +1,92 @@
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #fff;
+}
+.swiperContainer{
+    width: 100%;
+    max-width: 865px;
+    background: #faf8f8;
+    
+}
+
+.slideContent{
+    width: 100%;
+}
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 100px 70px 0px 70px;
+}
+.card img{
+    width: 30%;
+    height: auto;
+}
+.text{
+    width: 60%;
+}
+.text h2{
+    font-size: 22px;
+    width: 80%;
+}
+.text p{
+    font-size: 16px;
+    margin: 16px 0;
+}
+.perfil h2{
+    font-size: 14px;
+}
+.perfil p{
+    font-size: 14px;
+    margin: 5px 0 0 0 ;
+}
+
+@media screen and (max-width: 767px) {
+    .swiperContainer{
+        width: 95%;
+        max-width: none;
+        padding: 0;
+        margin: 0 0 0 auto;
+        background: #fff;
+    }
+    .card{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: 410px;
+        padding: 0;
+        background: #faf8f8;
+    }
+    .card img{
+        width: 45%;
+        margin: 16px 0;
+    }
+    .text{
+        width: 90%;
+       
+    }
+    .text h2{
+        font-size: 16px;
+        width: 100%;
+    }
+    .text p{
+        font-size: 14px;
+        margin: 16px 0;
+    }
+    .perfil h2{
+        font-size: 13px;
+    }
+    .perfil p{
+        font-size: 13px;
+        margin: 5px 0 0 0 ;
+    }
+}
