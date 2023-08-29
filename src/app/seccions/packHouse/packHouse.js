@@ -5,7 +5,7 @@ import styles from "./packHouse.module.css";
 import Image from "next/image";
 import Imagen1 from "./assets/image1.JPG";
 import Imagen2 from "./assets/image2.JPG";
-import ImagenLogo from './assets/LogoPackHouse.png'
+import ImagenLogo from "./assets/LogoPackHouse.png";
 import "remixicon/fonts/remixicon.css";
 
 export default function PackHouse() {
@@ -27,7 +27,7 @@ export default function PackHouse() {
       <article className={styles.PackHouseArticle}>
         <div>
           <button onClick={handlePrevPage} disabled={currentPage === 1}>
-            <i class="ri-arrow-left-s-line" ></i>
+            <i class="ri-arrow-left-s-line"></i>
           </button>
           <p>{`Packhouse ${currentPage}/2`}</p>
           <button
@@ -52,15 +52,14 @@ export default function PackHouse() {
             className={styles.imagen}
           />
         )}
-        <div className={styles.divLogo}> 
-        <Image
-         className={styles.LogoPackHouse} 
-         src={ImagenLogo} 
-         alt="Illustration with information about the 7000 square meters of pachamama farms where the best fruits of Peru are grown | Ilustracion con informacion sobre los 7000 Metros cuadrados de pachamama farms donde se cultivan las mejores frutas de Perú"
-         title="Information about the territory of Pachamama Farms | Informacion sobre el territorio de Pachamama Farms  "
-         />
+        <div className={styles.divLogo}>
+          <Image
+            className={styles.LogoPackHouse}
+            src={ImagenLogo}
+            alt="Illustration with information about the 7000 square meters of pachamama farms where the best fruits of Peru are grown | Ilustracion con informacion sobre los 7000 Metros cuadrados de pachamama farms donde se cultivan las mejores frutas de Perú"
+            title="Information about the territory of Pachamama Farms | Informacion sobre el territorio de Pachamama Farms  "
+          />
         </div>
-
       </article>
     </section>
   );
