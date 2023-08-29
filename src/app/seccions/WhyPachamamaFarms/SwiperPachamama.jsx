@@ -14,7 +14,7 @@ import "./SwiperPachamama.css";
 
 export default function SwiperPachamama() {
   return (
-    <div className={styles.swiperContainer}>
+    <div className={styles.swiperContainer} >
       <div className={styles.slideContent}>
         <Swiper
           // install Swiper modules
