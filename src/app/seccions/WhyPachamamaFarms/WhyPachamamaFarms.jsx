@@ -8,7 +8,7 @@ import SwiperPachamama from "./SwiperPachamama";
 const WhyPachamamaFarms = () => {
   return (
     <div className={styles.container}>
-      <Image src={image} alt="" width="auto" height="auto" />
+      <Image src={image} alt="" width="auto" height="auto" className={styles.imgDesktop}/>
       <div className={styles.cardsContainer}>
         {data.map((item, index) => (
           <div className={styles.card}>
