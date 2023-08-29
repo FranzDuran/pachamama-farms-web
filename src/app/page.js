@@ -6,6 +6,7 @@ import FruitsSeccion from "./seccions/fruits/fruits";
 import PackHouse from "./seccions/packHouse/packHouse";
 import FloatingIcons from "@/components/FloatingIcons/FloatingIcons";
 import Calendar from "./seccions/calendar/calenadar";
+import WhyPachamamaFarms from "./seccions/WhyPachamamaFarms/WhyPachamamaFarms";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <PackHouse/>
       <FloatingIcons/>
       <Calendar/>
+      <WhyPachamamaFarms/>
       <ContactUs />
     </main>
   );

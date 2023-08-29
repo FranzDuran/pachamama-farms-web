@@ -1,10 +1,12 @@
 
 .container{
     background: #1e1405;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .content{
     display: flex;
