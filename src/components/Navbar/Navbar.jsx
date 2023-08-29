@@ -27,7 +27,6 @@ const Navbar = () => {
     });
   };
 
-
   const handleClickNav = (scrollToId) => {
     document.getElementById(scrollToId)?.scrollIntoView({ behavior: "smooth" });
 
@@ -43,9 +42,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.navbar} ${isMenuOpen ? styles.navbarToggleDer : ""} ${styles.sticky} ${styles[menuTextColor]}`}
+      className={`${styles.navbar} ${
+        isMenuOpen ? styles.navbarToggleDer : ""
+      } ${styles.sticky} ${styles[menuTextColor]}`}
     >
-      <div className={`${styles.logo} ${isMenuOpen ? styles.hide : ""}`}>Logo</div>
+      <div className={`${styles.logo} ${isMenuOpen ? styles.hide : ""}`}>
+        Logo
+      </div>
       <div className={styles.menuIzq}>
         <div className={`${styles.languageButtons} ${styles[menuTextColor]}`}>
           <button
@@ -56,7 +59,13 @@ const Navbar = () => {
           >
             EN
           </button>
-          <span className={`${styles.languageSeparator} ${isMenuOpen ? styles.hide : ""}`}>|</span>
+          <span
+            className={`${styles.languageSeparator} ${
+              isMenuOpen ? styles.hide : ""
+            }`}
+          >
+            |
+          </span>
           <button
             onClick={() => changeLanguage("es")}
             className={`${styles.languageButton} ${
@@ -72,9 +81,11 @@ const Navbar = () => {
           }`}
           onClick={toggleMenu}
         >
-          <span className={styles.icon}></span>
-          <span className={styles.icon}></span>
-          <span className={styles.icon}></span>
+          {isMenuOpen ? (
+            <i className="ri-close-fill" id={styles.iconx}></i>
+          ) : (
+            <i className="ri-menu-line"></i>
+          )}
         </div>
       </div>
       {isMenuOpen && (
@@ -82,9 +93,13 @@ const Navbar = () => {
           <li onClick={() => handleClickNav("home")}>Home</li>
           <li onClick={() => handleClickNav("about")}>About us</li>
           <li onClick={() => handleClickNav("calendar")}>Calendar</li>
-          <li onClick={() => handleClickNav("certifications")}>Certifications</li>
+          <li onClick={() => handleClickNav("certifications")}>
+            Certifications
+          </li>
           <li onClick={() => handleClickNav("fruits")}>Our fruits</li>
-          <li id={styles.borderLi} onClick={() => handleClickNav("contact")}>Contact us</li>
+          <li id={styles.borderLi} onClick={() => handleClickNav("contact")}>
+            Contact us
+          </li>
         </ul>
       )}
       {/* <FloatingIcons isMenuOpen={isMenuOpen}/> */}
