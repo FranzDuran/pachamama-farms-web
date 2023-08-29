@@ -30,6 +30,7 @@
 
 .menuIzq {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -69,11 +70,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 24px;
-  height: 20px;
+  /* width: 24px;
+  height: 20px; */
   z-index: 200;
 }
 
+.navbarToggle i{
+  font-size: 25px;
+}
+
+#iconx{
+  color: #291c05;
+}
 .icon {
   width: 24px;
   height: 3px;
@@ -93,7 +101,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
   /* gap: 0.5rem; */
   z-index: 100;
 }
