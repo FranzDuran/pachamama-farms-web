@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./video.module.css";
 
-export default function Video() {
+export default function Video({hadleVideo}) {
   return (
     <div className={styles.Video}>
+      <i className="ri-close-fill" id={styles.iconx} onClick={() => hadleVideo()}></i>
       <iframe
         width="560"
         height="315"

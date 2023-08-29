@@ -99,7 +99,7 @@
 
 
   .divTexto h2 {
-    font-size: 20px;
+    font-size: 22px;
     width: 270px;
   }
 
@@ -109,6 +109,10 @@
   .logoPlay {
     width: 13px;
     height: 13px;
+  }
+
+  .divTexto button {
+    margin-top: 10px;
   }
 
 }

@@ -1,14 +1,14 @@
-.sectionCalendar{
-    border: 1px solid black;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    background-color: #fbf8f8;
+.sectionCalendar {
+  border: 1px solid black;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #fbf8f8;
 }
 
-.divFondo{
+.divFondo {
   width: 100vw;
-  height:60vh;
+  height: 60vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("./assets/_DSC9013.JPG");
@@ -16,46 +16,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.divCalendar{
-    width: 50vw;
-    height: 32vh;
-    background-color: #ffff;
-    background-image: url('./assets/calendar.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    top: 14vw;
+.divCalendar {
+  width: 50vw;
+  height: 32vh;
+  background-color: #ffff;
+  background-image: url("./assets/calendar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 14vw;
 }
 
-
+.CalendarInfoIMG{
+   width: 7vw;
+   height: 7vw;
+   border-radius: 50%;
+   position: absolute;
+   left: 3.4vw;
+   top: -3.4vw;
+}
 
 @media (max-width: 1040px) {
-  .divCalendar{
+  .divCalendar {
     width: 750px;
     height: 230px;
     top: 28vh;
+  }
 }
-  
-}
-  
-
 
 @media (max-width: 767px) {
-  .divCalendar{
+  .divCalendar {
     width: 310px;
     height: 90px;
     background-color: #ffff;
-    background-image: url('./assets/calendar.png');
+    background-image: url("./assets/calendar.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     top: 28vh;
+  }
 }
-  
-}
-  

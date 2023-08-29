@@ -45,7 +45,7 @@ const [video, setVideo] = useState(false)
        showNavigation={showNavigation}
        hadleVideo={hadleVideo}>
       </SwiperComponent>
-      {video && <Video />}
+      {video && <Video  hadleVideo={hadleVideo}/>}
     </section>
   );
 }
