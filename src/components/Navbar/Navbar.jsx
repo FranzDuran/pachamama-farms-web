@@ -2,12 +2,17 @@
 import React, { useState, useEffect } from "react";
 import FloatingIcons from "../FloatingIcons/FloatingIcons";
 import styles from "./navbar.module.css";
+import Image from "next/image";
+import logoWhite from "./logo white.png";
+import logoBlack from "./logo black.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [language, setLanguage] = useState("en"); // Default language is English
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [activeSection, setActiveSection] = useState(null);
+
+  console.log(menuTextColor);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -47,7 +52,11 @@ const Navbar = () => {
       } ${styles.sticky} ${styles[menuTextColor]}`}
     >
       <div className={`${styles.logo} ${isMenuOpen ? styles.hide : ""}`}>
-        Logo
+        {menuTextColor === "white" ? (
+          <Image src={logoWhite} alt="" width="auto" height="auto" />
+        ) : (
+          <Image src={logoBlack} alt="" width="auto" height="auto" />
+        )}
       </div>
       <div className={styles.menuIzq}>
         <div className={`${styles.languageButtons} ${styles[menuTextColor]}`}>

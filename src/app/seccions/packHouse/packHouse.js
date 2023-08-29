@@ -27,14 +27,14 @@ export default function PackHouse() {
       <article className={styles.PackHouseArticle}>
         <div>
           <button onClick={handlePrevPage} disabled={currentPage === 1}>
-            <i class="ri-arrow-left-s-line"></i>
+            <i className="ri-arrow-left-s-line"></i>
           </button>
           <p>{`Packhouse ${currentPage}/2`}</p>
           <button
             onClick={handleNextPage}
             disabled={currentPage === totalImages}
           >
-            <i class="ri-arrow-right-s-line"></i>
+            <i className="ri-arrow-right-s-line"></i>
           </button>
         </div>
         {isFirstImage ? (

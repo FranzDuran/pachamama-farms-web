@@ -63,6 +63,14 @@
 .logo {
   margin-left: 1rem;
   font-size: 1.5rem;
+  position: relative;
+}
+
+.logo img{
+  height: 55px;
+  width: auto;
+  position: absolute;
+  top: -15px;
 }
 
 .navbarToggle {
