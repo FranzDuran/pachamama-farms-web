@@ -7,25 +7,23 @@ import PackHouse from "./seccions/packHouse/packHouse";
 import FloatingIcons from "@/components/FloatingIcons/FloatingIcons";
 import Calendar from "./seccions/calendar/calenadar";
 import WhyPachamamaFarms from "./seccions/WhyPachamamaFarms/WhyPachamamaFarms";
-import Testimonials from "./seccions/Testimonials/Testimonials";
-import OurPeople from "./seccions/OurPeople/OurPeople";
-import OurFruits from "./seccions/OurFruits/OurFruits";
-
+import Compromise from "./seccions/compromise/compromise";
 
 export default function Home() {
   return (
     <main>
       <Navbar />
+
+      
       <HomeSeccion/>
       <AboutUs/>
       <FruitsSeccion/>
       <PackHouse/>
       <FloatingIcons/>
       <Calendar/>
-      <OurFruits/>
-      <OurPeople/>
-      <Testimonials/>
-      <WhyPachamamaFarms/>
+      <Compromise/>
+      <WhyPachamamaFarms/> 
+   
       <ContactUs />
     </main>
   );

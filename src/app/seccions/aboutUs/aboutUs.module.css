@@ -11,7 +11,6 @@
   top: 50%; /* Llevará la parte superior del h2 al 50% de altura del div */
   left: 50%; /* Llevará la izquierda del h2 al 50% del ancho del div */
   transform: translate(-50%, -50%); /* Centrar completamente el h2 */
-  width: auto;
   width: 70vw;
   height: auto;
   background-color: white;
@@ -90,11 +89,11 @@
   }
 }
 
-
+/* 
 
 @media (max-width: 330px) {
    .sectionAboutUs { 
      height: 500px;
    }
- }
+ } */
  

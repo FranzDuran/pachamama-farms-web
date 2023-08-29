@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .container img {
@@ -21,6 +20,9 @@
   width: 80%;
   max-width: 1200px;
   position: absolute;
+}
+.imgDesktop{
+  max-height: 100vh;
 }
 
 .card {
