@@ -1,0 +1,32 @@
+.sectionCalendar{
+    border: 1px solid black;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #fbf8f8;
+}
+
+.divFondo{
+  width: 100vw;
+  height:60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./assets/_DSC9013.JPG");
+  background-position: 50% 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.divCalendar{
+    width: 50vw;
+    height: 32vh;
+    background-color: #ffff;
+    background-image: url('./assets/calendar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 14vw;
+}
