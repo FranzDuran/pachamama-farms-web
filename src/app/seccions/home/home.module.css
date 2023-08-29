@@ -75,7 +75,7 @@
 
 @media screen and (min-width: 1800px) {
   .divTexto h2 {
-    font-size: 3.4rem;
+    font-size: 2.4rem;
   }
 
   .divTexto button {
@@ -83,17 +83,17 @@
   }
 
   .logoPlay {
-    width: 4rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
   }
-}
+} 
 
-@media (max-width: 1280px) {
+/* @media (max-width: 1280px) {
   .divTexto h2 {
     font-size: 2.5rem;
   }
 
-}
+} */
 
 @media (max-width: 920px) {
 

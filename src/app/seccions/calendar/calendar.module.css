@@ -30,3 +30,32 @@
     position: relative;
     top: 14vw;
 }
+
+
+
+@media (max-width: 1040px) {
+  .divCalendar{
+    width: 750px;
+    height: 230px;
+    top: 28vh;
+}
+  
+}
+  
+
+
+@media (max-width: 767px) {
+  .divCalendar{
+    width: 310px;
+    height: 90px;
+    background-color: #ffff;
+    background-image: url('./assets/calendar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 28vh;
+}
+  
+}
+  
