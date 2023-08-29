@@ -11,7 +11,7 @@ const WhyPachamamaFarms = () => {
       <Image src={image} alt="" width="auto" height="auto" />
       <div className={styles.cardsContainer}>
         {data.map((item, index) => (
-          <div className={styles.card}>
+          <div className={styles.card} key={index}>
           <Image src={item.image} alt="" width="auto" height="auto" />
           <h2>{item.title}</h2>
           <p>{item.paragraph}</p>

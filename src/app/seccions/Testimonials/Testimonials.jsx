@@ -10,11 +10,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import "./SwiperPachamama.css";
+//import "./SwiperPachamama.css";
 
-export default function SwiperPachamama() {
+export default function Testimonials() {
   return (
-    <div className={styles.swiperContainer}>
+    <section className={styles.swiperContainer}>
       <div className={styles.slideContent}>
         <Swiper
           // install Swiper modules
@@ -42,25 +42,30 @@ export default function SwiperPachamama() {
               slidesPerView: 1.25,
               spaceBetween: 0,
             },
-            
           }}
           pagination={{
             clickable: true,
-            el: ".pagination-pachamama",
+            el: ".pagination-testimonials",
           }}
         >
           {data.map((item, index) => (
             <SwiperSlide key={index}>
               <div className={styles.cardMobile}>
                 <Image src={item.image} alt="" width="auto" height="auto" />
-                <h2>{item.title}</h2>
-                <p>{item.paragraph}</p>
+                <div>
+                  <h2>{item.title}</h2>
+                  <p>{item.paragraph}</p>
+                  <div>
+                    <h2>{item.title}</h2>
+                    <p>{item.paragraph}</p>
+                  </div>
+                </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-      <div className="pagination-pachamama"></div>
-    </div>
+      <div className="pagination-testimonials"></div>
+    </section>
   );
 }
