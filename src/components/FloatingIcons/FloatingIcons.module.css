@@ -36,20 +36,22 @@
 }
 
 .scrollButton {
-  width: 40px;
+  /* width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 50%; */
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   position: fixed;
-  bottom: 10px;
+  bottom: 20px;
   right: 20px; /* Posiciona en la parte inferior derecha */
 }
-.scrollButton i{
-  font-size: 30px;
+.scrollButton img{
+  width: 30px;
+  height: auto;
+  transform: rotate(90deg);
 }
 /* .scrollButton:hover {
   background-color: #555;

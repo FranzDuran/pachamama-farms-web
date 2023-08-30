@@ -4,6 +4,9 @@ import Link from "next/link";
 import styles from "./FloatingIcons.module.css";
 import "remixicon/fonts/remixicon.css";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import flechablack from "./flecha-black.png";
+import flechawhite from "./flecha-white.png";
 
 const FloatingIcons = () => {
   const [menuTextColor, setMenuTextColor] = useState("white");
@@ -72,19 +75,11 @@ const FloatingIcons = () => {
       </span>
       <span className={styles.scrollButton} onClick={scrollToNextSection}>
         {/* <i className="ri-arrow-down-line"></i> */}
-        <svg
-    className={styles.customArrow}
-    width="40"
-    height="60" 
-    viewBox="0 0 40 60"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M20 40L11.34 31.34C10.93 30.93 10.93 30.27 11.34 29.86C11.75 29.46 12.41 29.46 12.82 29.86L20 37L27.18 29.86C27.59 29.46 28.25 29.46 28.66 29.86C29.07 30.27 29.07 30.93 28.66 31.34L20 40ZM20 37V15C20 14.45 19.55 14 19 14C18.45 14 18 14.45 18 15V37H20Z"
-      fill="currentColor"
-    />
-  </svg>
+        {menuTextColor === "white" ? (
+          <Image src={flechawhite} alt="" width="auto" height="auto" />
+        ) : (
+          <Image src={flechablack} alt="" width="auto" height="auto" />
+        )}
       </span>
     </div>
   );
