@@ -10,11 +10,12 @@ export default function OurFruits() {
     text: "Kent mangos",
     cards: [{ image: image1 }, { image: image2 }, { image: image3 }],
   };
-  return <SwiperReusable data={data} />;
-  
+  return (
+    <section id="fruits">
+      <SwiperReusable data={data} />
+    </section>
+  );
 }
-
-
 
 /* "use client";
 

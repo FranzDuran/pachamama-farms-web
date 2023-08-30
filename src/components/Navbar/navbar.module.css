@@ -89,6 +89,10 @@
 
 #iconx{
   color: #291c05;
+  font-size: 40px;
+}
+#iconx:hover{
+  color: #fff;
 }
 .icon {
   width: 24px;
@@ -118,12 +122,12 @@
   /* padding: 15px 0; */
   transition: background-color 0.3s;
   color: #291c05;
-  margin: auto;
+  margin:0 auto;
   font-size: 48px;
   font-weight: 600;
-  border-bottom: 2px solid #504633;
+  border-bottom: 1px solid #504633;
   width: 95%;
-  height: 16vh;
+  height: 16.6vh;
   text-align: center;
   display: flex;
   align-items: center;
@@ -136,6 +140,7 @@
 
 .menu li:hover {
   background-color: #555;
+  color: #fff;
 }
 
 

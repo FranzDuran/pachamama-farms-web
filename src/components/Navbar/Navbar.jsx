@@ -38,9 +38,19 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+
+    const handleDocumentClick = (event) => {
+      if (!event.target.closest(`.${styles.navbar}`)) {
+        setIsMenuOpen(false);
+      }
+    };
+  
+    document.addEventListener("click", handleDocumentClick);
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("click", handleDocumentClick);
     };
   }, []);
 
@@ -98,19 +108,14 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <ul className={styles.menu}>
-          <li onClick={() => handleClickNav("home")}>Home</li>
-          <li onClick={() => handleClickNav("about")}>About us</li>
-          <li onClick={() => handleClickNav("calendar")}>Calendar</li>
-          <li onClick={() => handleClickNav("certifications")}>
-            Certifications
-          </li>
-          <li onClick={() => handleClickNav("fruits")}>Our fruits</li>
-          <li id={styles.borderLi} onClick={() => handleClickNav("contact")}>
-            Contact us
-          </li>
-        </ul>
+        <li onClick={() => {handleClickNav("home"); toggleMenu();}}>Home</li>
+        <li onClick={() => {handleClickNav("about"); toggleMenu();}}>About us</li>
+        <li onClick={() => {handleClickNav("calendar"); toggleMenu();}}>Calendar</li>
+        <li onClick={() => {handleClickNav("certifications"); toggleMenu();}}>Certifications</li>
+        <li onClick={() => {handleClickNav("fruits"); toggleMenu();}}>Our fruits</li>
+        <li id={styles.borderLi} onClick={() => {handleClickNav("contact"); toggleMenu();}}>Contact us</li>
+      </ul>
       )}
-      {/* <FloatingIcons isMenuOpen={isMenuOpen}/> */}
     </nav>
   );
 };
