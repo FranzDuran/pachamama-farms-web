@@ -1,0 +1,152 @@
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #fff;
+}
+.swiperContainer{
+    width: 100%;
+    max-width: 55vw;
+    /* background: #faf8f8; */
+    position: relative;
+}
+
+.slideContent{
+    width: 100%;
+}
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 55vw;
+    height: 30vw;
+}
+.card img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.text{
+    width: 60%;
+}
+
+@media screen and (max-width: 767px) {
+    .swiperContainer{
+        width: 100%;
+        max-width: none;
+        padding: 0;
+        margin: 0 0 0 auto;
+        background: #fff;
+        height: auto;
+    }
+    .card{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        background: #faf8f8;
+    }
+    .card img{
+        width: 100%;
+        /* margin: 16px 0; */
+    }
+    .imageCount{
+        top: -20px;
+        left: 30% !important;
+        /* right: 70%; */
+        width: 200px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .divLogo{
+        display: none;
+    }
+}
+
+/* Image count */
+
+.imageCount{
+    position: absolute;
+    top: -30px;
+    left: 40%;
+    right: 60%;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.divLogo{
+    height: 2px;
+    position: relative;
+  }
+  
+  .LogoPackHouse{
+   position: absolute;
+   border-radius: 50%;
+   width: 7vw;
+   height: 7vw;
+   right: 0;
+   margin-right: -3.5vw;
+   top: -9vw;
+  z-index: 50;
+  }
+
+/*--------NAVEGATION-----------------------*/
+/* #button-navegation-prev {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 60%;
+    left: -50px;
+    z-index: 2;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#button-navegation-prev i {
+    color: #020203;
+    font-size: 28px;
+}
+
+#button-navegation-next {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 60%;
+    right: -50px;
+    z-index: 3;
+    border-radius: 50%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#button-navegation-next i {
+    color: #020203;
+    font-size: 28px;
+}
+
+
+.none {
+    border: 1px solid #dcddeb;
+    background: #ffffff;
+}
+
+.active {
+    border: 1px solid #020203;
+    background-color: #020203;
+}
+
+.active i {
+    color: #ffff !important;
+} */
