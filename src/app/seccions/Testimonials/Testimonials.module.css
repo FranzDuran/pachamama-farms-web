@@ -13,7 +13,7 @@
     width: 100%;
     max-width: 865px;
     background: #faf8f8;
-    
+    padding: 10px;
 }
 
 .slideContent{
@@ -28,7 +28,7 @@
     padding: 100px 70px 0px 70px;
 }
 .card img{
-    width: 30%;
+    width: 35%;
     height: auto;
 }
 .text{
@@ -40,7 +40,7 @@
 }
 .text p{
     font-size: 16px;
-    margin: 16px 0;
+    margin: 25px 0;
 }
 .perfil h2{
     font-size: 14px;

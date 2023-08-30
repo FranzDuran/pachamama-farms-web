@@ -24,8 +24,42 @@ export default function SwiperComponent({ showNavigation, hadleVideo }){
     <section className="container">
       <Swiper
         modules={[Navigation, Pagination, A11y]}
-        spaceBetween={10}
-        slidesPerView={1}
+        /* spaceBetween={0}
+        slidesPerView={1} */
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          375: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          390: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          400: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          425: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          1440: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+        }}
         navigation={
           showNavigation
             ? {

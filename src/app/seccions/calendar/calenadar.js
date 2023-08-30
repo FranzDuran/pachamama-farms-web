@@ -7,7 +7,7 @@ const Calendar = () => {
 
 
     return(
-       <section className={styles.sectionCalendar} id="calendar">
+       <section className={styles.sectionCalendar} id="calendar" data-text-color="black">
         <div className={styles.divFondo}>
           <div className={styles.divCalendar}>
            <Image 

@@ -1,11 +1,11 @@
 .floatingIconsContainer {
   position: fixed;
-  bottom: 0px;
+  bottom: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  left: 20px; 
+  left: 45px; 
   z-index: 100;
   background-color: transparent;
 }
@@ -36,7 +36,7 @@
   justify-content: center;
   cursor: pointer;
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   right: 20px; /* Posiciona en la parte inferior derecha */
 }
 .scrollButton img{
@@ -51,7 +51,7 @@
 }
 
 .black span {
-  color: black;
+  color: #291C05 ;
 }
   
 .hide {

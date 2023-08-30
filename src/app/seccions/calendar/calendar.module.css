@@ -18,7 +18,7 @@
 }
 
 .divCalendar {
-  width: 50vw;
+  width: 60vw;
   height: 32vh;
   background-color: #ffff;
   background-image: url("./assets/calendar.png");
@@ -26,16 +26,16 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  top: 14vw;
+  top: 15vw;
 }
 
 .CalendarInfoIMG{
-   width: 7vw;
-   height: 7vw;
+   width: 8vw;
+   height: 8vw;
    border-radius: 50%;
    position: absolute;
    left: 3.4vw;
-   top: -3.4vw;
+   top: -4vw;
 }
 
 @media (max-width: 1040px) {

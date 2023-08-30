@@ -75,7 +75,7 @@
 
 .imageCount{
     position: absolute;
-    top: -30px;
+    top: -38px;
     left: 40%;
     right: 60%;
     display: flex;
@@ -93,11 +93,11 @@
   .LogoPackHouse{
    position: absolute;
    border-radius: 50%;
-   width: 7vw;
-   height: 7vw;
-   right: 0;
+   width: 8vw;
+   height: 8vw;
+   right: -8px;
    margin-right: -3.5vw;
-   top: -9vw;
+   top: -11vw;
   z-index: 50;
   }
 

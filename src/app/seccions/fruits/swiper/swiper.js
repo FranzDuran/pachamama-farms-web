@@ -16,8 +16,42 @@ export default function SwiperCarrousel (){
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, A11y]}
-        spaceBetween={10}
-        slidesPerView={1}
+        /* spaceBetween={10}
+        slidesPerView={1} */
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          375: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          390: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          400: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          425: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          1024: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          1440: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+        }}
       >
         <SwiperSlide>
           <article className={styles.divContenido}>

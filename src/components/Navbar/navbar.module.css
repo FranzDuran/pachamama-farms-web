@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2.5rem;
+  padding: 2rem 2.5rem 1rem;
   background-color: transparent;
   color: white;
   position: relative;
@@ -25,7 +25,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .menuIzq {
@@ -47,7 +47,7 @@
 }
 
 .black button {
-  color: black;
+  color: #291C05 ;
 }
 
 .white span {
@@ -56,8 +56,8 @@
 }
 
 .black span {
-  color: black;
-  background-color: black;
+  color: #291C05 ;
+  background-color: #291C05 ;
 }
 
 .logo {
@@ -67,10 +67,11 @@
 }
 
 .logo img{
-  height: 55px;
+  height: 60px;
   width: auto;
   position: absolute;
   top: -15px;
+  left: -15px;
 }
 
 .navbarToggle {
@@ -91,9 +92,9 @@
   color: #291c05;
   font-size: 40px;
 }
-#iconx:hover{
+/* #iconx:hover{
   color: #fff;
-}
+} */
 .icon {
   width: 24px;
   height: 3px;
@@ -158,7 +159,7 @@
   color: white;
   cursor: pointer;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 500;
   /* margin-right: 0.5rem; */
   /* padding: 0.25rem 0.5rem; */
 }
@@ -168,7 +169,8 @@
 }
 
 .activeLanguage {
-  color: rgb(119, 119, 119) !important;
+  /* color: rgb(119, 119, 119) !important; */
+  font-weight: 600;
 }
 
 .languageSeparator {
