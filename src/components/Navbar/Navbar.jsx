@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import FloatingIcons from "../FloatingIcons/FloatingIcons";
 import styles from "./navbar.module.css";
 import Image from "next/image";
 import logoWhite from "./logo white.png";
@@ -73,7 +72,7 @@ const Navbar = () => {
               isMenuOpen ? styles.hide : ""
             }`}
           >
-            |
+            
           </span>
           <button
             onClick={() => changeLanguage("es")}

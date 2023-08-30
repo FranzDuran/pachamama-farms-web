@@ -5,7 +5,7 @@ import logoImg from './assets/logosCompromise.png'
 
 export default function Compromise() {
   return (
-    <section className={styles.sectionCompromise}>
+    <section className={styles.sectionCompromise} data-text-color="black">
       <article className={styles.articleCompromise}>
         <h3>Our commitment</h3>
         <div className={styles.divisor}></div>

@@ -74,7 +74,6 @@ const FloatingIcons = () => {
         </Link>
       </span>
       <span className={styles.scrollButton} onClick={scrollToNextSection}>
-        {/* <i className="ri-arrow-down-line"></i> */}
         {menuTextColor === "white" ? (
           <Image src={flechawhite} alt="" width="auto" height="auto" />
         ) : (
