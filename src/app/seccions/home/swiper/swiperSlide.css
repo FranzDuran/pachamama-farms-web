@@ -83,16 +83,3 @@
   background-color: transparent;
   color: #fff;
 }
-
-
-
-
-@media screen and (min-width: 1800px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    width: 2rem;
-    height: 2rem;
-    --swiper-navigation-size: 2.5rem;
-  }
-  
-}

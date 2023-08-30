@@ -67,7 +67,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }){
                 to the land we farm
               </h2>
               <button onClick={() => hadleVideo()}>
-                Watch the video <Image src={PlayImg} width={20} height={20} alt='play logo to start the video of quality fruits and agricultural products | logo de play para inciar el video de frutas y productos agropecuarios de calidad' className={styles.logoPlay}/>
+                Watch the video <i class="ri-play-circle-line" className={styles.logoPlay}></i>
               </button>
             </div>
           </article>
