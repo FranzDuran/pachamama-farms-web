@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   left: 45px; 
-  z-index: 100;
+  z-index: 80;
   background-color: transparent;
 }
 
@@ -62,3 +62,8 @@
   display: none;
 }
 
+@media screen and (max-width: 767px) {
+  .scrollButton img{
+   width: 17px;
+  }
+}
