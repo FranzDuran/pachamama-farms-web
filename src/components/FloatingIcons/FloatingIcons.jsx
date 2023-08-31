@@ -34,21 +34,25 @@ const FloatingIcons = () => {
   }, []);
 
   const scrollToNextSection = () => {
-    // Lógica para desplazarse a la siguiente sección de la página
-    const sections = document.querySelectorAll("section"); // Selecciona todas las secciones
+    const sections = document.querySelectorAll("section");
+    const windowHeight = window.innerHeight;
     let nextSectionIndex = -1;
-
+  
     sections.forEach((section, index) => {
       const rect = section.getBoundingClientRect();
-      if (rect.top >= 0 && rect.top < window.innerHeight) {
+      if (rect.top >= 0 && rect.top < windowHeight) {
         nextSectionIndex = index + 1;
       }
     });
-
+  
     if (nextSectionIndex < sections.length) {
       sections[nextSectionIndex].scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Si estás en la última sección, redirige a la primera sección
+      sections[0].scrollIntoView({ behavior: "smooth" });
     }
   };
+  
 
   return (
     <div

@@ -11,8 +11,6 @@ const Navbar = () => {
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [activeSection, setActiveSection] = useState(null);
 
-  console.log(menuTextColor);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };

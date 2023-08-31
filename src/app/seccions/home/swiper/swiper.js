@@ -101,7 +101,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }){
                 to the land we farm
               </h2>
               <button onClick={() => hadleVideo()}>
-                Watch the video <i class="ri-play-circle-line" className={styles.logoPlay}></i>
+                Watch the video <i className="ri-play-circle-line" id={styles.logoPlay}></i>
               </button>
             </div>
           </article>
