@@ -11,13 +11,13 @@
   top: 50%; /* Llevará la parte superior del h2 al 50% de altura del div */
   left: 50%; /* Llevará la izquierda del h2 al 50% del ancho del div */
   transform: translate(-50%, -50%); /* Centrar completamente el h2 */
-  width: 70vw;
+  width: 75vw;
   height: auto;
   background-color: white;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 60px;
+  padding: 50px 0px;
 }
 
 .article h3 {
@@ -30,7 +30,7 @@
 }
 
 .divisor {
-  margin-top: 2.5vw;
+  margin-top: 2vw;
   width: 5.3vw;
   height: 0px;
   border: 1.3px solid rgb(144, 138, 138);
@@ -38,9 +38,9 @@
 
 .parrafo {
   margin-top: 4.5vw;
-  width: 90%;
+  width: 100%;
   color: #291C05 !important;
-  font-size: 1.25rem;
+  font-size: 2.25rem;
   font-weight: 400;
   text-align: center;
   /* font-family: 'Roboto', sans-serif; */
