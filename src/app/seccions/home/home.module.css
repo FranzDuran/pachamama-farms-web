@@ -6,7 +6,7 @@
   background-position: 50% 25%;
   background-image: url("./assets/_DSC9473.JPG");
   position: relative;
-  transform: scale(1.6);
+  /* transform: scale(1.6); */
 }
 
 .imgFondo{

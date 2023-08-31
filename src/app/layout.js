@@ -1,7 +1,7 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Newsreader } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const nw = Newsreader({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className} style={{margin:0}}>{children}</body>
+      <body className={nw.className} style={{margin:0 , fontWeight:'600'}}>{children}</body>
     </html>
   )
 }
