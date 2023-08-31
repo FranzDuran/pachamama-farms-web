@@ -7,8 +7,8 @@ const Calendar = () => {
 
 
     return(
-       <section className={styles.sectionCalendar} id="calendar" data-text-color="black">
-        <div className={styles.divFondo}>
+       <section className={styles.sectionCalendar} id="calendar" data-text-color="white">
+        <section className={styles.divFondo} /* data-text-color="white" */>
           <div className={styles.divCalendar}>
            <Image 
             src={CalendarImg}
@@ -17,7 +17,7 @@ const Calendar = () => {
             className={styles.CalendarInfoIMG}
            /> 
           </div>    
-        </div>    
+        </section>    
        </section>
     )
 
