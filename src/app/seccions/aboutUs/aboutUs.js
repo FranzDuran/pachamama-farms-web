@@ -1,11 +1,14 @@
 import React from "react";
 import styles from "./aboutUs.module.css";
+import { Roboto,  } from 'next/font/google';
+
+const roboto = Roboto ({weight:"700", subsets: ['latin']})
 
 const AboutUs = () => {
   return (
     <section data-text-color="black" className={styles.sectionAboutUs} id="about">
-      <article className={styles.article}>
-        <h3>What we do</h3>
+      <article className={styles.article} >
+        <h3 className={roboto.className} >What we do</h3>
         <div className={styles.divisor}></div>
         <p className={styles.parrafo}>
           Pachamama Farms is dedicated to research, development, <br />

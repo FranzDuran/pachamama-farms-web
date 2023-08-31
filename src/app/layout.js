@@ -1,5 +1,5 @@
 import './globals.css'
-import { Newsreader } from 'next/font/google'
+import { Newsreader, Roboto } from 'next/font/google'
 
 const nw = Newsreader({ subsets: ['latin'] })
 

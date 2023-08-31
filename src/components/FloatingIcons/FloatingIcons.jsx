@@ -5,8 +5,8 @@ import styles from "./FloatingIcons.module.css";
 import "remixicon/fonts/remixicon.css";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import flechablack from "./flecha-black.png";
-import flechawhite from "./flecha-white.png";
+import flechawhite from "./flecha_blanca.png";
+import flechablack from "./flecha_marron.png";
 
 const FloatingIcons = () => {
   const [menuTextColor, setMenuTextColor] = useState("white");

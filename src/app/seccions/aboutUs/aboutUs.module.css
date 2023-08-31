@@ -21,9 +21,12 @@
 }
 
 .article h3 {
-  color: black;
+  color: #291C05;
   /* margin-top: 8vh; */
-  font-size: 1.3vw;
+  font-size: 1.25rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  
 }
 
 .divisor {
@@ -36,17 +39,21 @@
 .parrafo {
   margin-top: 4.5vw;
   width: 90%;
-  color: black;
-  font-size: 1.7vw;
+  color: #291C05 !important;
+  font-size: 1.25rem;
+  font-weight: 400;
   text-align: center;
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 .parrafo2 {
   margin-top: 4.5vw;
   width: 90%;
-  color: rgb(48, 48, 48);
-  font-size: 1vw;
+  color: #291C05;
+  font-size: .8rem;
+  font-weight: 400;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 920px) {

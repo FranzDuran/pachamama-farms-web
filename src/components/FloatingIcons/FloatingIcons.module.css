@@ -37,12 +37,12 @@
   cursor: pointer;
   position: fixed;
   bottom: 30px;
-  right: 20px; /* Posiciona en la parte inferior derecha */
+  right: 40px; /* Posiciona en la parte inferior derecha */
 }
 .scrollButton img{
-  width: 30px;
+  width: 25px;
   height: auto;
-  transform: rotate(90deg);
+  /* transform: rotate(90deg); */
 }
 
 
