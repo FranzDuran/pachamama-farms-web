@@ -74,7 +74,7 @@ const FloatingIcons = () => {
           <i className="ri-linkedin-box-fill"></i>
         </Link>
       </span>
-      <span className={styles.youtubeIcon} style={{ lineHeight: 24 }}>
+      <span className={styles.youtubeIcon}>
         <Link
           href="https://www.youtube.com/your-youtube-url"
           passHref
