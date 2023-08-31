@@ -7,6 +7,9 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import flechawhite from "./flecha_blanca.png";
 import flechablack from "./flecha_marron.png";
+import { Roboto,  } from 'next/font/google';
+
+const roboto = Roboto ({weight:"400", subsets: ['latin']})
 
 const FloatingIcons = () => {
   const [menuTextColor, setMenuTextColor] = useState("white");
