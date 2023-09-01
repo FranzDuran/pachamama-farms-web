@@ -2,6 +2,10 @@
 import { Navigation, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from '../fruits.module.css'
+import Image from "next/image";
+import img1 from "../assets/4.jpg";
+import img2 from "../assets/5.jpg";
+import img3 from "../assets/6.jpg";
 
 // Import Swiper stylesjj
 import "swiper/css";
@@ -16,8 +20,6 @@ export default function SwiperCarrousel (){
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, A11y]}
-        /* spaceBetween={10}
-        slidesPerView={1} */
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -55,6 +57,7 @@ export default function SwiperCarrousel (){
       >
         <SwiperSlide>
           <article className={styles.divContenido}>
+          <Image src={img1} alt="" width="auto" height="auto" className={styles.divTexto}/>
             <div className={styles.divTexto}>
               <h3>
               We work everyday to bring <br/>
@@ -64,7 +67,8 @@ export default function SwiperCarrousel (){
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article className={styles.divContenido2}>
+          <article className={styles.divContenido}>
+          <Image src={img2} alt="" width="auto" height="auto" className={styles.divTexto}/>
             <div className={styles.divTexto}>
               <h3>
               We work everyday to bring <br/>
@@ -74,7 +78,8 @@ export default function SwiperCarrousel (){
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article className={styles.divContenido3}>
+          <article className={styles.divContenido}>
+          <Image src={img3} alt="" width="auto" height="auto" className={styles.divTexto}/>
             <div className={styles.divTexto}>
               <h3>
               We work everyday to bring <br/>
@@ -84,7 +89,6 @@ export default function SwiperCarrousel (){
           </article>
         </SwiperSlide>
       </Swiper>
-
     </div>
   );
 };
