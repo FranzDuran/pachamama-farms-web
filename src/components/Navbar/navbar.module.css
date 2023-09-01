@@ -127,8 +127,8 @@
 
 /* Aplica la animación al cerrar */
 .menu-slide-out {
-  animation: slideOut .5s ease-in-out;
-  transition: all .5s ease-out;
+  /* animation: slideOut 1s ease-in-out; */
+  transition: all 1s ease-out;
   top: -100vh;
 }
 
