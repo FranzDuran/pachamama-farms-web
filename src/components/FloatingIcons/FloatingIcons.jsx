@@ -5,11 +5,13 @@ import styles from "./FloatingIcons.module.css";
 import "remixicon/fonts/remixicon.css";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import flechawhite from "./flecha_blanca.png";
-import flechablack from "./flecha_marron.png";
-import { Roboto } from "next/font/google";
+import flechawhite from "./assets/flecha_blanca.png";
+import flechablack from "./assets/flecha_marron.png";
+import iconYoutubeClaro from "./assets/ico_youtube_claro.png";
+import iconYoutubeOscuro from "./assets/ico_youtube_oscuro.png";
+//import { Roboto } from "next/font/google";
 
-const roboto = Roboto({ weight: "400", subsets: ["latin"] });
+/* const roboto = Roboto({ weight: "400", subsets: ["latin"] }); */
 
 const FloatingIcons = () => {
   const [menuTextColor, setMenuTextColor] = useState("white");
@@ -67,7 +69,7 @@ const FloatingIcons = () => {
       <span className={`${styles.textIcon} `}>Find us in</span>
       <span className={`${styles.linkedinIcon} `}>
         <Link
-          href="https://www.linkedin.com/your-linkedin-url"
+          href="https://www.linkedin.com/company/pachamama-farms-sac/"
           passHref
           style={{ textDecoration: "none", color: "inherit" }}
         >
@@ -76,11 +78,16 @@ const FloatingIcons = () => {
       </span>
       <span className={styles.youtubeIcon}>
         <Link
-          href="https://www.youtube.com/your-youtube-url"
+          href="https://www.youtube.com/@pachamamafarms7190"
           passHref
           style={{ textDecoration: "none", color: "inherit" }}
         >
-          <i className="ri-youtube-fill"></i>
+          {/* <i className="ri-youtube-fill"></i> */}
+          {menuTextColor === "white" ? (
+          <Image src={iconYoutubeClaro} alt="" width="auto" height="auto" />
+        ) : (
+          <Image src={iconYoutubeOscuro} alt="" width="auto" height="auto" />
+        )}
         </Link>
       </span>
       <span

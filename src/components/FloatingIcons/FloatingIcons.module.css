@@ -24,6 +24,10 @@
 .youtubeIcon{
   margin-left: 3px;
 }
+.youtubeIcon img{
+  width: 19px;
+  height: auto;
+}
 
 .textIcon{
   margin-right: 10px;
