@@ -2,9 +2,13 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: #fbf8f8;
 }
-
+.sectionWhite{
+  width: 100vw;
+  height: 40vh;
+  background: #fbf8f8;
+  z-index: 5;
+}
 .divFondo {
   width: 100vw;
   height: 60vh;
@@ -20,12 +24,6 @@
 .divCalendar {
   width: 60vw;
   background: #fff;
-  /* height: 37vh; */
-  /* background-color: #ffff;
-  background-image: url("./assets/calendar.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
   position: relative;
   top: 15vw;
 }
@@ -48,7 +46,6 @@
 @media (max-width: 1040px) {
   .divCalendar {
     width: 550px;
-    /* height: 230px; */
     top: 28vh;
   }
 }
@@ -58,10 +55,6 @@
     width: 310px;
     height: 90px;
     background-color: #ffff;
-    /* background-image: url("./assets/calendar.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
     position: relative;
     top: 28vh;
   }
