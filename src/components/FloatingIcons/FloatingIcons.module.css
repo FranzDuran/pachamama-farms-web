@@ -1,6 +1,6 @@
 .floatingIconsContainer {
   position: fixed;
-  bottom: 20px;
+  bottom: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
