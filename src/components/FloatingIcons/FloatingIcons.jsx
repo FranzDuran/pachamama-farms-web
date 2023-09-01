@@ -10,6 +10,8 @@ import flechablack from "./assets/flecha_marron.png";
 import iconYoutubeClaro from "./assets/ico_youtube_claro.png";
 import iconYoutubeOscuro from "./assets/ico_youtube_oscuro.png";
 //import { Roboto } from "next/font/google";
+import LikedinClaro from "./assets/LinkedinClaro.png";
+import linkedinOscuro from "./assets/LinkedinOscuro.png";
 
 /* const roboto = Roboto({ weight: "400", subsets: ["latin"] }); */
 
@@ -17,23 +19,21 @@ const FloatingIcons = () => {
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [isLastSection, setIsLastSection] = useState(false);
 
-
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
     const windowHeight = window.innerHeight;
-  
+
     sections.forEach((section, index) => {
       const rect = section.getBoundingClientRect();
       const topOffset = windowHeight * 0.49 - rect.height * 0.49;
       const bottomOffset = windowHeight * 0.49 + rect.height * 0.49;
-  
+
       if (rect.top <= bottomOffset && rect.bottom >= topOffset) {
         setMenuTextColor(section.dataset.textColor || "white");
         setIsLastSection(index === sections.length - 1);
       }
     });
   };
-  
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -73,7 +73,12 @@ const FloatingIcons = () => {
           passHref
           style={{ textDecoration: "none", color: "inherit" }}
         >
-          <i className="ri-linkedin-box-fill"></i>
+          {/* <i className="ri-youtube-fill"></i> */}
+          {menuTextColor === "white" ? (
+            <Image src={LikedinClaro} alt="" width="auto" height="auto" />
+          ) : (
+            <Image src={linkedinOscuro} alt="" width="auto" height="auto" />
+          )}
         </Link>
       </span>
       <span className={styles.youtubeIcon}>
@@ -84,10 +89,10 @@ const FloatingIcons = () => {
         >
           {/* <i className="ri-youtube-fill"></i> */}
           {menuTextColor === "white" ? (
-          <Image src={iconYoutubeClaro} alt="" width="auto" height="auto" />
-        ) : (
-          <Image src={iconYoutubeOscuro} alt="" width="auto" height="auto" />
-        )}
+            <Image src={iconYoutubeClaro} alt="" width="auto" height="auto" />
+          ) : (
+            <Image src={iconYoutubeOscuro} alt="" width="auto" height="auto" />
+          )}
         </Link>
       </span>
       <span
