@@ -15,7 +15,7 @@ import Testimonials from "./seccions/Testimonials/Testimonials";
 export default function Home() {
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
       <HomeSeccion/>
       <AboutUs/>
       <FruitsSeccion/>
@@ -26,7 +26,7 @@ export default function Home() {
       <OurPeople/>
       <Testimonials/>
       <WhyPachamamaFarms/> 
-      <ContactUs />
+      {/* <ContactUs /> */}
       <FloatingIcons/>
     </main>
   );

@@ -7,6 +7,7 @@ import logoBlack from "./logo black.png";
 import iconoClaro from "./icono-claro.png";
 import iconoOscuro from "./icono-oscuro.png";
 import iconClose from "./icon-close.png";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,27 +71,32 @@ const Navbar = () => {
       </div>
       <div className={styles.menuIzq}>
         <div className={`${styles.languageButtons} ${styles[menuTextColor]}`}>
-          <button
-            onClick={() => changeLanguage("en")}
-            className={`${styles.languageButton} ${
-              language === "en" ? styles.activeLanguage : ""
-            } ${isMenuOpen ? styles.hide : ""}`}
-          >
-            EN
-          </button>
+          <Link href="/">
+            <button
+              onClick={() => changeLanguage("en")}
+              className={`${styles.languageButton} ${
+                language === "en" ? styles.activeLanguage : ""
+              } ${isMenuOpen ? styles.hide : ""}`}
+            >
+              EN
+            </button>
+          </Link>
           <span
             className={`${styles.languageSeparator} ${
               isMenuOpen ? styles.hide : ""
             }`}
           ></span>
-          <button
-            onClick={() => changeLanguage("es")}
-            className={`${styles.languageButton} ${
-              language === "es" ? styles.activeLanguage : ""
-            } ${isMenuOpen ? styles.hide : ""}`}
-          >
-            ES
-          </button>
+
+          <Link href="/es">
+            <button
+              onClick={() => changeLanguage("es")}
+              className={`${styles.languageButton} ${
+                language === "es" ? styles.activeLanguage : ""
+              } ${isMenuOpen ? styles.hide : ""}`}
+            >
+              ES
+            </button>
+          </Link>
         </div>
         <div
           className={`${styles.navbarToggle} ${isMenuOpen ? styles.open : ""} ${
@@ -99,7 +105,13 @@ const Navbar = () => {
           onClick={toggleMenu}
         >
           {isMenuOpen ? (
-            <Image src={iconClose} alt="" width="auto" height="auto" className={styles.iconx}/>
+            <Image
+              src={iconClose}
+              alt=""
+              width="auto"
+              height="auto"
+              className={styles.iconx}
+            />
           ) : menuTextColor === "white" ? (
             <Image src={iconoClaro} alt="" width="auto" height="auto" />
           ) : (

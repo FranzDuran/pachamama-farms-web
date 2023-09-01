@@ -1,0 +1,85 @@
+.container {
+  position: relative;
+}
+
+
+.swiper-slide {
+  z-index: 1;
+}
+
+.swiper-button-prev {
+  color: #ffff !important;
+  margin-left: 14% !important;
+  border: none;
+}
+
+.swiper-button-next {
+  color: #ffff !important;
+  margin-right: 14% !important;
+  border: none;
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+.paginationSwiper {
+  display: none;
+}
+
+@media screen and (max-width:930px) {
+  .paginationSwiper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 3;
+    bottom:4% !important;
+  }
+
+  .paginationSwiper .swiper-pagination-bullet {
+    background: #707070;
+    height: 10px;
+    width: 10px;
+    margin-right: 6px;
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius: 100%;
+  }
+
+  .paginationSwiper .swiper-pagination-bullet-active {
+    background: #fff;
+    opacity: 1;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+/* Estilo para los botones de navegación */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  /* Color del texto */
+  background-color: transparent;
+  /* Color de fondo */
+  font-size: 18px;
+  /* Tamaño de fuente */
+  padding: 10px 20px;
+  /* Espaciado interno */
+  border-radius: 5px;
+  /* Borde redondeado */
+  transition: background-color 0.3s, color 0.3s;
+  /* Transiciones suaves */
+  --swiper-navigation-size: 15px;
+}
+
+/* Estilo cuando el cursor pasa por encima de los botones */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: transparent;
+  color: #fff;
+}
