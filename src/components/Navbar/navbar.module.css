@@ -102,7 +102,7 @@
   list-style: none;
   background-color: #e8e5e5;
   position: absolute;
-  top: 0px;
+  top: -100vh;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -118,7 +118,7 @@
 /* Define la animación para cerrar */
 @keyframes slideOut {
   from {
-    transform: translateY(0);
+    transform: translateY(0);  
   }
   to {
     transform: translateY(-100%);
@@ -127,8 +127,9 @@
 
 /* Aplica la animación al cerrar */
 .menu-slide-out {
-  animation: slideOut 0.5s ease-in-out;
-  transform: translateY(-100%);
+  animation: slideOut .5s ease-in-out;
+  transition: all .5s ease-out;
+  top: -100vh;
 }
 
 /* Define la animación */
@@ -144,21 +145,7 @@
 /* Aplica la animación */
 .menu-slide-in {
   animation: slideIn 1s ease-in-out;
-}
-
-/* Define la animación para cerrar */
-@keyframes slideOut {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(100%);
-  }
-}
-
-/* Aplica la animación al cerrar */
-.menu-slide-out {
-  animation: slideOut 0.5s ease-in-out;
+  top: 0;
 }
 
 

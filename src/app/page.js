@@ -1,7 +1,4 @@
 import HomeSeccion from "@/app/seccions/home/home.js";
-import AboutUs from "./seccions/aboutUs/aboutUs";
-import Navbar from "@/components/Navbar/Navbar";
-import ContactUs from "./seccions/ContactUs/ContactUs";
 import FruitsSeccion from "./seccions/fruits/fruits";
 import PackHouse from "./seccions/packHouse/packHouse";
 import FloatingIcons from "@/components/FloatingIcons/FloatingIcons";
@@ -11,11 +8,11 @@ import Compromise from "./seccions/compromise/compromise";
 import OurFruits from "./seccions/OurFruits/OurFruits";
 import OurPeople from "./seccions/OurPeople/OurPeople";
 import Testimonials from "./seccions/Testimonials/Testimonials";
+import AboutUs from "./seccions/aboutUs/aboutUs";
 
 export default function Home() {
   return (
     <main>
-      {/* <Navbar /> */}
       <HomeSeccion/>
       <AboutUs/>
       <FruitsSeccion/>
@@ -26,7 +23,6 @@ export default function Home() {
       <OurPeople/>
       <Testimonials/>
       <WhyPachamamaFarms/> 
-      {/* <ContactUs /> */}
       <FloatingIcons/>
     </main>
   );

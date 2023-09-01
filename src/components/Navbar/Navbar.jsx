@@ -135,7 +135,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      {isMenuOpen && (
+      
         <ul className={`${styles.menu} ${isMenuOpen ? styles['menu-slide-in'] : styles['menu-slide-out']}`}>
           <li
             onClick={() => {
@@ -187,7 +187,6 @@ const Navbar = () => {
             Contact us
           </li>
         </ul>
-      )}
     </nav>
   );
 };
