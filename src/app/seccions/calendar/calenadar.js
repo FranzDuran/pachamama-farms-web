@@ -1,7 +1,8 @@
 import React from "react";
 import styles from './calendar.module.css'
 import Image from "next/image";
-import CalendarImg from './assets/CalendarInfo.png'
+import CalendarImg from './assets/CalendarInfo.png';
+import calendar from './assets/calendar.png';
 
 const Calendar = () => {
 
@@ -10,6 +11,12 @@ const Calendar = () => {
        <section className={styles.sectionCalendar} id="calendar" data-text-color="white">
         <section className={styles.divFondo} /* data-text-color="white" */>
           <div className={styles.divCalendar}>
+          <Image 
+            src={calendar}
+            alt=""
+            title=""
+            className={styles.calendarImg}
+           /> 
            <Image 
             src={CalendarImg}
             alt=""

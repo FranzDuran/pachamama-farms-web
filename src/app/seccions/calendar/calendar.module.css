@@ -19,14 +19,20 @@
 
 .divCalendar {
   width: 60vw;
-  height: 37vh;
-  background-color: #ffff;
+  background: #fff;
+  /* height: 37vh; */
+  /* background-color: #ffff;
   background-image: url("./assets/calendar.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   position: relative;
   top: 15vw;
+}
+
+.calendarImg{
+  width: 100%;
+  height: auto;
 }
 
 .CalendarInfoIMG{
@@ -41,8 +47,8 @@
 
 @media (max-width: 1040px) {
   .divCalendar {
-    width: 750px;
-    height: 230px;
+    width: 550px;
+    /* height: 230px; */
     top: 28vh;
   }
 }
@@ -52,10 +58,10 @@
     width: 310px;
     height: 90px;
     background-color: #ffff;
-    background-image: url("./assets/calendar.png");
+    /* background-image: url("./assets/calendar.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     position: relative;
     top: 28vh;
   }
