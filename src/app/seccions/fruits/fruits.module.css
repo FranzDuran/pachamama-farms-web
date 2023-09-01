@@ -18,10 +18,12 @@
 }
 
 .divTexto h3{
-   font-size: 2.4rem;
-   text-align: center; 
-   font-weight: 300;
-   color: #ffff;
+    text-align: center; 
+    color: #ffff;
+    font-family: "Periodico";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 300;
 }
 
 .divContenido2 {
