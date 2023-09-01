@@ -13,14 +13,28 @@ const Navbar = () => {
   const [language, setLanguage] = useState("en"); // Default language is English
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [activeSection, setActiveSection] = useState(null);
-  console.log(isMenuOpen);
+  
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    console.log(isMenuOpen);
+    if (isMenuOpen) {
+      // Antes de cerrar el menú, desactiva el scroll suave
+      document.documentElement.style.scrollBehavior = 'auto';
+      setTimeout(() => {
+        setIsMenuOpen(false);
+        // Después de cerrar el menú, restaura el scroll suave
+        document.documentElement.style.scrollBehavior = 'smooth';
+      }, 500); // Ajusta el tiempo según la duración de la animación de cierre
+    } else {
+      setIsMenuOpen(true);
+    }
   };
 
   const changeLanguage = (newLanguage) => {
     setLanguage(newLanguage);
+  };
+
+  const handleLogoClick = () => {
+    handleClickNav("home");
+    setIsMenuOpen(false); // Close the menu when clicking the logo
   };
 
   const handleScroll = () => {
@@ -49,6 +63,7 @@ const Navbar = () => {
     document.addEventListener("click", handleDocumentClick);
 
     window.addEventListener("scroll", handleScroll);
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("click", handleDocumentClick);
@@ -61,7 +76,8 @@ const Navbar = () => {
         isMenuOpen ? styles.navbarToggleDer : ""
       } ${styles.sticky} ${styles[menuTextColor]}`}
     >
-      <div className={`${styles.logo} ${isMenuOpen ? styles.hide : ""}`}>
+      <div className={`${styles.logo} ${isMenuOpen ? styles.hide : ""}`}
+        onClick={handleLogoClick}>
         {menuTextColor === "white" ? (
           <Image src={logoWhite} alt="" width="auto" height="auto" />
         ) : (
@@ -99,7 +115,13 @@ const Navbar = () => {
           onClick={toggleMenu}
         >
           {isMenuOpen ? (
-            <Image src={iconClose} alt="" width="auto" height="auto" className={styles.iconx}/>
+            <Image
+              src={iconClose}
+              alt=""
+              width="auto"
+              height="auto"
+              className={styles.iconx}
+            />
           ) : menuTextColor === "white" ? (
             <Image src={iconoClaro} alt="" width="auto" height="auto" />
           ) : (
@@ -108,7 +130,7 @@ const Navbar = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <ul className={styles.menu}>
+        <ul className={`${styles.menu} ${isMenuOpen ? styles['menu-slide-in'] : styles['menu-slide-out']}`}>
           <li
             onClick={() => {
               handleClickNav("home");

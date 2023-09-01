@@ -24,12 +24,13 @@
     gap: 10px;
 }
 
-.small-text span {
+.small-text a {
     color: #fffff6;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: normal;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    text-decoration: none;
 }
 .small-text .line{
     height: 2px;

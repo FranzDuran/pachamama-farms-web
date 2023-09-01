@@ -10,17 +10,20 @@
 
 .articleCompromise {
   height: auto;
-  width: 70vw;
+  width: 92vw;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 .articleCompromise h3 {
   color: #302920;
   /* margin-top: 8vh; */
-  font-size: 1.3vw;
+  font-size: 1.25rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .divisor {
@@ -32,18 +35,21 @@
 
 .parrafo {
   margin-top: 2vw;
-  width: 90%;
+  width: 100%;
   color: #423b30;
-  font-size: 1.8vw;
+  font-size: 2.25rem;
   text-align: center;
-  line-height: 2.8vw
+  line-height: 2.8vw;
+  font-family: 'Periodico Display Light';
+  font-weight: 300;
+  font-style: normal;
 }
 
 
 .logos{
     width: 30vw;
     height: auto;
-    margin-top: 2vw;
+    margin-top: 2.5vw;
 }
 
 

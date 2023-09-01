@@ -1,11 +1,14 @@
 import styles from "./contact.module.css";
 
 export default function ContactUs() {
+
+  const email = "ventas@pachamamafarms.com";
+  
   return (
     <section className={styles.container} data-text-color="white" id="contact">
       <div className={styles.content}>
         <div className={styles["small-text"]}>
-          <span>Get in touch</span>
+        <a href={`mailto:${email}`}>Get in touch</a>
           <span className={styles.line}/>
         </div>
         <div className={styles["big-text"]}>
