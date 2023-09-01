@@ -14,7 +14,7 @@ export default function ContactUs() {
           <span>Parcela A s/n predio Parales Valle</span>
           <span>Sector Medio – Tambogrande</span>
           <span>Piura – Perú</span>
-          <a href={`mailto:${email}`}>ventas@pachamamafarms.com</a>
+          <a href={`mailto:${email}`} target="_blank">ventas@pachamamafarms.com</a>
           <span>T. (+51) 469 9845</span>
         </div>
       </div>
