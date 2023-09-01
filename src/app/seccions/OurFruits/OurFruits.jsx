@@ -4,10 +4,10 @@ import image2 from "./assets/_DSC8669.JPG";
 import image3 from "./assets/_DSC9565.JPG";
 import logoicon from "./assets/logoicon.png";
 
-export default function OurFruits() {
+export default function OurFruits({text}) {
   const data = {
     logo: logoicon,
-    text: "Kent mangos",
+    text: text,
     cards: [{ image: image1 }, { image: image2 }, { image: image3 }],
   };
   return (

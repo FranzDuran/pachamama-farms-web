@@ -1,6 +1,16 @@
 import react from 'react'
 import HomeSeccion from '../seccionsEspañol/home/homeEs'
 import AboutUs from '../seccionsEspañol/aboutUs/aboutUsEs'
+import FruitsSeccion from '../seccionsEspañol/fruits/fruits'
+import PackHouse from '../seccions/packHouse/packHouse'
+import Calendar from '../seccionsEspañol/calendar/calenadar'
+import Compromise from '../seccionsEspañol/compromise/compromise'
+import OurFruits from '../seccions/OurFruits/OurFruits'
+import OurPeople from '../seccionsEspañol/OurPeople/OurPeople'
+import Testimonials from '../seccionsEspañol/Testimonials/Testimonials'
+import WhyPachamamaFarms from '../seccionsEspañol/WhyPachamamaFarms/WhyPachamamaFarms'
+import FloatingIcons from '@/components/FloatingIcons/FloatingIcons'
+
 
 const Es = () => {
 
@@ -8,6 +18,15 @@ const Es = () => {
         <main>
             <HomeSeccion></HomeSeccion>
             <AboutUs></AboutUs>
+            <FruitsSeccion></FruitsSeccion>
+            <PackHouse text={'Empacadora'}/>
+            <Calendar></Calendar>
+            <Compromise></Compromise>
+            <OurFruits text={'Kent mangos'} ></OurFruits>
+            <OurPeople></OurPeople>
+            <Testimonials></Testimonials>
+            <WhyPachamamaFarms></WhyPachamamaFarms> 
+            <FloatingIcons></FloatingIcons>
         </main>
     )
 }
