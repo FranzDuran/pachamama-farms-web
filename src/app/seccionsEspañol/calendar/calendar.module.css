@@ -1,0 +1,62 @@
+.sectionCalendar {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #fbf8f8;
+}
+
+.divFondo {
+  width: 100vw;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./assets/_DSC9013.JPG");
+  background-position: 50% 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divCalendar {
+  width: 60vw;
+  height: 37vh;
+  background-color: #ffff;
+  background-image: url("./assets/calendar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 15vw;
+}
+
+.CalendarInfoIMG{
+   width: 8vw;
+   height: 8vw;
+   border-radius: 50%;
+   position: absolute;
+   left: 3.4vw;
+   top: -4vw;
+}
+
+
+@media (max-width: 1040px) {
+  .divCalendar {
+    width: 750px;
+    height: 230px;
+    top: 28vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .divCalendar {
+    width: 310px;
+    height: 90px;
+    background-color: #ffff;
+    background-image: url("./assets/calendar.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 28vh;
+  }
+}

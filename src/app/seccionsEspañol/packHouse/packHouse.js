@@ -3,10 +3,10 @@ import image1 from "./assets/image1.JPG";
 import image2 from "./assets/image2.JPG";
 import logoicon from "./assets/LogoPackHouse.png";
 
-export default function PackHouse({text}) {
+export default function PackHouse() {
   const data = {
     logo: logoicon,
-    text: text,
+    text: "Packhouse",
     cards: [{ image: image1 }, { image: image2 }],
   };
   return <SwiperReusable data={data} />;

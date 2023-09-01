@@ -19,10 +19,10 @@ export default function Home() {
       <HomeSeccion/>
       <AboutUs/>
       <FruitsSeccion/>
-      <PackHouse/>
+      <PackHouse text={'Packhouse'}/>
       <Calendar/>
       <Compromise/>
-      <OurFruits/>
+      <OurFruits text={'Kent mangos'}/>
       <OurPeople/>
       <Testimonials/>
       <WhyPachamamaFarms/> 
