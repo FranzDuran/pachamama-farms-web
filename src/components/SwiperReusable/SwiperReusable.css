@@ -12,7 +12,7 @@
 }
 
 #button-navegation-prev i {
-    color: #000;
+    color: #291C05 ;
     font-size: 30px;
 }
 
@@ -29,7 +29,7 @@
 }
 
 #button-navegation-next i {
-    color: #000;
+    color: #291C05 ;
     font-size: 30px;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .none i{
-    color: #797979 !important;
+    color: #9b9b9b !important;
 }
 
 .active {
@@ -48,7 +48,7 @@
 }
 
 .active i {
-    color: #000 !important;
+    color: #291C05  !important;
 }
 
 

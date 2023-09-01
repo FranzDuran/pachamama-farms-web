@@ -4,17 +4,19 @@ import styles from "./navbar.module.css";
 import Image from "next/image";
 import logoWhite from "./logo white.png";
 import logoBlack from "./logo black.png";
+import iconoClaro from "./icono-claro.png";
+import iconoOscuro from "./icono-oscuro.png";
+import iconClose from "./icon-close.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [language, setLanguage] = useState("en"); // Default language is English
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [activeSection, setActiveSection] = useState(null);
-
-  console.log(menuTextColor);
-
+  console.log(isMenuOpen);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    console.log(isMenuOpen);
   };
 
   const changeLanguage = (newLanguage) => {
@@ -38,13 +40,12 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-
     const handleDocumentClick = (event) => {
       if (!event.target.closest(`.${styles.navbar}`)) {
         setIsMenuOpen(false);
       }
     };
-  
+
     document.addEventListener("click", handleDocumentClick);
 
     window.addEventListener("scroll", handleScroll);
@@ -81,9 +82,7 @@ const Navbar = () => {
             className={`${styles.languageSeparator} ${
               isMenuOpen ? styles.hide : ""
             }`}
-          >
-            
-          </span>
+          ></span>
           <button
             onClick={() => changeLanguage("es")}
             className={`${styles.languageButton} ${
@@ -100,21 +99,66 @@ const Navbar = () => {
           onClick={toggleMenu}
         >
           {isMenuOpen ? (
-            <i className="ri-close-fill" id={styles.iconx}></i>
+            <Image src={iconClose} alt="" width="auto" height="auto" className={styles.iconx}/>
+          ) : menuTextColor === "white" ? (
+            <Image src={iconoClaro} alt="" width="auto" height="auto" />
           ) : (
-            <i className="ri-menu-line"></i>
+            <Image src={iconoOscuro} alt="" width="auto" height="auto" />
           )}
         </div>
       </div>
       {isMenuOpen && (
         <ul className={styles.menu}>
-        <li onClick={() => {handleClickNav("home"); toggleMenu();}}>Home</li>
-        <li onClick={() => {handleClickNav("about"); toggleMenu();}}>About us</li>
-        <li onClick={() => {handleClickNav("calendar"); toggleMenu();}}>Calendar</li>
-        <li onClick={() => {handleClickNav("certifications"); toggleMenu();}}>Certifications</li>
-        <li onClick={() => {handleClickNav("fruits"); toggleMenu();}}>Our fruits</li>
-        <li id={styles.borderLi} onClick={() => {handleClickNav("contact"); toggleMenu();}}>Contact us</li>
-      </ul>
+          <li
+            onClick={() => {
+              handleClickNav("home");
+              toggleMenu();
+            }}
+          >
+            Home
+          </li>
+          <li
+            onClick={() => {
+              handleClickNav("about");
+              toggleMenu();
+            }}
+          >
+            About us
+          </li>
+          <li
+            onClick={() => {
+              handleClickNav("calendar");
+              toggleMenu();
+            }}
+          >
+            Calendar
+          </li>
+          <li
+            onClick={() => {
+              handleClickNav("certifications");
+              toggleMenu();
+            }}
+          >
+            Certifications
+          </li>
+          <li
+            onClick={() => {
+              handleClickNav("fruits");
+              toggleMenu();
+            }}
+          >
+            Our fruits
+          </li>
+          <li
+            id={styles.borderLi}
+            onClick={() => {
+              handleClickNav("contact");
+              toggleMenu();
+            }}
+          >
+            Contact us
+          </li>
+        </ul>
       )}
     </nav>
   );

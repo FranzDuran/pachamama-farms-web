@@ -3,14 +3,12 @@ import { Navigation, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./swiperSlide.css";
 
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import PlayImg from '../assets/playcircleline.png';
+import PlayImg from "../assets/PLAY.png";
 import Image from "next/image";
-
 
 // import Img1 from './assets/_DSC9473.JPG';
 // import img2 from './assets/_DSC0320.JPG'
@@ -19,7 +17,7 @@ import Image from "next/image";
 import styles from "../home.module.css";
 // import { Image } from "next/image";
 
-export default function SwiperComponent({ showNavigation, hadleVideo }){
+export default function SwiperComponent({ showNavigation, hadleVideo }) {
   return (
     <section className="container">
       <Swiper
@@ -63,12 +61,11 @@ export default function SwiperComponent({ showNavigation, hadleVideo }){
         navigation={
           showNavigation
             ? {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
               }
             : false
         }
-        
         pagination={
           !showNavigation
             ? {
@@ -80,17 +77,27 @@ export default function SwiperComponent({ showNavigation, hadleVideo }){
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
-          <article className={styles.divContenido} aria-label="Contenido destacado">
+          <article
+            className={styles.divContenido}
+            aria-label="Contenido destacado"
+          >
             <div className={styles.divTexto}>
               <h2>
-                We are a big family working <br />
-                together every day
+                We are a big family <br />
+                working together
               </h2>
               <button onClick={() => hadleVideo()}>
-                Watch the video <Image src={PlayImg} width={20} height={20} alt='play logo to start the video of quality fruits and agricultural products | logo de play para inciar el video de frutas y productos agropecuarios de calidad' className={styles.logoPlay}/>
+                Watch the video{" "}
+                <Image
+                  src={PlayImg}
+                  width={20}
+                  height={20}
+                  alt="play logo to start the video of quality fruits and agricultural products | logo de play para inciar el video de frutas y productos agropecuarios de calidad"
+                  className={styles.logoPlay}
+                />
               </button>
             </div>
-             {/* <Image src={Img1} className={styles.imgFondo}></Image> */}
+            {/* <Image src={Img1} className={styles.imgFondo}></Image> */}
           </article>
         </SwiperSlide>
         <SwiperSlide>
@@ -101,7 +108,14 @@ export default function SwiperComponent({ showNavigation, hadleVideo }){
                 to the land we farm
               </h2>
               <button onClick={() => hadleVideo()}>
-                Watch the video <i class="ri-play-circle-line" className={styles.logoPlay}></i>
+                Watch the video{" "}
+                <Image
+                  src={PlayImg}
+                  width={20}
+                  height={20}
+                  alt="play logo to start the video of quality fruits and agricultural products | logo de play para inciar el video de frutas y productos agropecuarios de calidad"
+                  className={styles.logoPlay}
+                />
               </button>
             </div>
           </article>
@@ -110,11 +124,19 @@ export default function SwiperComponent({ showNavigation, hadleVideo }){
           <article className={styles.divContenido3}>
             <div className={styles.divTexto}>
               <h2>
-                The land we cultivate is unique <br />
-                and brings us unique fruits
+                We know that only unique places
+                <br />
+                can make unique products
               </h2>
               <button onClick={() => hadleVideo()}>
-                Watch the video <Image src={PlayImg} width={20} height={20} alt='play logo to start the video of quality fruits and agricultural products | logo de play para inciar el video de frutas y productos agropecuarios de calidad' className={styles.logoPlay}/>
+                Watch the video{" "}
+                <Image
+                  src={PlayImg}
+                  width={20}
+                  height={20}
+                  alt="play logo to start the video of quality fruits and agricultural products | logo de play para inciar el video de frutas y productos agropecuarios de calidad"
+                  className={styles.logoPlay}
+                />
               </button>
             </div>
           </article>
@@ -125,4 +147,4 @@ export default function SwiperComponent({ showNavigation, hadleVideo }){
       <div className="paginationSwiper"></div>
     </section>
   );
-};
+}

@@ -20,7 +20,6 @@ export default function Home() {
       <AboutUs/>
       <FruitsSeccion/>
       <PackHouse/>
-      <FloatingIcons/>
       <Calendar/>
       <Compromise/>
       <OurFruits/>
@@ -28,6 +27,7 @@ export default function Home() {
       <Testimonials/>
       <WhyPachamamaFarms/> 
       <ContactUs />
+      <FloatingIcons/>
     </main>
   );
 }
