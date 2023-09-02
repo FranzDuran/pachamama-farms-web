@@ -39,7 +39,7 @@ export default function Testimonials() {
               },
               425: {
                 slidesPerView: 1.25,
-                spaceBetween: 0,
+                spaceBetween: 10,
               },
               768: {
                 slidesPerView: 1,
