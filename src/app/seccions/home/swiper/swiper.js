@@ -10,12 +10,11 @@ import "swiper/css/scrollbar";
 import PlayImg from "../assets/PLAY.png";
 import Image from "next/image";
 
-// import Img1 from './assets/_DSC9473.JPG';
-// import img2 from './assets/_DSC0320.JPG'
-// import img3 from './assets/DJI_0286.JPG'
+import imagen1 from '../assets/image1.jpg';
+ 
 
 import styles from "../home.module.css";
-// import { Image } from "next/image";
+
 
 export default function SwiperComponent({ showNavigation, hadleVideo }) {
   return (
@@ -97,7 +96,6 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
                 />
               </button>
             </div>
-            {/* <Image src={Img1} className={styles.imgFondo}></Image> */}
           </article>
         </SwiperSlide>
         <SwiperSlide>
