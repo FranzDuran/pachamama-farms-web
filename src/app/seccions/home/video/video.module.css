@@ -17,7 +17,8 @@
 #iconx{
   font-size: 2vw;
   left: 47.5vw;
-  position: relative; 
+  position: absolute;
+  top: 0; 
   color: #ffff;
   font-weight: 100;
   cursor: pointer;
@@ -28,7 +29,6 @@
       width: 80vw;
       height: 40vw;
     }
-
 
   #iconx{
       font-size: 3vw;

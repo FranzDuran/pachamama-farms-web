@@ -44,6 +44,12 @@
 }
 
 @media screen and (max-width: 1023px){
+
+    .divTexto {
+        top: 45%;
+    }
+
+    
     .divContenido img{
         width: auto;
         height: 100vh;

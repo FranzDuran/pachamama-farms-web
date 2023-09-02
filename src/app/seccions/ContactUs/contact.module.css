@@ -66,11 +66,11 @@
 
 @media screen and (max-width:767px) {
     .small-text span {
-        font-size: 12px;
+        font-size: 20px;
     }
     .big-text span {
         color: #fffff6;
-        font-size: 1rem;
+        font-size: 23px;
     }
     .small-text .line{
         margin: 10px 0 30px;
