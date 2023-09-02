@@ -57,6 +57,12 @@
     color: inherit;
 }
 
+@media screen and (max-width:1023px) {
+    .big-text span {
+        font-size: 2rem;
+        
+    }
+}
 
 @media screen and (max-width:767px) {
     .small-text span {
@@ -64,7 +70,7 @@
     }
     .big-text span {
         color: #fffff6;
-        font-size: 24px;
+        font-size: 23px;
     }
     .small-text .line{
         margin: 10px 0 30px;
