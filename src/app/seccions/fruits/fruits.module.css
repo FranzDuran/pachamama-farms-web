@@ -45,6 +45,11 @@
   }
 
   @media (max-width: 920px) {
+    .divTexto{
+        top: 45%; /* Llevará la parte superior del h2 al 50% de altura del div */
+    }
+
+    
     .divTexto h3{
         font-size: 35px;
         width: 270px;
