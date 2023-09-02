@@ -2,8 +2,8 @@
   width: 100vw;
   height: 100vh;
   /* background-size: cover;
-  background-repeat: no-repeat; */
-  /* background-position: 50% 25%; */
+  background-repeat: no-repeat;
+  background-position: 25% 50%; */
   background-image: url("./assets/1.jpg");
   position: relative;
   /* transform: scale(1.6); */
@@ -90,13 +90,13 @@
   } */
 } 
 
-@media screen and (min-width: 1023px){
+@media screen and (max-width: 1023px){
   .divContenido {
     width: 100vw;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
 
     position: relative;
     /* transform: scale(1.6); */

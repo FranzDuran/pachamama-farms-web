@@ -9,12 +9,8 @@ import flechawhite from "./assets/flecha_blanca.png";
 import flechablack from "./assets/flecha_marron.png";
 import iconYoutubeClaro from "./assets/ico_youtube_claro.png";
 import iconYoutubeOscuro from "./assets/ico_youtube_oscuro.png";
-<<<<<<< HEAD
-=======
-//import { Roboto } from "next/font/google";
 import LikedinClaro from "./assets/LinkedinClaro.png";
 import linkedinOscuro from "./assets/LinkedinOscuro.png";
->>>>>>> 0dce831be037f2355c254eeffe414719bef28e2b
 
 
 const FloatingIcons = () => {
