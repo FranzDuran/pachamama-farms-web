@@ -60,11 +60,6 @@
         /* margin: 16px 0; */
     }
     .imageCount{
-        top: -20px;
-        left: 30% !important;
-        /* right: 70%; */
-        width: 200px;
-        font-size: 20px;
         font-weight: 600;
     }
     .divLogo{
@@ -79,14 +74,9 @@
 /* Image count */
 
 .imageCount{
-    /* position: absolute;
-    top: -32px;
-    left: 40%;
-    right: 60%; */
     display: flex;
     flex-direction: row;
-    /* width: 200px; */
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
 }
 
