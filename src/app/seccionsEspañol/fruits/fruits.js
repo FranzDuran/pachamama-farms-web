@@ -2,11 +2,8 @@
 import SwiperCarrousel from "./swiper/swiper";
 
 export default function FruitsSeccion() {
-
-
-
   return (
-    <section id="home">
+    <section>
       <SwiperCarrousel></SwiperCarrousel>
     </section>
   );
