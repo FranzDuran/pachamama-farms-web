@@ -10,7 +10,7 @@ import "swiper/css/scrollbar";
 import PlayImg from "../assets/PLAY.png";
 import Image from "next/image";
 
-import imagen1 from '../assets/image1.jpg';
+// import imagen1 from '../assets/image1.jpg';
  
 
 import styles from "../home.module.css";

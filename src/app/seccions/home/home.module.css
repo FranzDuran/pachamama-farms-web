@@ -60,7 +60,7 @@
   background-size: cover;
   background-repeat: no-repeat; 
   background-position:top;
-  background-image: url("./assets/2.jpg");
+  background-image: url("./assets/image2.jpg");
   position: relative;
 }
 
@@ -70,7 +70,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  background-image: url("./assets/3.jpg");
+  background-image: url("./assets/image3.jpg");
   position: relative;
 }
 
@@ -79,14 +79,6 @@
     font-size: 2.4rem;
   }
 
-  /* .divTexto button {
-    font-size: 2.4rem;
-  } */
-
-  /* .logoPlay {
-    width: 2rem;
-    height: 2rem;
-  } */
 } 
 
 @media screen and (max-width: 1023px){
@@ -96,9 +88,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    position: relative;
-    /* transform: scale(1.6); */
+    position: relative
   }
 }
 
