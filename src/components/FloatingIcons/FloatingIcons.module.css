@@ -80,4 +80,18 @@ color: transparent;
   .scrollButton img{
    width: 17px;
   }
+  .floatingIconsContainer {
+    left: 27px; 
+  }
+  
+  
+.scrollButton {
+  right: 24px; /* Posiciona en la parte inferior derecha */
+}
+.scrollButton img{
+  width: 25px;
+  height: auto;
+  /* transform: rotate(90deg); */
+}
+
 }
