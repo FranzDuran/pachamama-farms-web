@@ -54,7 +54,7 @@ color: transparent;
   justify-content: center;
   cursor: pointer;
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   right: 40px; /* Posiciona en la parte inferior derecha */
 }
 .scrollButton img{
