@@ -1,16 +1,13 @@
 "use client";
 import Image from "next/image";
 import styles from "./SwiperReusable.module.css";
-//import { data } from "./Data";
 import { Pagination, Autoplay } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-//import "swiper/css/pagination";
 import "swiper/css/navigation";
-//import "swiper/css/autoplay";
 import "./SwiperReusable.css";
 
 import { useRef, useState } from "react";
@@ -52,9 +49,11 @@ export default function SwiperReusable({ data }) {
           <Swiper
             // install Swiper modules
             modules={[Pagination, Autoplay]}
+
             //Navigation property
             ref={SlideRef}
             onSlideChange={onSlideChange}
+
             breakpoints={{
               320: {
                 slidesPerView: 1,
@@ -92,15 +91,16 @@ export default function SwiperReusable({ data }) {
           >
             {data.cards.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className={styles.card}>
+                <article className={styles.card}>
                   <Image src={item.image} alt="" width="auto" height="auto" />
-                </div>
+                </article>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
+
         {/*-----------------NAVEGATION------------------*/}
-        <div className={styles.caja}>
+        <nav className={styles.navegation}>
           <button
             id="button-navegation-prev"
             className={`${[!isFirst ? "active" : "none"]}`}
@@ -108,10 +108,12 @@ export default function SwiperReusable({ data }) {
           >
             <i className="ri-arrow-left-s-line"></i>
           </button>
+
           {/* Image count */}
-          <div className={styles.imageCount}>
+          <p className={styles.imageCount}>
             {data.text} {currentImage}/{data.cards.length}
-          </div>
+          </p>
+
           <button
             id="button-navegation-next"
             className={`${[!isLast ? "active" : "none"]}`}
@@ -119,7 +121,8 @@ export default function SwiperReusable({ data }) {
           >
             <i className="ri-arrow-right-s-line"></i>
           </button>
-        </div>
+
+        </nav>
         <div className={styles.divLogo}>
           <Image
             className={styles.LogoPackHouse}

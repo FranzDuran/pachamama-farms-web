@@ -1,6 +1,4 @@
-
-
-.container{
+.container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -8,19 +6,20 @@
     align-items: center;
     position: relative;
     background: #fff;
-    color: #291C05 ;
+    color: #291C05;
 }
-.swiperContainer{
+
+.swiperContainer {
     width: 100%;
     max-width: 55vw;
-    /* background: #faf8f8; */
     position: relative;
 }
 
-.slideContent{
+.slideContent {
     width: 100%;
 }
-.card{
+
+.card {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -29,17 +28,54 @@
     width: 55vw;
     height: 30vw;
 }
-.card img{
+
+.card img {
     width: 100%;
     height: auto;
     margin: 0;
 }
-.text{
+
+.text {
     width: 60%;
 }
 
+/* Image count */
+
+.imageCount {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.navegation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: -35px;
+    left: -1.6%;
+    width: 56.5vw;
+}
+
+.divLogo {
+    height: 2px;
+    position: relative;
+}
+
+.LogoPackHouse {
+    position: absolute;
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    right: -8px;
+    margin-right: -3.5vw;
+    top: -11vw;
+    z-index: 50;
+}
+
 @media screen and (max-width: 767px) {
-    .swiperContainer{
+    .swiperContainer {
         width: 100%;
         max-width: none;
         padding: 0;
@@ -47,7 +83,8 @@
         background: #fff;
         height: auto;
     }
-    .card{
+
+    .card {
         flex-direction: column;
         justify-content: flex-start;
         width: 100%;
@@ -55,114 +92,22 @@
         padding: 0;
         background: #faf8f8;
     }
-    .card img{
+
+    .card img {
         width: 100%;
-        /* margin: 16px 0; */
     }
-    .imageCount{
-        top: -20px;
-        left: 30% !important;
-        /* right: 70%; */
-        width: 200px;
-        font-size: 20px;
+
+    .imageCount {
         font-weight: 600;
     }
-    .divLogo{
+
+    .divLogo {
         display: none;
     }
-    .caja{
+
+    .navegation {
         width: 100vw !important;
         left: 0 !important;
     }
 }
 
-/* Image count */
-
-.imageCount{
-    /* position: absolute;
-    top: -32px;
-    left: 40%;
-    right: 60%; */
-    display: flex;
-    flex-direction: row;
-    /* width: 200px; */
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.caja{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    top: -35px;
-    left: -1.6%;
-    /* right: 50%; */
-    /* margin: auto; */
-    width: 56.5vw;
-}
-.divLogo{
-    height: 2px;
-    position: relative;
-  }
-  
-  .LogoPackHouse{
-   position: absolute;
-   border-radius: 50%;
-   width: 8vw;
-   height: 8vw;
-   right: -8px;
-   margin-right: -3.5vw;
-   top: -11vw;
-  z-index: 50;
-  }
-
-/*--------NAVEGATION-----------------------*/
-/* #button-navegation-prev {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    bottom: 60%;
-    left: -50px;
-    z-index: 2;
-    border-radius: 50%;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-#button-navegation-prev i {
-    color: #020203;
-    font-size: 28px;
-}
-
-#button-navegation-next {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    bottom: 60%;
-    right: -50px;
-    z-index: 3;
-    border-radius: 50%;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-#button-navegation-next i {
-    color: #020203;
-    font-size: 28px;
-}
-
-
-.none {
-    border: 1px solid #dcddeb;
-    background: #ffffff;
-}
-
-.active {
-    border: 1px solid #020203;
-    background-color: #020203;
-}
-
-.active i {
-    color: #ffff !important;
-} */

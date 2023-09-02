@@ -4,9 +4,9 @@ import styles from "./aboutUs.module.css";
 const AboutUs = () => {
   return (
     <section
+      id="about"
       data-text-color="black"
       className={styles.sectionAboutUs}
-      id="about"
     >
       <article className={styles.article}>
         <h3>que hacemos</h3>

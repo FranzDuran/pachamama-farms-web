@@ -6,6 +6,7 @@ import logoicon from "./assets/LogoPackHouse.png";
 export default function PackHouse() {
   const data = {
     logo: logoicon,
+    textLogo: "With more than 7000 m2",
     text: "Packhouse",
     cards: [{ image: image1 }, { image: image2 }],
   };
