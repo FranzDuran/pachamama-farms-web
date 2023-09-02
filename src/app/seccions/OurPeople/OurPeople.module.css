@@ -30,6 +30,9 @@
     font-family: "Periodico";
 }
 
+.imgMobile{
+    display: none;
+}
 
 @media screen and (min-width: 1800px) {
 
@@ -60,5 +63,18 @@
     .divTexto h3 {
         font-size: 35px;
         width: 270px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .img{
+        display: none;
+    }
+    .imgMobile{
+        display: flex;
+        width: 100vw !important;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
     }
 }

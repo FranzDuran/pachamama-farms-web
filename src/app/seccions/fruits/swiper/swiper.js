@@ -6,6 +6,9 @@ import Image from "next/image";
 import img1 from "../assets/4.jpg";
 import img2 from "../assets/5.jpg";
 import img3 from "../assets/6.jpg";
+import img4 from "../assets/mobile4.jpg";
+import img5 from "../assets/mobile5.jpg";
+import img6 from "../assets/mobile6.jpg";
 
 // Import Swiper stylesjj
 import "swiper/css";
@@ -57,7 +60,8 @@ export default function SwiperCarrousel (){
       >
         <SwiperSlide>
           <article className={styles.divContenido}>
-          <Image src={img1} alt="" width="auto" height="auto" />
+          <Image src={img1} alt="" width="auto" height="auto" className={styles.img}/>
+          <Image src={img4} alt="" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
               We work everyday to bring <br/>
@@ -68,7 +72,8 @@ export default function SwiperCarrousel (){
         </SwiperSlide>
         <SwiperSlide>
           <article className={styles.divContenido}>
-          <Image src={img2} alt="" width="auto" height="auto" />
+          <Image src={img2} alt="" width="auto" height="auto" className={styles.img}/>
+          <Image src={img5} alt="" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
               We work everyday to bring <br/>
@@ -79,7 +84,8 @@ export default function SwiperCarrousel (){
         </SwiperSlide>
         <SwiperSlide>
           <article className={styles.divContenido}>
-          <Image src={img3} alt="" width="auto" height="auto" />
+          <Image src={img3} alt="" width="auto" height="auto" className={styles.img}/>
+          <Image src={img6} alt="" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
               We work everyday to bring <br/>
