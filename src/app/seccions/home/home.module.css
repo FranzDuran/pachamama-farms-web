@@ -1,9 +1,9 @@
 .divContenido {
   width: 100vw;
   height: 100vh;
-  /* background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 25% 50%; */
+  background-position: top;
   background-image: url("./assets/1.jpg");
   position: relative;
   /* transform: scale(1.6); */
