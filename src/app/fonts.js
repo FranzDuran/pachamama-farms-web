@@ -5,7 +5,7 @@ import localFont from "next/font/local";
 const nw = Newsreader({ subsets: ["latin"] });
 
 const roboto = Roboto({
-  weight: ["300", "400", "700"],
+  weight: ["300", "400", "500", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   display: "swap",

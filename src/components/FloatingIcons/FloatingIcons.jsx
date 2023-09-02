@@ -9,9 +9,7 @@ import flechawhite from "./assets/flecha_blanca.png";
 import flechablack from "./assets/flecha_marron.png";
 import iconYoutubeClaro from "./assets/ico_youtube_claro.png";
 import iconYoutubeOscuro from "./assets/ico_youtube_oscuro.png";
-//import { Roboto } from "next/font/google";
 
-/* const roboto = Roboto({ weight: "400", subsets: ["latin"] }); */
 
 const FloatingIcons = () => {
   const [menuTextColor, setMenuTextColor] = useState("white");
@@ -33,7 +31,6 @@ const FloatingIcons = () => {
       }
     });
   };
-  
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -82,7 +79,6 @@ const FloatingIcons = () => {
           passHref
           style={{ textDecoration: "none", color: "inherit" }}
         >
-          {/* <i className="ri-youtube-fill"></i> */}
           {menuTextColor === "white" ? (
           <Image src={iconYoutubeClaro} alt="" width="auto" height="auto" />
         ) : (

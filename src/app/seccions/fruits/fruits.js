@@ -6,7 +6,7 @@ export default function FruitsSeccion() {
 
 
   return (
-    <section id="home">
+    <section id="about">
       <SwiperCarrousel></SwiperCarrousel>
     </section>
   );

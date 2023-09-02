@@ -40,6 +40,15 @@
 
 }
 
+@media screen and (max-width: 1023px){
+    .divContenido img{
+        width: auto;
+        height: 100vh;
+        object-position: center !important;
+        object-fit: cover;
+    }
+  }
+
 
 @media (max-width: 920px) {
     .divTexto h3 {

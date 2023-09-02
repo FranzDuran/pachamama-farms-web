@@ -14,15 +14,15 @@ const Navbar = () => {
   const [language, setLanguage] = useState("en"); // Default language is English
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [activeSection, setActiveSection] = useState(null);
-  
+
   const toggleMenu = () => {
     if (isMenuOpen) {
       // Antes de cerrar el menú, desactiva el scroll suave
-      document.documentElement.style.scrollBehavior = 'auto';
+      document.documentElement.style.scrollBehavior = "auto";
       setTimeout(() => {
         setIsMenuOpen(false);
         // Después de cerrar el menú, restaura el scroll suave
-        document.documentElement.style.scrollBehavior = 'smooth';
+        document.documentElement.style.scrollBehavior = "smooth";
       }, 500); // Ajusta el tiempo según la duración de la animación de cierre
     } else {
       setIsMenuOpen(true);
@@ -64,7 +64,7 @@ const Navbar = () => {
     document.addEventListener("click", handleDocumentClick);
 
     window.addEventListener("scroll", handleScroll);
-    
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("click", handleDocumentClick);
@@ -77,8 +77,10 @@ const Navbar = () => {
         isMenuOpen ? styles.navbarToggleDer : ""
       } ${styles.sticky} ${styles[menuTextColor]}`}
     >
-      <div className={`${styles.logo} ${isMenuOpen ? styles.hide : ""}`}
-        onClick={handleLogoClick}>
+      <div
+        className={`${styles.logo} ${isMenuOpen ? styles.hide : ""}`}
+        onClick={handleLogoClick}
+      >
         {menuTextColor === "white" ? (
           <Image src={logoWhite} alt="" width="auto" height="auto" />
         ) : (
@@ -135,58 +137,62 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      
-        <ul className={`${styles.menu} ${isMenuOpen ? styles['menu-slide-in'] : styles['menu-slide-out']}`}>
-          <li
-            onClick={() => {
-              handleClickNav("home");
-              toggleMenu();
-            }}
-          >
-            Home
-          </li>
-          <li
-            onClick={() => {
-              handleClickNav("about");
-              toggleMenu();
-            }}
-          >
-            About us
-          </li>
-          <li
-            onClick={() => {
-              handleClickNav("calendar");
-              toggleMenu();
-            }}
-          >
-            Calendar
-          </li>
-          <li
-            onClick={() => {
-              handleClickNav("certifications");
-              toggleMenu();
-            }}
-          >
-            Certifications
-          </li>
-          <li
-            onClick={() => {
-              handleClickNav("fruits");
-              toggleMenu();
-            }}
-          >
-            Our fruits
-          </li>
-          <li
-            id={styles.borderLi}
-            onClick={() => {
-              handleClickNav("contact");
-              toggleMenu();
-            }}
-          >
-            Contact us
-          </li>
-        </ul>
+
+      <ul
+        className={`${styles.menu} ${
+          isMenuOpen ? styles["menu-slide-in"] : styles["menu-slide-out"]
+        }`}
+      >
+        <li
+          onClick={() => {
+            handleClickNav("home");
+            toggleMenu();
+          }}
+        >
+          Home
+        </li>
+        <li
+          onClick={() => {
+            handleClickNav("about");
+            toggleMenu();
+          }}
+        >
+          About us
+        </li>
+        <li
+          onClick={() => {
+            handleClickNav("calendar");
+            toggleMenu();
+          }}
+        >
+          Calendar
+        </li>
+        <li
+          onClick={() => {
+            handleClickNav("certifications");
+            toggleMenu();
+          }}
+        >
+          Certifications
+        </li>
+        <li
+          onClick={() => {
+            handleClickNav("fruits");
+            toggleMenu();
+          }}
+        >
+          Our fruits
+        </li>
+        <li
+          id={styles.borderLi}
+          onClick={() => {
+            handleClickNav("contact");
+            toggleMenu();
+          }}
+        >
+          Contact us
+        </li>
+      </ul>
     </nav>
   );
 };

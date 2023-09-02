@@ -40,14 +40,22 @@
 }
 
 .card h2 {
-  font-size: 14px;
+  font-size: 1.188rem;
   text-align: center;
   margin: 16px 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #291C05;
 }
 
 .card p {
-  font-size: 14px;
+  font-size: 1.188rem;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #291C05;
 }
 
 .card:last-child {

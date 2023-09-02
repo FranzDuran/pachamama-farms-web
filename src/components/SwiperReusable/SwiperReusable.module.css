@@ -70,22 +70,37 @@
     .divLogo{
         display: none;
     }
+    .caja{
+        width: 100vw !important;
+        left: 0 !important;
+    }
 }
 
 /* Image count */
 
 .imageCount{
-    position: absolute;
+    /* position: absolute;
     top: -32px;
     left: 40%;
-    right: 60%;
+    right: 60%; */
     display: flex;
     flex-direction: row;
-    width: 200px;
+    /* width: 200px; */
     font-size: 18px;
     font-weight: 600;
 }
 
+.caja{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: -35px;
+    left: -1.6%;
+    /* right: 50%; */
+    /* margin: auto; */
+    width: 56.5vw;
+}
 .divLogo{
     height: 2px;
     position: relative;

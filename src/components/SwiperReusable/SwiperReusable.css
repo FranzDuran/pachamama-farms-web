@@ -1,9 +1,9 @@
 #button-navegation-prev {
-    width: 40px;
-    height: 40px;
-    position: absolute;
+    /* width: 40px;
+    height: 40px; */
+    /* position: absolute;
     top: -45px;
-    left: -15px;
+    left: -15px; */
     /* z-index: 150; */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -17,11 +17,11 @@
 }
 
 #button-navegation-next {
-    width: 40px;
-    height: 40px;
-    position: absolute;
+    /* width: 40px;
+    height: 40px; */
+    /* position: absolute;
     top: -45px;
-    right: -14px;
+    right: -14px; */
     /* z-index: 150; */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -53,19 +53,19 @@
 
 
 @media screen and (max-width: 767px){
-    #button-navegation-prev {
+    /* #button-navegation-prev {
         width: 40px;
         height: 40px;
         top: -37px;
         left: 10px;
        
-    }
+    } */
     
-    #button-navegation-next {
+    /* #button-navegation-next {
         width: 40px;
         height: 40px;
         top: -37px;
         right: 10px;
         
-    }
+    } */
 }

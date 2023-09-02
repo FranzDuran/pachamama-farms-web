@@ -57,7 +57,7 @@ export default function SwiperCarrousel (){
       >
         <SwiperSlide>
           <article className={styles.divContenido}>
-          <Image src={img1} alt="" width="auto" height="auto" className={styles.divTexto}/>
+          <Image src={img1} alt="" width="auto" height="auto" />
             <div className={styles.divTexto}>
               <h3>
               We work everyday to bring <br/>
@@ -68,7 +68,7 @@ export default function SwiperCarrousel (){
         </SwiperSlide>
         <SwiperSlide>
           <article className={styles.divContenido}>
-          <Image src={img2} alt="" width="auto" height="auto" className={styles.divTexto}/>
+          <Image src={img2} alt="" width="auto" height="auto" />
             <div className={styles.divTexto}>
               <h3>
               We work everyday to bring <br/>
@@ -79,7 +79,7 @@ export default function SwiperCarrousel (){
         </SwiperSlide>
         <SwiperSlide>
           <article className={styles.divContenido}>
-          <Image src={img3} alt="" width="auto" height="auto" className={styles.divTexto}/>
+          <Image src={img3} alt="" width="auto" height="auto" />
             <div className={styles.divTexto}>
               <h3>
               We work everyday to bring <br/>

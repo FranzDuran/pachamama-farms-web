@@ -90,6 +90,19 @@
   } */
 } 
 
+@media screen and (min-width: 1023px){
+  .divContenido {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    position: relative;
+    /* transform: scale(1.6); */
+  }
+}
+
 
 @media (max-width: 920px) {
 

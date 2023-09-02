@@ -100,23 +100,25 @@ export default function SwiperReusable({ data }) {
           </Swiper>
         </div>
         {/*-----------------NAVEGATION------------------*/}
-        <button
-          id="button-navegation-prev"
-          className={`${[!isFirst ? "active" : "none"]}`}
-          onClick={() => handlePrev()}
-        >
-          <i className="ri-arrow-left-s-line"></i>
-        </button>
-        <button
-          id="button-navegation-next"
-          className={`${[!isLast ? "active" : "none"]}`}
-          onClick={() => handleNext()}
-        >
-          <i className="ri-arrow-right-s-line"></i>
-        </button>
-        {/* Image count */}
-        <div className={styles.imageCount}>
-          {data.text} {currentImage}/{data.cards.length}
+        <div className={styles.caja}>
+          <button
+            id="button-navegation-prev"
+            className={`${[!isFirst ? "active" : "none"]}`}
+            onClick={() => handlePrev()}
+          >
+            <i className="ri-arrow-left-s-line"></i>
+          </button>
+          {/* Image count */}
+          <div className={styles.imageCount}>
+            {data.text} {currentImage}/{data.cards.length}
+          </div>
+          <button
+            id="button-navegation-next"
+            className={`${[!isLast ? "active" : "none"]}`}
+            onClick={() => handleNext()}
+          >
+            <i className="ri-arrow-right-s-line"></i>
+          </button>
         </div>
         <div className={styles.divLogo}>
           <Image
