@@ -7,6 +7,10 @@ import img1 from "./assets/7.png";
 import img2 from "./assets/8.jpg";
 import img3 from "./assets/9.jpg";
 import img4 from "./assets/10.png";
+import img5 from "./assets/mobile7.jpg";
+import img6 from "./assets/mobile8.jpg";
+import img7 from "./assets/mobile9.jpg";
+import img8 from "./assets/mobile10.jpg";
 
 // Import Swiper stylesjj
 import "swiper/css";
@@ -59,7 +63,8 @@ export default function SwiperPeople() {
       >
         <SwiperSlide>
           <article className={styles.divContenido}>
-            <Image src={img1} alt="" width="auto" height="auto" />
+            <Image src={img1} alt="" width="auto" height="auto" className={styles.img}/>
+            <Image src={img5} alt="" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
                 We’re conviced that
@@ -71,7 +76,8 @@ export default function SwiperPeople() {
         </SwiperSlide>
         <SwiperSlide>
           <article className={styles.divContenido}>
-            <Image src={img2} alt="" width="auto" height="auto" />
+          <Image src={img2} alt="" width="auto" height="auto" className={styles.img}/>
+          <Image src={img6} alt="" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
                 We’re conviced that
@@ -83,7 +89,8 @@ export default function SwiperPeople() {
         </SwiperSlide>
         <SwiperSlide>
           <article className={styles.divContenido}>
-            <Image src={img3} alt="" width="auto" height="auto" />
+          <Image src={img3} alt="" width="auto" height="auto" className={styles.img}/>
+          <Image src={img7} alt="" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
                 We’re conviced that
@@ -95,7 +102,8 @@ export default function SwiperPeople() {
         </SwiperSlide>
         <SwiperSlide>
           <article className={styles.divContenido}>
-            <Image src={img4} alt="" width="auto" height="auto" />
+          <Image src={img4} alt="" width="auto" height="auto" className={styles.img}/>
+          <Image src={img8} alt="" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
                 We’re conviced that
