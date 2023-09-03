@@ -19,8 +19,8 @@ export default function Compromise() {
         <Image 
         src={logoImg}
         className={styles.logos}
-        title=""
-        alt=""
+        title="logos of the partners and clients that collaborate with Pachamama Farms"
+        alt="partner and customer logos"
         />
  
       </article>
