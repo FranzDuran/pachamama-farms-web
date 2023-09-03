@@ -11,9 +11,14 @@ import "./modal.css";
 export default function HomeSeccion() {
   const [video, setVideo] = useState(false);
 
-  const hadleVideo = () => {
-    setVideo(!video);
+  const closeVideo = () => {
+    setVideo(false);
   };
+
+  const openVideo = () => {
+    setVideo(true);
+  };
+
 
   const handleWindowResize = () => {
     // Aquí defines el ancho máximo para la versión móvil
@@ -43,7 +48,7 @@ export default function HomeSeccion() {
     <section id="home">
       <SwiperComponent
         showNavigation={showNavigation}
-        hadleVideo={hadleVideo}
+        hadleVideo={openVideo}
       ></SwiperComponent>
           
           
@@ -51,12 +56,12 @@ export default function HomeSeccion() {
 
       <Modal
         isOpen={video}
-        onRequestClose={video}
+        onRequestClose={closeVideo}
         overlayClassName="custom-modal-overlay" // Estiliza el fondo oscuro en tu archivo CSS
         closeTimeoutMS={2000}
         className={`custom-modal ${video ? 'opened' : ''}`} 
     >
-            <Video  hadleVideo={hadleVideo}/>
+            <Video  hadleVideo={closeVideo}/>
       </Modal>
     </section>
   );

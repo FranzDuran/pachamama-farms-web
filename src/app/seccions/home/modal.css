@@ -23,13 +23,10 @@
     align-items: center;
   }
   
-  .custom-modal.opened {
-    /* opacity: 1 */
-  }
 
   .ReactModal__Overlay {
     opacity: 0;
-    transition: opacity 1000ms ease-in-out;
+    transition: opacity 700ms ease-in-out;
 }
 
 .ReactModal__Overlay--after-open{
