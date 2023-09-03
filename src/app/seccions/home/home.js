@@ -3,17 +3,17 @@
 import { useEffect, useState } from "react";
 import SwiperComponent from "./swiper/swiper.js";
 import Video from "./video/video.js";
-
-
+import Modal from 'react-modal';
+import "./modal.css";
+// import styles from './video/video.module.css'
 
 
 export default function HomeSeccion() {
-  
-const [video, setVideo] = useState(false)
+  const [video, setVideo] = useState(false);
 
   const hadleVideo = () => {
-    setVideo(!video)
-  }
+    setVideo(!video);
+  };
 
   const handleWindowResize = () => {
     // Aquí defines el ancho máximo para la versión móvil
@@ -42,10 +42,22 @@ const [video, setVideo] = useState(false)
   return (
     <section id="home">
       <SwiperComponent
-       showNavigation={showNavigation}
-       hadleVideo={hadleVideo}>
-      </SwiperComponent>
-      {video && <Video  hadleVideo={hadleVideo}/>}
+        showNavigation={showNavigation}
+        hadleVideo={hadleVideo}
+      ></SwiperComponent>
+          
+          
+      {/* {video && <Video  hadleVideo={hadleVideo}/>} */}
+
+      <Modal
+        isOpen={video}
+        onRequestClose={video}
+        overlayClassName="custom-modal-overlay" // Estiliza el fondo oscuro en tu archivo CSS
+        closeTimeoutMS={2000}
+        className={`custom-modal ${video ? 'opened' : ''}`} 
+    >
+            <Video  hadleVideo={hadleVideo}/>
+      </Modal>
     </section>
   );
 }
