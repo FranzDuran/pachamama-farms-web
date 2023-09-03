@@ -27,7 +27,7 @@ const Calendar = () => {
 
             <Image
             src={calendarResponsive}
-            alt="responsive crop calendar"
+            alt="responsive crop calendar "
             title="Calendar showing the months in which all responsive fruits are grown"
             className={styles.CalendarResponsive}
           />
