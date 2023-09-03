@@ -20,6 +20,7 @@ const FloatingIcons = () => {
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
     const windowHeight = window.innerHeight;
+    let isPachamamaSectionVisible = false;
 
     sections.forEach((section, index) => {
       const rect = section.getBoundingClientRect();
@@ -29,8 +30,18 @@ const FloatingIcons = () => {
       if (rect.top <= bottomOffset && rect.bottom >= topOffset) {
         setMenuTextColor(section.dataset.textColor || "white");
         setIsLastSection(index === sections.length - 1);
+
+        // Check if the current section has the id "pachamama"
+        if (section.id === "pachamama") {
+          isPachamamaSectionVisible = true;
+        }
       }
     });
+
+    // Set the menuTextColor to white if the "pachamama" section is visible
+    if (isPachamamaSectionVisible) {
+      setMenuTextColor("white");
+    }
   };
 
   useEffect(() => {
