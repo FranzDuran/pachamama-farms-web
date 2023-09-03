@@ -82,9 +82,9 @@ const Navbar = () => {
         onClick={handleLogoClick}
       >
         {menuTextColor === "white" ? (
-          <Image src={logoWhite} alt="" width="auto" height="auto" />
+          <Image src={logoWhite} alt="white Pachamama farms logo for dark backgrounds" title="dark logo"  width="auto" height="auto" />
         ) : (
-          <Image src={logoBlack} alt="" width="auto" height="auto" />
+          <Image src={logoBlack} alt="white Pachamama farms logo for light backgrounds"  title="clear logo" width="auto" height="auto" />
         )}
       </div>
       <div className={styles.menuIzq}>
@@ -125,15 +125,16 @@ const Navbar = () => {
           {isMenuOpen ? (
             <Image
               src={iconClose}
-              alt=""
+              alt="close icon , to be able to close the dropdown menu"
+              title="close icon"
               width="auto"
               height="auto"
               className={styles.iconx}
             />
           ) : menuTextColor === "white" ? (
-            <Image src={iconoClaro} alt="" width="auto" height="auto" />
+            <Image src={iconoClaro} alt="light hamburger menu icon for dark backgrounds, to open the dropdown menu" title="clear hamburger menu icon" width="auto" height="auto" />
           ) : (
-            <Image src={iconoOscuro} alt="" width="auto" height="auto" />
+            <Image src={iconoOscuro} alt="dark hamburger menu icon for dark backgrounds, to open the dropdown menu" title="dark hamburger menu icon" width="auto" height="auto" />
           )}
         </div>
       </div>

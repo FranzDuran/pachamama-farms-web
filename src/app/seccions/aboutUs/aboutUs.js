@@ -4,7 +4,9 @@ import styles from "./aboutUs.module.css";
 const AboutUs = () => {
   return (
     <section data-text-color="black" className={styles.sectionAboutUs} id="about">
-      <article className={styles.article} >
+      <article className={styles.article} 
+      aria-label="section where we talk about what we do, produce and export the best fruits"
+      >
         <h3>What we do</h3>
         <div className={styles.divisor}></div>
         <p className={styles.parrafo}>

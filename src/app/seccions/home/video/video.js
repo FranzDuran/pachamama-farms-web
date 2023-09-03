@@ -5,7 +5,9 @@ import "../modal.css";
 
 export default function Video({ hadleVideo, video }) {
   return (
-      <article className={styles.Video}>
+      <article className={styles.Video}
+      aria-label="modal showing a youtube video about Pachamama Farms quality fruits and products"
+      >
         <i
           className="ri-close-fill"
           id={styles.iconx}
@@ -15,7 +17,7 @@ export default function Video({ hadleVideo, video }) {
           width="560"
           height="315"
           src="https://www.youtube.com/embed/MZL2trTxwnU?si=x-_VrnxQ_forKuo9"
-          title="Excellence in Agricultural Innovation: Pachamama Farms' Commitment to Premium Produce from Peru | Excelencia en innovación agrícola: el compromiso de Pachamama Farms con productos premium del Perú"
+          title="youtube video showing all that Pachamama Farms has to offer"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen

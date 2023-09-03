@@ -44,7 +44,7 @@ export default function SwiperReusable({ data }) {
 
   return (
     <section className={styles.container} data-text-color="black">
-      <div className={styles.swiperContainer}>
+      <article className={styles.swiperContainer}>
         <div className={styles.slideContent}>
           <Swiper
             // install Swiper modules
@@ -91,9 +91,9 @@ export default function SwiperReusable({ data }) {
           >
             {data.cards.map((item, index) => (
               <SwiperSlide key={index}>
-                <article className={styles.card}>
-                  <Image src={item.image} alt="" width="auto" height="auto" />
-                </article>
+                <div className={styles.card}>
+                  <Image src={item.image} alt="pachamama farms facilities and workers growing quality fruits" title="facilities and workers cultivating" width="auto" height="auto" />
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -127,11 +127,11 @@ export default function SwiperReusable({ data }) {
           <Image
             className={styles.LogoPackHouse}
             src={data.logo}
-            alt="Illustration with information about the 7000 square meters of pachamama farms where the best fruits of Peru are grown | Ilustracion con informacion sobre los 7000 Metros cuadrados de pachamama farms donde se cultivan las mejores frutas de Perú"
-            title="Information about the territory of Pachamama Farms | Informacion sobre el territorio de Pachamama Farms  "
+            alt="Illustration with information about the 7000 square meters of pachamama farms where the best fruits of Peru are grown"
+            title="Information about the territory of Pachamama Farms "
           />
         </div>
-      </div>
+      </article>
     </section>
   );
 }

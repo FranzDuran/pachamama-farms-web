@@ -62,7 +62,7 @@
   .divCalendar {
     width: 100vw;
     height: 100vh;
-    top: 26%;
+    top:0;
     position: absolute;
     background: transparent;
     display: flex;
@@ -79,7 +79,9 @@
 
   .CalendarResponsive{
     display: flex;
-    width: 80vw;
+    width: 90vw;
     height: auto; 
+    position: relative;
+    top: -15vh;
   }
 }
