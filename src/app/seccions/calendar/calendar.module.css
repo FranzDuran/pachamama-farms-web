@@ -1,7 +1,6 @@
 .sectionCalendar {
   width: 100vw;
   height: 100vh;
-
 }
 
 .divFondo {
@@ -49,6 +48,9 @@
   top: -5vw;
 }
 
+.CalendarResponsive{
+  display: none;
+}
 
 @media (max-width: 1023px) {
   .divCalendar {
@@ -58,8 +60,26 @@
 
 @media (max-width: 767px) {
   .divCalendar {
-    width: 88vw;
-    top: 86%;
+    width: 100vw;
+    height: 100vh;
+    top: 26%;
     position: absolute;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .calendarImg {
+    display: none;
+  }
+  .CalendarInfoIMG{
+    display: none;
+  }
+
+  .CalendarResponsive{
+    display: flex;
+    width: 80vw;
+    height: auto; 
   }
 }

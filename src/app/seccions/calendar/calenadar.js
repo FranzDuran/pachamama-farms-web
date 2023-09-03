@@ -4,7 +4,7 @@ import Image from "next/image";
 import CalendarImg from "./assets/CalendarInfo.png";
 import calendar from "./assets/calendar.png";
 import imgfondo from "./assets/_DSC9013.JPG";
-
+import calendarResponsive from './assets/calendario_mobile.png'
 const Calendar = () => {
   return (
     <section className={styles.sectionCalendar} id="calendar">
@@ -17,11 +17,19 @@ const Calendar = () => {
             title=""
             className={styles.calendarImg}
           />
+          
           <Image
             src={CalendarImg}
             alt=""
             title=""
             className={styles.CalendarInfoIMG}
+          />
+
+            <Image
+            src={calendarResponsive}
+            alt=""
+            title=""
+            className={styles.CalendarResponsive}
           />
         </div>
       </section>
