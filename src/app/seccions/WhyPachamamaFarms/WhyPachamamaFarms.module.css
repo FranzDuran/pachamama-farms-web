@@ -21,7 +21,8 @@
   max-width: 1200px;
   position: absolute;
 }
-.imgDesktop{
+
+.imgDesktop {
   max-height: 100vh;
 }
 
@@ -118,14 +119,26 @@
     text-align: center;
     margin: 16px 0;
     font-family: 'Roboto', sans-serif;
+<<<<<<< HEAD
     font-weight: 600;
+=======
+    font-style: normal;
+    font-weight: 600;
+    color: #291C05;
+>>>>>>> 597dba577446636d7d9fc963dc7076ff9fc6678e
   }
 
   .cardMobile p {
     font-size: 14px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+<<<<<<< HEAD
     font-weight: 300;
+=======
+    font-style: normal;
+    font-weight: 300;
+    color: #291C05;
+>>>>>>> 597dba577446636d7d9fc963dc7076ff9fc6678e
   }
 
 }
