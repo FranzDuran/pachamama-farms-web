@@ -21,7 +21,8 @@
   max-width: 1200px;
   position: absolute;
 }
-.imgDesktop{
+
+.imgDesktop {
   max-height: 100vh;
 }
 
@@ -117,11 +118,19 @@
     font-size: 16px;
     text-align: center;
     margin: 16px 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: #291C05;
   }
 
   .cardMobile p {
     font-size: 14px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #291C05;
   }
 
 }
