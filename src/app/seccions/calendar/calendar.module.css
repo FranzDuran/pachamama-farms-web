@@ -22,7 +22,7 @@
 
 .sectionWhite {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
 }
 
 .divCalendar {
@@ -82,6 +82,6 @@
     width: 90vw;
     height: auto; 
     position: relative;
-    top: -15vh;
+    top: -9vh;
   }
 }

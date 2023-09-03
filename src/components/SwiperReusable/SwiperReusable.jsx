@@ -100,7 +100,7 @@ export default function SwiperReusable({ data }) {
         </div>
 
         {/*-----------------NAVEGATION------------------*/}
-        <nav className={styles.navegation}>
+        <div className={styles.navegation}>
           <button
             id="button-navegation-prev"
             className={`${[!isFirst ? "active" : "none"]}`}
@@ -122,7 +122,7 @@ export default function SwiperReusable({ data }) {
             <i className="ri-arrow-right-s-line"></i>
           </button>
 
-        </nav>
+        </div>
         <div className={styles.divLogo}>
           <Image
             className={styles.LogoPackHouse}

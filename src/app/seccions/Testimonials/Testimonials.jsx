@@ -15,7 +15,10 @@ import "./SwiperTestimonials.css";
 export default function Testimonials() {
   return (
     <section className={styles.container} data-text-color="black">
-      <div className={styles.swiperContainer}>
+      <article className={styles.swiperContainer}
+        aria-label="
+        testimonial article where they talk about how we work for and for the environment"
+      >
         <div className={styles.slideContent}>
           <Swiper
             // install Swiper modules
@@ -62,7 +65,7 @@ export default function Testimonials() {
             {data.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className={styles.card}>
-                  <Image src={item.image} alt="" width="auto" height="auto" />
+                  <Image src={item.image} title="employee testimonial" alt="testimonial article where they talk about how we work for and for the environment" width="auto" height="auto" />
                   <div className={styles.text}>
                     <h2>{item.title}</h2>
                     <p>{item.paragraph}</p>
@@ -77,7 +80,7 @@ export default function Testimonials() {
           </Swiper>
         </div>
         <div className="pagination-testimonials"></div>
-      </div>
+      </article>
     </section>
   );
 }

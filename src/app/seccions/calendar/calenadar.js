@@ -13,22 +13,22 @@ const Calendar = () => {
         <div className={styles.divCalendar}>
           <Image
             src={calendar}
-            alt=""
-            title=""
+            alt="calendar showing the months in which all fruits are grown"
+            title="crop calendar"
             className={styles.calendarImg}
           />
           
           <Image
             src={CalendarImg}
-            alt=""
-            title=""
+            alt="seasonal calendar where all fruits are grown"
+            title="season calendar"
             className={styles.CalendarInfoIMG}
           />
 
             <Image
             src={calendarResponsive}
-            alt=""
-            title=""
+            alt="responsive crop calendar "
+            title="Calendar showing the months in which all responsive fruits are grown"
             className={styles.CalendarResponsive}
           />
         </div>

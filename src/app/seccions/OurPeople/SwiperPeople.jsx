@@ -62,9 +62,12 @@ export default function SwiperPeople() {
         }}
       >
         <SwiperSlide>
-          <article className={styles.divContenido}>
-            <Image src={img1} alt="" width="auto" height="auto" className={styles.img}/>
-            <Image src={img5} alt="" width="auto" height="auto" className={styles.imgMobile}/>
+          <article className={styles.divContenido}
+            aria-label="article about the workers and how we strive to have the best quality products"
+          >
+            
+            <Image src={img1} alt="worker carrying fruits while working" title="worker carrying fruits" width="auto" height="auto" className={styles.img}/>
+            <Image src={img5} alt="worker carrying fruits while working" title="worker carrying fruits" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
                 We’re conviced that
@@ -75,9 +78,10 @@ export default function SwiperPeople() {
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article className={styles.divContenido}>
-          <Image src={img2} alt="" width="auto" height="auto" className={styles.img}/>
-          <Image src={img6} alt="" width="auto" height="auto" className={styles.imgMobile}/>
+          <article className={styles.divContenido}
+            aria-label="article about the workers and how we strive to have the best quality products">
+          <Image src={img2} alt="Female worker checking the quality of fruits." title="Female worker checking the quality" width="auto" height="auto" className={styles.img}/>
+          <Image src={img6} alt="Female worker checking the quality of fruits." title="Female worker checking the quality" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
                 We’re conviced that
@@ -88,9 +92,10 @@ export default function SwiperPeople() {
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article className={styles.divContenido}>
-          <Image src={img3} alt="" width="auto" height="auto" className={styles.img}/>
-          <Image src={img7} alt="" width="auto" height="auto" className={styles.imgMobile}/>
+          <article className={styles.divContenido}
+            aria-label="article about the workers and how we strive to have the best quality products">
+          <Image src={img3} alt="worker collecting fruits from farm fields" title="worker picking fruits" width="auto" height="auto" className={styles.img}/>
+          <Image src={img7} alt="worker collecting fruits from farm fields" title="worker picking fruits" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
                 We’re conviced that
@@ -101,9 +106,10 @@ export default function SwiperPeople() {
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article className={styles.divContenido}>
-          <Image src={img4} alt="" width="auto" height="auto" className={styles.img}/>
-          <Image src={img8} alt="" width="auto" height="auto" className={styles.imgMobile}/>
+          <article className={styles.divContenido}
+            aria-label="article about the workers and how we strive to have the best quality products">
+          <Image src={img4} alt="worker resting after a day of work" title="female worker resting" width="auto" height="auto" className={styles.img}/>
+          <Image src={img8} alt="worker resting after a day of work" title="female worker resting" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
                 We’re conviced that
