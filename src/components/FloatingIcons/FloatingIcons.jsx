@@ -84,9 +84,9 @@ const FloatingIcons = () => {
         >
           {/* <i className="ri-youtube-fill"></i> */}
           {menuTextColor === "white" ? (
-            <Image src={LikedinClaro} alt="" width="auto" height="auto" />
+            <Image src={LikedinClaro} title="Likedin icon" alt="white Likedin icon to show on dark backgrounds" width="auto" height="auto" />
           ) : (
-            <Image src={linkedinOscuro} alt="" width="auto" height="auto" />
+            <Image src={linkedinOscuro} title="Likedin icon"  alt="black Likedin icon to show on claros backgrounds" width="auto" height="auto" />
           )}
         </Link>
       </span>
@@ -95,11 +95,12 @@ const FloatingIcons = () => {
           href="https://www.youtube.com/@pachamamafarms7190"
           passHref
           style={{ textDecoration: "none", color: "inherit" }}
+          target="_blank"
         >
           {menuTextColor === "white" ? (
-            <Image src={iconYoutubeClaro} alt="" width="auto" height="auto" />
+            <Image src={iconYoutubeClaro} title="youtube icon" alt="white youtube icon to show on dark backgrounds" height="auto" />
           ) : (
-            <Image src={iconYoutubeOscuro} alt="" width="auto" height="auto" />
+            <Image src={iconYoutubeOscuro} title="youtube icon"  alt="black youtube icon to show on claros backgrounds" height="auto" />
           )}
         </Link>
       </span>
@@ -111,9 +112,9 @@ const FloatingIcons = () => {
         }}
       >
         {menuTextColor === "white" ? (
-          <Image src={flechawhite} alt="" width="auto" height="auto" />
+          <Image src={flechawhite}title="white arrow" alt="light arrow to advance to the next section when the background is dark" width="auto" height="auto" />
         ) : (
-          <Image src={flechablack} alt="" width="auto" height="auto" />
+          <Image src={flechablack}title="dark arrow" alt="dark arrow to advance to the next section when the background is ligh" width="auto" height="auto" />
         )}
       </span>
     </div>
