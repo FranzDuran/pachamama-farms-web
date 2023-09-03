@@ -24,22 +24,22 @@ export default function SwiperPachamama() {
           breakpoints={{
             320: {
               slidesPerView: 1,
-              spaceBetween: 10,
+              spaceBetween: 0,
             },
             375: {
-              slidesPerView: 1.1,
+              slidesPerView: 1,
               spaceBetween: 0,
             },
             390: {
-              slidesPerView: 1.13,
+              slidesPerView: 1,
               spaceBetween: 0,
             },
             400: {
-              slidesPerView: 1.25,
-              spaceBetween: 10,
+              slidesPerView: 1,
+              spaceBetween: 0,
             },
             425: {
-              slidesPerView: 1.25,
+              slidesPerView: 1,
               spaceBetween: 0,
             },
             

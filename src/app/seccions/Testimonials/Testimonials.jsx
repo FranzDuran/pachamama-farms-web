@@ -26,19 +26,19 @@ export default function Testimonials() {
                 spaceBetween: 10,
               },
               375: {
-                slidesPerView: 1.1,
+                slidesPerView: 1,
                 spaceBetween: 10,
               },
               390: {
-                slidesPerView: 1.13,
+                slidesPerView: 1,
                 spaceBetween: 0,
               },
               400: {
-                slidesPerView: 1.25,
+                slidesPerView: 1,
                 spaceBetween: 10,
               },
               425: {
-                slidesPerView: 1.25,
+                slidesPerView: 1,
                 spaceBetween: 10,
               },
               768: {
