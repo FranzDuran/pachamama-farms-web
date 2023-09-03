@@ -8,7 +8,7 @@ import calendarResponsive from './assets/calendario_mobile.png'
 const Calendar = () => {
   return (
     <section className={styles.sectionCalendar} id="calendar">
-      <article className={styles.divFondo} data-text-color="white">
+      <section className={styles.divFondo} data-text-color="white">
         <Image src={imgfondo} alt="" title="" className={styles.fondoImg} />
         <div className={styles.divCalendar}>
           <Image
@@ -32,11 +32,11 @@ const Calendar = () => {
             className={styles.CalendarResponsive}
           />
         </div>
-      </article>
-      <div
+      </section>
+      <section
         className={styles.sectionWhite}
         data-text-color="black"
-      ></div>
+      ></section>
     </section>
   );
 };
