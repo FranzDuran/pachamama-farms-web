@@ -81,7 +81,7 @@ const FloatingIcons = () => {
           href="https://www.linkedin.com/company/pachamama-farms-sac/"
           passHref
           style={{ textDecoration: "none", color: "inherit" }}
-          // target="_blank"
+          target="_blank"
         >
           {/* <i className="ri-youtube-fill"></i> */}
           {menuTextColor === "white" ? (
@@ -96,7 +96,7 @@ const FloatingIcons = () => {
           href="https://www.youtube.com/@pachamamafarms7190"
           passHref
           style={{ textDecoration: "none", color: "inherit" }}
-          // target="_blank"
+          target="_blank"
         >
           {menuTextColor === "white" ? (
             <Image src={iconYoutubeClaro} title="youtube icon" alt="white youtube icon to show on dark backgrounds" height="auto" />
