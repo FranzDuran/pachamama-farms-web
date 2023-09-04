@@ -21,7 +21,8 @@
   max-width: 1200px;
   position: absolute;
 }
-.imgDesktop{
+
+.imgDesktop {
   max-height: 100vh;
 }
 
@@ -40,14 +41,22 @@
 }
 
 .card h2 {
-  font-size: 14px;
+  font-size: 1.188rem;
   text-align: center;
   margin: 16px 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #291C05;
 }
 
 .card p {
-  font-size: 14px;
+  font-size: 1.188rem;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #291C05;
 }
 
 .card:last-child {
@@ -82,7 +91,7 @@
     flex-direction: column;
     align-items: center;
 
-    width: 95%;
+    width: 100%;
     right: 0;
   }
 
@@ -97,6 +106,7 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
   }
 
   .cardMobile img {
@@ -108,11 +118,19 @@
     font-size: 16px;
     text-align: center;
     margin: 16px 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    color: #291C05;
   }
 
   .cardMobile p {
     font-size: 14px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #291C05;
   }
 
 }

@@ -10,12 +10,11 @@ import "swiper/css/scrollbar";
 import PlayImg from "../assets/PLAY.png";
 import Image from "next/image";
 
-// import Img1 from './assets/_DSC9473.JPG';
-// import img2 from './assets/_DSC0320.JPG'
-// import img3 from './assets/DJI_0286.JPG'
+// import imagen1 from '../assets/image1.jpg';
+ 
 
 import styles from "../home.module.css";
-// import { Image } from "next/image";
+
 
 export default function SwiperComponent({ showNavigation, hadleVideo }) {
   return (
@@ -79,41 +78,45 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
         <SwiperSlide>
           <article
             className={styles.divContenido}
-            aria-label="Contenido destacado"
+            aria-label="article about fruits with background image text and button to display a modal with a youtube video"
           >
             <div className={styles.divTexto}>
               <h2>
-              Nosotros somos una familia grande<br />
+              Somos una gran familia <br />
               trabajando juntos
               </h2>
               <button onClick={() => hadleVideo()}>
-              Ver el vídeo{" "}
+              Ver el video{" "}
                 <Image
                   src={PlayImg}
                   width={20}
                   height={20}
-                  alt="play logo to start the video of quality fruits and agricultural products | logo de play para inciar el video de frutas y productos agropecuarios de calidad"
+                  alt="play logo to start the video of quality fruits and agricultural products"
+                  title="play logo"
                   className={styles.logoPlay}
                 />
               </button>
             </div>
-            {/* <Image src={Img1} className={styles.imgFondo}></Image> */}
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article className={styles.divContenido2}>
+          <article
+           className={styles.divContenido2}
+           aria-label="article about fruits with background image text and button to display a modal with a youtube video"
+           >
             <div className={styles.divTexto}>
               <h2>
-               Nos sentimos realmente conectados <br />
-               a la tierra que cultivamos
+              Sabemos que solo los mejores lugares pueden  <br />
+              ofrecernos las mejores frutas
               </h2>
               <button onClick={() => hadleVideo()}>
-              Ver el vídeo{" "}
+              Ver el video{" "}
                 <Image
                   src={PlayImg}
                   width={20}
                   height={20}
-                  alt="play logo to start the video of quality fruits and agricultural products | logo de play para inciar el video de frutas y productos agropecuarios de calidad"
+                  alt="play logo to start the video of quality fruits and agricultural products "
+                  title="play logo"
                   className={styles.logoPlay}
                 />
               </button>
@@ -121,20 +124,23 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article className={styles.divContenido3}>
+          <article 
+          className={styles.divContenido3}
+          aria-label="article about fruits with background image text and button to display a modal with a youtube video">
             <div className={styles.divTexto}>
               <h2>
-              Sabemos que sólo lugares únicos
+              Nos sentimos realmente conectados con la tierra que cultivamos
                 <br />
-                puede hacer productos únicos
+                con la tierra que cultivamos
               </h2>
               <button onClick={() => hadleVideo()}>
-              Ver el vídeo{" "}
+              Ver el video{" "}
                 <Image
                   src={PlayImg}
                   width={20}
                   height={20}
-                  alt="play logo to start the video of quality fruits and agricultural products | logo de play para inciar el video de frutas y productos agropecuarios de calidad"
+                  alt="play logo to start the video of quality fruits and agricultural products"
+                  title="play logo"
                   className={styles.logoPlay}
                 />
               </button>

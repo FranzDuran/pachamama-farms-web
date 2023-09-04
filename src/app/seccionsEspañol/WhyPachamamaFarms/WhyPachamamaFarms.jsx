@@ -7,17 +7,17 @@ import SwiperPachamama from "./SwiperPachamama";
 
 const WhyPachamamaFarms = () => {
   return (
-    <section className={styles.container} data-text-color="black">
-      <Image src={image} alt="" width="auto" height="auto" className={styles.imgDesktop}/>
-      <div className={styles.cardsContainer}>
+    <section className={styles.container} id="pachamama" data-text-color="black" >
+      <Image src={image} title="background of our crop fields" alt="background of our large fields of crops" width="auto" height="auto" className={styles.imgDesktop}/>
+      <article className={styles.cardsContainer}>
         {data.map((item, index) => (
           <div className={styles.card} key={index}>
-          <Image src={item.image} alt="" width="auto" height="auto" />
+          <Image src={item.image} title="icon about our great virtues" alt="icon where we talk about our excellent work team,Certified guarantee,Innovation" width="auto" height="auto" />
           <h2>{item.title}</h2>
           <p>{item.paragraph}</p>
         </div>
         ))}
-      </div>
+      </article>
       <SwiperPachamama/>
     </section>
   );

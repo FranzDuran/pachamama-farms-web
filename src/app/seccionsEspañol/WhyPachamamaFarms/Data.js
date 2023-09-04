@@ -5,17 +5,17 @@ import icon3 from "./assets/icon3.png";
 export const data = [
     {
         image:icon1,
-        title:"Excelente equipo de trabajo",
-        paragraph:"Expertos en la materia y excelentes personas en constante crecimiento con cursos de capacitación y actualización.",
+        title:"Trabajo en equipo excepcional",
+        paragraph:"Expertos en el campo. Nuestro personal está en constante crecimiento con entrenamientos, cursos actualizados y capacitaciones.",
     },
     {
         image:icon2,
         title:"Garantía certificada",
-        paragraph:"La búsqueda constante de la calidad está en el centro de las preocupaciones, tanto de los clientes como de nosotros mismos.",
+        paragraph:"Entendemos la importancia de la calidad para nuestros consumidores pero lo hacemos por nosotros. La calidad requiere excelencia en todos los aspectos.",
     },
     {
         image:icon3,
-        title:"Innovación",
-        paragraph:"Innovamos e intentamos mejorar cada día, buscando nuevas tecnologías que nos permitan reducir el impacto en el medio ambiente.",
+        title:"Innovación para mejorar",
+        paragraph:" Estamos constantemente buscando cómo mejorar nuestros procesos con la última tecnología disponible para reducir el impacto ambiental.",
     },
 ]

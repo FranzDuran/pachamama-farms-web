@@ -2,6 +2,13 @@
 import { Navigation, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from '../fruits.module.css'
+import Image from "next/image";
+import img1 from "../assets/4.jpg";
+import img2 from "../assets/5.jpg";
+import img3 from "../assets/6.jpg";
+import img4 from "../assets/mobile4.jpg";
+import img5 from "../assets/mobile5.jpg";
+import img6 from "../assets/mobile6.jpg";
 
 // Import Swiper stylesjj
 import "swiper/css";
@@ -16,8 +23,6 @@ export default function SwiperCarrousel (){
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, A11y]}
-        /* spaceBetween={10}
-        slidesPerView={1} */
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -55,36 +60,40 @@ export default function SwiperCarrousel (){
       >
         <SwiperSlide>
           <article className={styles.divContenido}>
+          <Image src={img1} alt="background fruits and products we sell" title='background fruits' width="auto" height="auto" className={styles.img}/>
+          <Image src={img4} alt="background fruits and products that we sell to show in responsive version" title="responsive fruit background" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
-              Trabajamos todos los días para traer <br/>
-              frutas inolvidables
+              El secreto de nuestras frutas es <br/>
+              cuidar cada detalle.
               </h3>
             </div>
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article className={styles.divContenido2}>
+          <article className={styles.divContenido}>
+          <Image src={img2}  alt="background fruits and products we sell" title='background fruits' width="auto" height="auto" className={styles.img}/>
+          <Image src={img5} alt="background fruits and products that we sell to show in responsive version" title="responsive fruit background" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
-              Trabajamos todos los días para traer <br/>
-              frutas inolvidables
+              Trabajamos todos los días para producir  <br/>
+              y entregar frutos excepcionales.
               </h3>
             </div>
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article className={styles.divContenido3}>
+          <article className={styles.divContenido}>
+          <Image src={img3}  alt="background fruits and products we sell" title='background fruits' width="auto" height="auto" className={styles.img}/>
+          <Image src={img6} alt="background fruits and products that we sell to show in responsive version" title="responsive fruit background" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
-              Trabajamos todos los días para traer <br/>
-              frutas inolvidables
+              Calidad, calidad y calidad.
               </h3>
             </div>
           </article>
         </SwiperSlide>
       </Swiper>
-
     </div>
   );
 };

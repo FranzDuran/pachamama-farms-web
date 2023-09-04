@@ -10,6 +10,7 @@ import OurPeople from '../seccionsEspañol/OurPeople/OurPeople'
 import Testimonials from '../seccionsEspañol/Testimonials/Testimonials'
 import WhyPachamamaFarms from '../seccionsEspañol/WhyPachamamaFarms/WhyPachamamaFarms'
 import FloatingIcons from '@/components/FloatingIcons/FloatingIcons'
+import ContactUs from '../seccionsEspañol/ContactUs/ContactUs'
 
 
 const Es = () => {
@@ -22,10 +23,11 @@ const Es = () => {
             <PackHouse text={'Empacadora'}/>
             <Calendar></Calendar>
             <Compromise></Compromise>
-            <OurFruits text={'Kent mangos'} ></OurFruits>
+            <OurFruits text={'Mangos Kent'} ></OurFruits>
             <OurPeople></OurPeople>
             <Testimonials></Testimonials>
             <WhyPachamamaFarms></WhyPachamamaFarms> 
+            <ContactUs/>
             <FloatingIcons></FloatingIcons>
         </main>
     )

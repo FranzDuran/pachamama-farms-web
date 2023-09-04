@@ -1,11 +1,11 @@
 .divContenido {
     width: 100vw;
     height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('./assets/_DSC9433.JPG');
     position: relative;
+}
+.divContenido .img{
+    width: 100vw;
+    height: auto;
 }
 
 .divTexto{
@@ -18,61 +18,56 @@
 }
 
 .divTexto h3{
-   font-size: 2.4rem;
-   text-align: center; 
-   font-weight: 300;
-   color: #ffff;
+    text-align: center; 
+    color: #ffff;
+    font-family: "Periodico";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 300;
 }
 
-.divContenido2 {
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('./assets/YL_01310.JPG');
-    position: relative;
+.imgMobile{
+    display: none;
 }
-
-
-.divContenido3 {
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    background-image: url('./assets/_DSC9761.JPG');
-    position: relative;
-}
-
 
 @media screen and (min-width: 1800px) {
     /* Agrega aquí tus estilos personalizados */
     .divTexto h3{
         font-size: 2.4rem;
      }
-  
   }
 
+  @media screen and (max-width: 1023px){
+    .divContenido .img{
+        width: auto;
+        height: 100vh;
+        object-position: center;
+        object-fit: cover;
+    }
+  }
 
   @media (max-width: 920px) {
-/* 
-    .divContenido {
-        height: 300px;
-    }
-    .divContenido2 {
-        height: 300px;
+    .divTexto{
+        top: 45%; /* Llevará la parte superior del h2 al 50% de altura del div */
     }
 
-    .divContenido3 {
-        height: 300px;
-    } */
-
-
+    
     .divTexto h3{
-        font-size: 18px;
+        font-size: 35px;
         width: 270px;
      }
+  }
 
-
+  @media screen and (max-width: 767px){
+    .divContenido .img{
+        display: none;
+    }
+    .imgMobile{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        object-position: center;
+        object-fit: cover;
+    }
+    
   }

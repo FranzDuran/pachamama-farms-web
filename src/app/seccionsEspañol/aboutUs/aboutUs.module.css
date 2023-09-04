@@ -8,7 +8,7 @@
 
 .article {
   position: absolute;
-  top: 50%;
+  top:50%;
   /* Llevará la parte superior del h2 al 50% de altura del div */
   left: 50%;
   /* Llevará la izquierda del h2 al 50% del ancho del div */
