@@ -81,6 +81,7 @@ const FloatingIcons = () => {
           href="https://www.linkedin.com/company/pachamama-farms-sac/"
           passHref
           style={{ textDecoration: "none", color: "inherit" }}
+          target="_blank"
         >
           {/* <i className="ri-youtube-fill"></i> */}
           {menuTextColor === "white" ? (
