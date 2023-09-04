@@ -11,10 +11,8 @@ import PlayImg from "../assets/PLAY.png";
 import Image from "next/image";
 
 // import imagen1 from '../assets/image1.jpg';
- 
 
-import styles from "../home.module.css";
-
+import styles from "../PaginaPrincipal.module.css";
 
 export default function SwiperComponent({ showNavigation, hadleVideo }) {
   return (
@@ -82,11 +80,11 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
           >
             <div className={styles.divTexto}>
               <h2>
-              Somos una gran familia <br />
-              trabajando juntos
+                Somos una gran familia <br />
+                trabajando juntos
               </h2>
               <button onClick={() => hadleVideo()}>
-              Ver el video{" "}
+                Ver el video{" "}
                 <Image
                   src={PlayImg}
                   width={20}
@@ -101,16 +99,16 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
         </SwiperSlide>
         <SwiperSlide>
           <article
-           className={styles.divContenido2}
-           aria-label="article about fruits with background image text and button to display a modal with a youtube video"
-           >
+            className={styles.divContenido2}
+            aria-label="article about fruits with background image text and button to display a modal with a youtube video"
+          >
             <div className={styles.divTexto}>
               <h2>
-              Sabemos que solo los mejores lugares pueden  <br />
-              ofrecernos las mejores frutas
+                Sabemos que solo los mejores lugares pueden <br />
+                ofrecernos las mejores frutas
               </h2>
               <button onClick={() => hadleVideo()}>
-              Ver el video{" "}
+                Ver el video{" "}
                 <Image
                   src={PlayImg}
                   width={20}
@@ -124,17 +122,18 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article 
-          className={styles.divContenido3}
-          aria-label="article about fruits with background image text and button to display a modal with a youtube video">
+          <article
+            className={styles.divContenido3}
+            aria-label="article about fruits with background image text and button to display a modal with a youtube video"
+          >
             <div className={styles.divTexto}>
               <h2>
-              Nos sentimos realmente conectados con la tierra que cultivamos
+                Nos sentimos realmente conectados con la tierra que cultivamos
                 <br />
                 con la tierra que cultivamos
               </h2>
               <button onClick={() => hadleVideo()}>
-              Ver el video{" "}
+                Ver el video{" "}
                 <Image
                   src={PlayImg}
                   width={20}

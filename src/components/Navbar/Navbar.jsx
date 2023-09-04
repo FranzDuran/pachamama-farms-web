@@ -9,13 +9,21 @@ import iconoOscuro from "./icono-oscuro.png";
 import iconClose from "./icon-close.png";
 import Link from "next/link";
 
+import { useRouter } from 'next/navigation'
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [language, setLanguage] = useState("en"); // Default language is English
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [activeSection, setActiveSection] = useState(null);
 
+  const router = useRouter()
+  /* console.log(router) */
+
   const toggleMenu = () => {
+    const urlActual = router.asPath;
+    /* console.log(urlActual) */
+
     if (isMenuOpen) {
       // Antes de cerrar el menú, desactiva el scroll suave
       document.documentElement.style.scrollBehavior = "auto";
@@ -150,7 +158,9 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          Home
+          {
+            language === "en" ? "Home" : "Pagina Principal"
+          }
         </li>
         <li
           onClick={() => {
@@ -158,7 +168,9 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          About us
+          {
+            language === "en" ? "About us" : "Sobre Nosotros"
+          }
         </li>
         <li
           onClick={() => {
@@ -166,7 +178,9 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          Calendar
+          {
+            language === "en" ? "Calendar" : "Calendario"
+          }     
         </li>
         <li
           onClick={() => {
@@ -174,7 +188,9 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          Certifications
+          {
+            language === "en" ? "Certifications" : "Certificaciones"
+          } 
         </li>
         <li
           onClick={() => {
@@ -182,7 +198,10 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          Our fruits
+          {
+            language === "en" ? "Our fruits" : "Nuestras frutas"
+          } 
+          
         </li>
         <li
           id={styles.borderLi}
@@ -191,7 +210,10 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          Contact us
+          {
+            language === "en" ? "Contact us" : "Contacta con nosotros"
+          }
+          
         </li>
       </ul>
     </nav>

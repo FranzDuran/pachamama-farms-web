@@ -8,7 +8,7 @@ import "./modal.css";
 // import styles from './video/video.module.css'
 
 
-export default function HomeSeccion() {
+export default function PaginaPrincipal() {
   const [video, setVideo] = useState(false);
 
   const closeVideo = () => {

@@ -1,7 +1,7 @@
 "use client";
 import SwiperCarrousel from "./swiper/swiper";
 
-export default function FruitsSeccion() {
+export default function Frutas() {
 
 
 

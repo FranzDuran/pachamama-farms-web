@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import styles from "./WhyPachamamaFarms.module.css";
+import styles from "./PorquePachamamaFarms.module.css";
 import { data } from "./Data";
 import { Pagination, Autoplay } from "swiper/modules";
 

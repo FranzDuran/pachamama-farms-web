@@ -1,11 +1,12 @@
 import React from "react";
-import styles from "./calendar.module.css";
+import styles from "./Calendario.module.css";
 import Image from "next/image";
 import CalendarImg from "./assets/CalendarInfo.png";
 import calendar from "./assets/calendario_desktop.png";
+import calendarioMobile from "./assets/calendario_mobile-es.png";
 import imgfondo from "./assets/_DSC9013.JPG";
 import calendarResponsive from './assets/calendario_mobile.png'
-const Calendar = () => {
+const Calendario = () => {
   return (
     <section className={styles.sectionCalendar} id="calendar">
       <section className={styles.divFondo} data-text-color="white">
@@ -26,7 +27,7 @@ const Calendar = () => {
           />
 
             <Image
-            src={calendarResponsive}
+            src={calendarioMobile}
             alt="responsive crop calendar "
             title="Calendar showing the months in which all responsive fruits are grown"
             className={styles.CalendarResponsive}
@@ -41,4 +42,4 @@ const Calendar = () => {
   );
 };
 
-export default Calendar;
+export default Calendario;

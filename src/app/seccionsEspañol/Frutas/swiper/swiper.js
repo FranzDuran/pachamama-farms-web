@@ -1,7 +1,7 @@
 // import Swiper core and required modules
 import { Navigation, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import styles from '../fruits.module.css'
+import styles from '../Frutas.module.css'
 import Image from "next/image";
 import img1 from "../assets/4.jpg";
 import img2 from "../assets/5.jpg";
@@ -63,9 +63,9 @@ export default function SwiperCarrousel (){
           <Image src={img1} alt="background fruits and products we sell" title='background fruits' width="auto" height="auto" className={styles.img}/>
           <Image src={img4} alt="background fruits and products that we sell to show in responsive version" title="responsive fruit background" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
-              <h3>
-              El secreto de nuestras frutas es <br/>
-              cuidar cada detalle.
+              <h3 className={styles.español}>
+              El secreto de nuestras frutas  <br/>
+              es cuidar cada detalle.
               </h3>
             </div>
           </article>

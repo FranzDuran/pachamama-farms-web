@@ -1,37 +1,41 @@
-import react from 'react'
-import HomeSeccion from '../seccionsEspañol/home/homeEs'
-import AboutUs from '../seccionsEspañol/aboutUs/aboutUsEs'
-import FruitsSeccion from '../seccionsEspañol/fruits/fruits'
-import PackHouse from '../seccions/packHouse/packHouse'
-import Calendar from '../seccionsEspañol/calendar/calenadar'
-import Compromise from '../seccionsEspañol/compromise/compromise'
-import OurFruits from '../seccions/OurFruits/OurFruits'
-import OurPeople from '../seccionsEspañol/OurPeople/OurPeople'
-import Testimonials from '../seccionsEspañol/Testimonials/Testimonials'
-import WhyPachamamaFarms from '../seccionsEspañol/WhyPachamamaFarms/WhyPachamamaFarms'
-import FloatingIcons from '@/components/FloatingIcons/FloatingIcons'
-import ContactUs from '../seccionsEspañol/ContactUs/ContactUs'
-
+import react from "react";
+import PaginaPrincipal from "../seccionsEspañol/PaginaPrincipal/PaginaPrincipal";
+import FruitsSeccion from "../seccionsEspañol/Frutas/Frutas";
+import PackHouse from "../seccions/packHouse/packHouse";
+import Calendar from "../seccionsEspañol/Calendario/Calendario";
+import Compromise from "../seccionsEspañol/Compromiso/Compromiso";
+import OurFruits from "../seccions/OurFruits/OurFruits";
+import OurPeople from "../seccionsEspañol/NuestraGente/NuestraGente";
+import Testimonials from "../seccionsEspañol/Testimonios/Testimonios";
+import WhyPachamamaFarms from "../seccionsEspañol/PorquePachamamaFarms/PorquePachamamaFarms";
+import FloatingIcons from "@/components/FloatingIcons/FloatingIcons";
+import ContactUs from "../seccionsEspañol/Contactanos/Contactanos";
+import SobreNosotros from "../seccionsEspañol/SobreNosotros/SobreNosotros";
+import Frutas from "../seccionsEspañol/Frutas/Frutas";
+import Empacadora from "../seccionsEspañol/Empacadora/Empacadora";
+import Calendario from "../seccionsEspañol/Calendario/Calendario";
+import Compromiso from "../seccionsEspañol/Compromiso/Compromiso";
+import NuestrasFrutas from "../seccionsEspañol/NuestrasFrutas/NuestrasFrutas";
+import NuestraGente from "../seccionsEspañol/NuestraGente/NuestraGente";
+import Testimonios from "../seccionsEspañol/Testimonios/Testimonios";
+import PorquePachamamaFarms from "../seccionsEspañol/PorquePachamamaFarms/PorquePachamamaFarms";
 
 const Es = () => {
+  return (
+    <main>
+      <PaginaPrincipal />
+      <SobreNosotros />
+      <Frutas />
+      <Empacadora/>
+      <Calendario/>
+      <Compromiso/>
+      <NuestrasFrutas/>
+      <NuestraGente/>
+      <Testimonios/>
+      <PorquePachamamaFarms/>
+      <FloatingIcons></FloatingIcons>
+    </main>
+  );
+};
 
-    return(
-        <main>
-            <HomeSeccion></HomeSeccion>
-            <AboutUs></AboutUs>
-            <FruitsSeccion></FruitsSeccion>
-            <PackHouse text={'Empacadora'}/>
-            <Calendar></Calendar>
-            <Compromise></Compromise>
-            <OurFruits text={'Mangos Kent'} ></OurFruits>
-            <OurPeople></OurPeople>
-            <Testimonials></Testimonials>
-            <WhyPachamamaFarms></WhyPachamamaFarms> 
-            <FloatingIcons></FloatingIcons>
-        </main>
-    )
-}
-
-
-
-export default Es
+export default Es;

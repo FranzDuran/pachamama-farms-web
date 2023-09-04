@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./compromise.module.css";
+import styles from "./Compromiso.module.css";
 import Image from "next/image";
 import logoImg from "./assets/logosCompromise.png";
 
-export default function Compromise() {
+export default function Compromiso() {
   return (
     <section
       className={styles.sectionCompromise}

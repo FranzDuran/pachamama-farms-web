@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import styles from "./Testimonials.module.css";
+import styles from "./Testimonios.module.css";
 import { data } from "./Data";
 import { Pagination, Autoplay } from "swiper/modules";
 
@@ -10,9 +10,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import "./SwiperTestimonials.css";
+import "./SwiperTestimonios.css";
 
-export default function Testimonials() {
+export default function Testimonios() {
   return (
     <section className={styles.container} data-text-color="black">
       <article className={styles.swiperContainer}

@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./WhyPachamamaFarms.module.css";
+import styles from "./PorquePachamamaFarms.module.css";
 import image from "./assets/DJI_0289.JPG";
 import Image from "next/image";
 import { data } from "./Data";
 import SwiperPachamama from "./SwiperPachamama";
 
-const WhyPachamamaFarms = () => {
+const PorquePachamamaFarms = () => {
   return (
     <section className={styles.container} id="pachamama" data-text-color="black" >
       <Image src={image} title="background of our crop fields" alt="background of our large fields of crops" width="auto" height="auto" className={styles.imgDesktop}/>
@@ -23,4 +23,4 @@ const WhyPachamamaFarms = () => {
   );
 };
 
-export default WhyPachamamaFarms;
+export default PorquePachamamaFarms;

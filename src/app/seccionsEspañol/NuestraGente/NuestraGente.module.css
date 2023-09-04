@@ -18,7 +18,7 @@
     /* Llevará la izquierda del h2 al 50% del ancho del div */
     transform: translate(-50%, -50%);
     /* Centrar completamente el h2 */
-    width: auto;
+    width: 80%;
 }
 
 .divTexto h3 {
@@ -48,6 +48,9 @@
     .divTexto {
         top: 45%;
     }
+    .divTexto h3{
+        width: 100%;
+    }
 
     
     .divContenido img{
@@ -62,7 +65,7 @@
 @media (max-width: 920px) {
     .divTexto h3 {
         font-size: 35px;
-        width: 270px;
+        width: 100%;
     }
 }
 

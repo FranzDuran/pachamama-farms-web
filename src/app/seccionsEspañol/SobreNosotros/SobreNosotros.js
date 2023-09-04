@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./aboutUs.module.css";
+import styles from "./SobreNosotros.module.css";
 
-const AboutUs = () => {
+const SobreNosotros = () => {
   return (
     <section
       data-text-color="black"
@@ -12,13 +12,14 @@ const AboutUs = () => {
         className={styles.article}
         aria-label="section where we talk about what we do, produce and export the best fruits"
       >
-        <h3>What we do</h3>
+        <h3>Que hacemos</h3>
         <div className={styles.divisor}></div>
         <p className={styles.parrafo}>
           Pachamama Farms se dedica a la investigación, desarrollo, <br />
-          producción, empaque y exportación de <br />
-          frutas y verduras exóticas de alta calidad del Perú. Cada año,
-          nuestras frutas han <br />
+          producción, empaque y exportación de frutas y verduras
+          <br />
+          exóticas de alta calidad del Perú. Cada año, nuestras frutas han{" "}
+          <br />
           sido reconocidas con los mejores estándares de calidad en Europa.
         </p>
 
@@ -33,4 +34,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default SobreNosotros;

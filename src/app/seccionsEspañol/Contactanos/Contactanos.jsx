@@ -1,6 +1,6 @@
-import styles from "./contact.module.css";
+import styles from "./Contactanos.module.css";
 
-export default function ContactUs() {
+export default function Contactanos() {
   const email = "ventas@pachamamafarms.com";
 
   return (
