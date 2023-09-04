@@ -27,7 +27,6 @@ const Es = () => {
             <OurPeople></OurPeople>
             <Testimonials></Testimonials>
             <WhyPachamamaFarms></WhyPachamamaFarms> 
-            <ContactUs/>
             <FloatingIcons></FloatingIcons>
         </main>
     )
