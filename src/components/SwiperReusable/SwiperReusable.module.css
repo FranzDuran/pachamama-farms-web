@@ -35,7 +35,7 @@
     margin: 0;
     object-fit: cover;
     object-position: center;
-    max-height: 314px;
+
 }
 
 .text {
@@ -98,6 +98,7 @@
 
     .card img {
         width: 100%;
+        max-height: 220px;
     }
 
     .imageCount {
