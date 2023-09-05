@@ -10,7 +10,7 @@ const SobreNosotros = () => {
     >
       <article
         className={styles.article}
-        aria-label="section where we talk about what we do, produce and export the best fruits"
+        aria-label="sección donde hablamos de lo que hacemos, producimos y exportamos las mejores frutas"
       >
         <h3>Que hacemos</h3>
         <div className={styles.divisor}></div>

@@ -76,7 +76,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
         <SwiperSlide>
           <article
             className={styles.divContenido}
-            aria-label="article about fruits with background image text and button to display a modal with a youtube video"
+            aria-label="artículo sobre frutas con texto de imagen de fondo y botón para mostrar un modal con un video de youtube"
           >
             <div className={styles.divTexto}>
               <h2>
@@ -89,7 +89,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
                   src={PlayImg}
                   width={20}
                   height={20}
-                  alt="play logo to start the video of quality fruits and agricultural products"
+                  alt="reproducir logo para iniciar el video de frutas y productos agrícolas de calidad"
                   title="play logo"
                   className={styles.logoPlay}
                 />
@@ -100,8 +100,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
         <SwiperSlide>
           <article
             className={styles.divContenido2}
-            aria-label="article about fruits with background image text and button to display a modal with a youtube video"
-          >
+            aria-label="artículo sobre frutas con texto de imagen de fondo y botón para mostrar un modal con un video de youtube">
             <div className={styles.divTexto}>
               <h2>
                 Sabemos que solo los mejores lugares pueden <br />
@@ -113,7 +112,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
                   src={PlayImg}
                   width={20}
                   height={20}
-                  alt="play logo to start the video of quality fruits and agricultural products "
+                  alt="reproducir logo para iniciar el video de frutas y productos agrícolas de calidad "
                   title="play logo"
                   className={styles.logoPlay}
                 />
@@ -124,7 +123,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
         <SwiperSlide>
           <article
             className={styles.divContenido3}
-            aria-label="article about fruits with background image text and button to display a modal with a youtube video"
+            aria-label="artículo sobre frutas con texto de imagen de fondo y botón para mostrar un modal con un video de youtube"
           >
             <div className={styles.divTexto}>
               <h2>
@@ -138,7 +137,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
                   src={PlayImg}
                   width={20}
                   height={20}
-                  alt="play logo to start the video of quality fruits and agricultural products"
+                  alt="reproducir logo para iniciar el video de frutas y productos agrícolas de calidad"
                   title="play logo"
                   className={styles.logoPlay}
                 />

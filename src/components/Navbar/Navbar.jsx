@@ -15,8 +15,8 @@ const Navbar = () => {
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [activeSection, setActiveSection] = useState(null);
 
-  const currentURL = window.location.href;
-  const ultimasDosLetras = currentURL.slice(-2);
+  const currentURL2 = window.location.href;
+  const ultimasDosLetras = currentURL2.slice(-2);
 
   const toggleMenu = () => {
     if (isMenuOpen) {

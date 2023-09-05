@@ -8,11 +8,11 @@ import SwiperPachamama from "./SwiperPachamama";
 const PorquePachamamaFarms = () => {
   return (
     <section className={styles.container} id="pachamama" data-text-color="black" >
-      <Image src={image} title="background of our crop fields" alt="background of our large fields of crops" width="auto" height="auto" className={styles.imgDesktop}/>
+      <Image src={image} title="fondo de nuestros campos de cultivo" alt="Antecedentes de nuestros grandes campos de cultivos." width="auto" height="auto" className={styles.imgDesktop}/>
       <article className={styles.cardsContainer}>
         {data.map((item, index) => (
           <div className={styles.card} key={index}>
-          <Image src={item.image} title="icon about our great virtues" alt="icon where we talk about our excellent work team,Certified guarantee,Innovation" width="auto" height="auto" />
+          <Image src={item.image} title="icono sobre nuestras grandes virtudes" alt="icono donde hablamos de nuestro excelente equipo de trabajo,Garantía certificada,Innovación" width="auto" height="auto" />
           <h2>{item.title}</h2>
           <p>{item.paragraph}</p>
         </div>

@@ -60,8 +60,8 @@ export default function SwiperCarrousel (){
       >
         <SwiperSlide>
           <article className={styles.divContenido}>
-          <Image src={img1} alt="background fruits and products we sell" title='background fruits' width="auto" height="auto" className={styles.img}/>
-          <Image src={img4} alt="background fruits and products that we sell to show in responsive version" title="responsive fruit background" width="auto" height="auto" className={styles.imgMobile}/>
+          <Image src={img1} alt="fondo frutas y productos que vendemos" title='frutas de fondo' width="auto" height="auto" className={styles.img}/>
+          <Image src={img4} alt="Fondo de frutas y productos que vendemos para mostrar en versión responsiva." title="fondo de fruta " width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3 className={styles.español}>
               El secreto de nuestras frutas  <br/>
@@ -72,8 +72,8 @@ export default function SwiperCarrousel (){
         </SwiperSlide>
         <SwiperSlide>
           <article className={styles.divContenido}>
-          <Image src={img2}  alt="background fruits and products we sell" title='background fruits' width="auto" height="auto" className={styles.img}/>
-          <Image src={img5} alt="background fruits and products that we sell to show in responsive version" title="responsive fruit background" width="auto" height="auto" className={styles.imgMobile}/>
+          <Image src={img2}  alt="fondo frutas y productos que vendemos" title='frutas de fondo' width="auto" height="auto" className={styles.img}/>
+          <Image src={img5} alt="Fondo de frutas y productos que vendemos para mostrar en versión responsiva." title="fondo de fruta " width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
               Trabajamos todos los días para producir  <br/>
@@ -84,8 +84,8 @@ export default function SwiperCarrousel (){
         </SwiperSlide>
         <SwiperSlide>
           <article className={styles.divContenido}>
-          <Image src={img3}  alt="background fruits and products we sell" title='background fruits' width="auto" height="auto" className={styles.img}/>
-          <Image src={img6} alt="background fruits and products that we sell to show in responsive version" title="responsive fruit background" width="auto" height="auto" className={styles.imgMobile}/>
+          <Image src={img3}  alt="fondo frutas y productos que vendemos" title='frutas de fondo' width="auto" height="auto" className={styles.img}/>
+          <Image src={img6} alt="Fondo de frutas y productos que vendemos para mostrar en versión responsiva." title="fondo de fruta " width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
               Calidad, calidad y calidad.

@@ -94,12 +94,12 @@ export default function SwiperPeople() {
         <SwiperSlide>
           <article
             className={styles.divContenido}
-            aria-label="article about the workers and how we strive to have the best quality products"
+            aria-label="artículo sobre los trabajadores y cómo nos esforzamos por tener productos de la mejor calidad"
           >
             <Image
               src={img2}
               alt="Female worker checking the quality of fruits."
-              title="Female worker checking the quality"
+              title="Trabajadora comprobando la calidad."
               width="auto"
               height="auto"
               className={styles.img}
@@ -107,7 +107,7 @@ export default function SwiperPeople() {
             <Image
               src={img6}
               alt="Female worker checking the quality of fruits."
-              title="Female worker checking the quality"
+              title="Trabajadora comprobando la calidad."
               width="auto"
               height="auto"
               className={styles.imgMobile}
@@ -124,20 +124,20 @@ export default function SwiperPeople() {
         <SwiperSlide>
           <article
             className={styles.divContenido}
-            aria-label="article about the workers and how we strive to have the best quality products"
+            aria-label="artículo sobre los trabajadores y cómo nos esforzamos por tener productos de la mejor calidad"
           >
             <Image
               src={img3}
-              alt="worker collecting fruits from farm fields"
-              title="worker picking fruits"
+              alt="Trabajador recogiendo frutas de campos agrícolas"
+              title="Trabajador recogiendo frutas"
               width="auto"
               height="auto"
               className={styles.img}
             />
             <Image
               src={img7}
-              alt="worker collecting fruits from farm fields"
-              title="worker picking fruits"
+              alt="Trabajador recogiendo frutas de campos agrícolas"
+              title="Trabajador recogiendo frutas"
               width="auto"
               height="auto"
               className={styles.imgMobile}
@@ -154,20 +154,20 @@ export default function SwiperPeople() {
         <SwiperSlide>
           <article
             className={styles.divContenido}
-            aria-label="article about the workers and how we strive to have the best quality products"
+            aria-label="artículo sobre los trabajadores y cómo nos esforzamos por tener productos de la mejor calidad"
           >
             <Image
               src={img4}
-              alt="worker resting after a day of work"
-              title="female worker resting"
+              alt="Trabajadora descansando después de un día de trabajo"
+              title="trabajador descansando"
               width="auto"
               height="auto"
               className={styles.img}
             />
             <Image
               src={img8}
-              alt="worker resting after a day of work"
-              title="female worker resting"
+              alt="Trabajador descansando después de un día de trabajo."
+              title="trabajador descansando"
               width="auto"
               height="auto"
               className={styles.imgMobile}

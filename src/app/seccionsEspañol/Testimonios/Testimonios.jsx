@@ -65,7 +65,7 @@ export default function Testimonios() {
             {data.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className={styles.card}>
-                  <Image src={item.image} title="employee testimonial" alt="testimonial article where they talk about how we work for and for the environment" width="auto" height="auto" />
+                  <Image src={item.image} title="testimonio de empleado" alt="artículo testimonial donde hablan de cómo trabajamos por y para el medio ambiente" width="auto" height="auto" />
                   <div className={styles.text}>
                     <h2>{item.title}</h2>
                     <p>{item.paragraph}</p>

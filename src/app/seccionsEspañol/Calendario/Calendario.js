@@ -15,21 +15,21 @@ const Calendario = () => {
           <Image
             src={calendar}
             alt="calendar showing the months in which all fruits are grown"
-            title="crop calendar"
+            title="calendario de cultivos"
             className={styles.calendarImg}
           />
           
           <Image
             src={CalendarImg}
-            alt="seasonal calendar where all fruits are grown"
-            title="season calendar"
+            alt="calendario estacional donde se cultivan todas las frutas"
+            title="calendario de temporada"
             className={styles.CalendarInfoIMG}
           />
 
             <Image
             src={calendarioMobile}
-            alt="responsive crop calendar "
-            title="Calendar showing the months in which all responsive fruits are grown"
+            alt=" calendario de cultivos responsivo "
+            title="Calendario que muestra los meses en los que se cultivan todas las frutas que responden."
             className={styles.CalendarResponsive}
           />
         </div>

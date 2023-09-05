@@ -28,8 +28,8 @@ export default function Compromiso() {
         <Image
           src={logoImg}
           className={styles.logos}
-          title="logos of the partners and clients that collaborate with Pachamama Farms"
-          alt="partner and customer logos"
+          title="logos de los socios y clientes que colaboran con Pachamama Farms"
+          alt="logotipos de socios y clientes"
         />
       </article>
     </section>
