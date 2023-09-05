@@ -3,6 +3,7 @@ import './globals.css'
 import fontsConfig from './fonts';
 import Navbar from '@/components/Navbar/Navbar';
 import ContactUs from './seccions/ContactUs/ContactUs';
+import Prueba from '@/components/prueba/prueba';
 
 export const metadata = {
   title: 'Dedicated to research, development, producing, packing and exporting high quality exotic fruits ',
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body className={applyFontsClasses()} style={{ margin: 0, fontWeight: '600' }}>
        <header>
           <Navbar></Navbar>
+          {/* <Prueba></Prueba> */}
        </header>
         {children}
         <footer>

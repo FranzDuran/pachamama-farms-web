@@ -8,6 +8,10 @@ import iconoClaro from "./icono-claro.png";
 import iconoOscuro from "./icono-oscuro.png";
 import iconClose from "./icon-close.png";
 import Link from "next/link";
+import { useRouter } from 'next/navigation';
+
+
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,6 +19,7 @@ const Navbar = () => {
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [activeSection, setActiveSection] = useState(null);
 
+  const router = useRouter();
   /* const currentURL2 = window.location.href;
   const ultimasDosLetras = currentURL2.slice(-2); */
 
@@ -63,7 +68,6 @@ const Navbar = () => {
         setIsMenuOpen(false);
       }
     };
-
     document.addEventListener("click", handleDocumentClick);
 
     window.addEventListener("scroll", handleScroll);
@@ -74,6 +78,8 @@ const Navbar = () => {
     };
   }, []);
 
+
+  
   return (
     <nav
       className={`${styles.navbar} ${
