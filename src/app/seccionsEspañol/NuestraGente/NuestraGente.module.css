@@ -1,0 +1,83 @@
+.divContenido {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.divContenido img {
+    width: 100vw;
+    height: auto;
+}
+
+.divTexto {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    /* Llevará la parte superior del h2 al 50% de altura del div */
+    left: 50%;
+    /* Llevará la izquierda del h2 al 50% del ancho del div */
+    transform: translate(-50%, -50%);
+    /* Centrar completamente el h2 */
+    width: 80%;
+}
+
+.divTexto h3 {
+    font-size: 3.75rem;
+    text-align: center;
+    font-weight: 300;
+    color: #ffff;
+    font-style: normal;
+    font-family: "Periodico";
+}
+
+.imgMobile{
+    display: none;
+}
+
+@media screen and (min-width: 1800px) {
+
+    /* Agrega aquí tus estilos personalizados */
+    .divTexto h3 {
+        font-size: 2.4rem;
+    }
+
+}
+
+@media screen and (max-width: 1023px){
+
+    .divTexto {
+        top: 45%;
+    }
+    .divTexto h3{
+        width: 100%;
+    }
+
+    
+    .divContenido img{
+        width: auto;
+        height: 100vh;
+        object-position: center !important;
+        object-fit: cover;
+    }
+  }
+
+
+@media (max-width: 920px) {
+    .divTexto h3 {
+        font-size: 35px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .img{
+        display: none;
+    }
+    .imgMobile{
+        display: flex;
+        width: 100vw !important;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+}

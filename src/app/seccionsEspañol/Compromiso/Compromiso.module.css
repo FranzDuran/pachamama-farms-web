@@ -1,0 +1,94 @@
+.sectionCompromise {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fbf8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.articleCompromise {
+  height: auto;
+  width: 92vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.articleCompromise h3 {
+  color: #302920;
+  font-size: 1.25rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.divisor {
+  margin-top: 1.6vw;
+  width: 5.3vw;
+  height: 0px;
+  border: 1.3px solid rgb(144, 138, 138);
+}
+
+.parrafo {
+  margin-top: 2vw;
+  width: 100%;
+  color: #423b30;
+  font-size: 2.25rem;
+  text-align: center;
+  line-height: 2.8vw;
+  font-family: 'Periodico Display Light';
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.logos{
+    width: 30vw;
+    height: auto;
+    margin-top: 2.5vw;
+}
+
+
+
+@media (max-width: 920px) {
+
+
+    .articleCompromise {
+      width: 90vw;
+      height: auto;
+      padding: 0;
+    }
+  
+    .articleCompromise h3 {
+      font-size: 19px;
+    }
+  
+    .divisor {
+      width: 80px;
+      margin-top: 18px;
+    }
+  
+    .parrafo {
+      font-size: 16px;
+      width: 90vw;
+      height: auto;
+      margin-top: 8vw;
+      line-height: 15px;
+      display: flex; /* Usar flexbox */
+      align-items: center; /* Centrar verticalmente */
+      justify-content: center; /* Centrar horizontalmente */
+    }
+  
+    .parrafo br {
+      display: none;
+    }
+
+    .logos{
+        width: 70vw;
+        height: 12vw;
+        margin-top: 8vw;
+    }
+  
+  }

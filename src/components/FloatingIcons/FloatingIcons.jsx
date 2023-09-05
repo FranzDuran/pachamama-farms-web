@@ -12,10 +12,12 @@ import iconYoutubeOscuro from "./assets/ico_youtube_oscuro.png";
 import LikedinClaro from "./assets/LinkedinClaro.png";
 import linkedinOscuro from "./assets/LinkedinOscuro.png";
 
-
 const FloatingIcons = () => {
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [isLastSection, setIsLastSection] = useState(false);
+
+  const currentURL = window.location.href;
+  const ultimasDosLetras = currentURL.slice(-2);
 
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
@@ -75,7 +77,9 @@ const FloatingIcons = () => {
     <div
       className={`${styles.floatingIconsContainer} ${styles[menuTextColor]}`}
     >
-      <span className={`${styles.textIcon} `}>Find us in</span>
+      <span className={`${styles.textIcon} `}>
+        {ultimasDosLetras === "es" ? "Encuéntranos en" : "Find us in"}
+      </span>
       <span className={`${styles.linkedinIcon} `}>
         <Link
           href="https://www.linkedin.com/company/pachamama-farms-sac/"
@@ -85,9 +89,21 @@ const FloatingIcons = () => {
         >
           {/* <i className="ri-youtube-fill"></i> */}
           {menuTextColor === "white" ? (
-            <Image src={LikedinClaro} title="Likedin icon" alt="white Likedin icon to show on dark backgrounds" width="auto" height="auto" />
+            <Image
+              src={LikedinClaro}
+              title="Likedin icon"
+              alt="white Likedin icon to show on dark backgrounds"
+              width="auto"
+              height="auto"
+            />
           ) : (
-            <Image src={linkedinOscuro} title="Likedin icon"  alt="black Likedin icon to show on claros backgrounds" width="auto" height="auto" />
+            <Image
+              src={linkedinOscuro}
+              title="Likedin icon"
+              alt="black Likedin icon to show on claros backgrounds"
+              width="auto"
+              height="auto"
+            />
           )}
         </Link>
       </span>
@@ -99,9 +115,19 @@ const FloatingIcons = () => {
           target="_blank"
         >
           {menuTextColor === "white" ? (
-            <Image src={iconYoutubeClaro} title="youtube icon" alt="white youtube icon to show on dark backgrounds" height="auto" />
+            <Image
+              src={iconYoutubeClaro}
+              title="youtube icon"
+              alt="white youtube icon to show on dark backgrounds"
+              height="auto"
+            />
           ) : (
-            <Image src={iconYoutubeOscuro} title="youtube icon"  alt="black youtube icon to show on claros backgrounds" height="auto" />
+            <Image
+              src={iconYoutubeOscuro}
+              title="youtube icon"
+              alt="black youtube icon to show on claros backgrounds"
+              height="auto"
+            />
           )}
         </Link>
       </span>
@@ -113,9 +139,21 @@ const FloatingIcons = () => {
         }}
       >
         {menuTextColor === "white" ? (
-          <Image src={flechawhite}title="white arrow" alt="light arrow to advance to the next section when the background is dark" width="auto" height="auto" />
+          <Image
+            src={flechawhite}
+            title="white arrow"
+            alt="light arrow to advance to the next section when the background is dark"
+            width="auto"
+            height="auto"
+          />
         ) : (
-          <Image src={flechablack}title="dark arrow" alt="dark arrow to advance to the next section when the background is ligh" width="auto" height="auto" />
+          <Image
+            src={flechablack}
+            title="dark arrow"
+            alt="dark arrow to advance to the next section when the background is ligh"
+            width="auto"
+            height="auto"
+          />
         )}
       </span>
     </div>
