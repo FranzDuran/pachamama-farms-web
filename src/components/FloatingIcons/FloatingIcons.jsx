@@ -16,8 +16,8 @@ const FloatingIcons = () => {
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [isLastSection, setIsLastSection] = useState(false);
 
-  const currentURL = window.location.href;
-  const ultimasDosLetras = currentURL.slice(-2);
+  /* const currentURL = window.location.href;
+  const ultimasDosLetras = currentURL.slice(-2); */
 
   const handleScroll = () => {
     const sections = document.querySelectorAll("section");
@@ -78,7 +78,8 @@ const FloatingIcons = () => {
       className={`${styles.floatingIconsContainer} ${styles[menuTextColor]}`}
     >
       <span className={`${styles.textIcon} `}>
-        {ultimasDosLetras === "es" ? "Encuéntranos en" : "Find us in"}
+      Find us in
+        {/* {ultimasDosLetras === "es" ? "Encuéntranos en" : "Find us in"} */}
       </span>
       <span className={`${styles.linkedinIcon} `}>
         <Link

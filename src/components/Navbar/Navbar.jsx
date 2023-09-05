@@ -15,8 +15,8 @@ const Navbar = () => {
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [activeSection, setActiveSection] = useState(null);
 
-  const currentURL2 = window.location.href;
-  const ultimasDosLetras = currentURL2.slice(-2);
+  /* const currentURL2 = window.location.href;
+  const ultimasDosLetras = currentURL2.slice(-2); */
 
   const toggleMenu = () => {
     if (isMenuOpen) {
@@ -177,7 +177,7 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          {ultimasDosLetras === "es" ? "Inicio" : "Home"}
+          {language === "es" ? "Inicio" : "Home"}
         </li>
         <li
           onClick={() => {
@@ -185,7 +185,7 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          {ultimasDosLetras === "es" ? "Sobre Nosotros" : "About us"}
+          {language === "es" ? "Sobre Nosotros" : "About us"}
         </li>
         <li
           onClick={() => {
@@ -193,7 +193,7 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          {ultimasDosLetras === "es" ? "Calendario" : "Calendar"}
+          {language === "es" ? "Calendario" : "Calendar"}
         </li>
         <li
           onClick={() => {
@@ -201,7 +201,7 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          {ultimasDosLetras === "es" ? "Certificaciones" : "Certifications"}
+          {language === "es" ? "Certificaciones" : "Certifications"}
         </li>
         <li
           onClick={() => {
@@ -209,7 +209,7 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          {ultimasDosLetras === "es" ? "Nuestras frutas" : "Our fruits"}
+          {language === "es" ? "Nuestras frutas" : "Our fruits"}
         </li>
         <li
           id={styles.borderLi}
@@ -218,7 +218,7 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          {ultimasDosLetras === "es" ? "Contáctanos" : "Contact us"}
+          {language === "es" ? "Contáctanos" : "Contact us"}
         </li>
       </ul>
     </nav>

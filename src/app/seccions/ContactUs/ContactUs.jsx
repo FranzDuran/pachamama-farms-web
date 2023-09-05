@@ -3,14 +3,14 @@ import styles from "./contact.module.css";
 
 export default function ContactUs() {
   const email = "ventas@pachamamafarms.com";
-  const currentURL = window.location.href;
-  const ultimasDosLetras = currentURL.slice(-2);
+  /* const currentURL = window.location.href;
+  const ultimasDosLetras = currentURL.slice(-2); */
 
   return (
     <section className={styles.container} data-text-color="white" id="contact">
       <div className={styles.content}>
         <div className={styles["small-text"]}>
-          <span> {ultimasDosLetras === "es" ? "Contáctanos" : "Get in touch"}</span>
+          <span>Get in touch {/* {ultimasDosLetras === "es" ? "Contáctanos" : "Get in touch"} */}</span>
           <span className={styles.line} />
         </div>
         <div className={styles["big-text"]}>
