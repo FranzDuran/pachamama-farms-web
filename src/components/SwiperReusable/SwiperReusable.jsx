@@ -92,7 +92,7 @@ export default function SwiperReusable({ data }) {
             {data.cards.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className={styles.card}>
-                  <Image src={item.image} alt="pachamama farms facilities and workers growing quality fruits" title="facilities and workers cultivating" width="auto" height="auto" />
+                  <Image src={item.image} alt="pachamama farms facilities and workers growing quality fruits || pachamama_farms_high_quality_exotic_fruits_vegetables_peru" title="facilities and workers cultivating" width="auto" height="auto" />
                 </div>
               </SwiperSlide>
             ))}

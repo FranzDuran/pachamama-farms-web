@@ -60,8 +60,8 @@ export default function SwiperCarrousel (){
       >
         <SwiperSlide>
           <article className={styles.divContenido}>
-          <Image src={img1} alt="background fruits and products we sell" title='background fruits' width="auto" height="auto" className={styles.img}/>
-          <Image src={img4} alt="background fruits and products that we sell to show in responsive version" title="responsive fruit background" width="auto" height="auto" className={styles.imgMobile}/>
+          <Image src={img1} alt="background fruits and products we sell || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_assets/4.jpg" title='background fruits' width="auto" height="auto" className={styles.img}/>
+          <Image src={img4} alt="background fruits and products that we sell to show in responsive version || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_assets/mobile4.jpg" title="responsive fruit background" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
               We work everyday to bring <br/>
@@ -72,8 +72,8 @@ export default function SwiperCarrousel (){
         </SwiperSlide>
         <SwiperSlide>
           <article className={styles.divContenido}>
-          <Image src={img2}  alt="background fruits and products we sell" title='background fruits' width="auto" height="auto" className={styles.img}/>
-          <Image src={img5} alt="background fruits and products that we sell to show in responsive version" title="responsive fruit background" width="auto" height="auto" className={styles.imgMobile}/>
+          <Image src={img2}  alt="background fruits and products we sell || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_assets/5.jpg" title='background fruits' width="auto" height="auto" className={styles.img}/>
+          <Image src={img5} alt="background fruits and products that we sell to show in responsive version || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_assets/mobile5.jpg" title="responsive fruit background" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
               We work everyday to bring <br/>
@@ -84,8 +84,8 @@ export default function SwiperCarrousel (){
         </SwiperSlide>
         <SwiperSlide>
           <article className={styles.divContenido}>
-          <Image src={img3}  alt="background fruits and products we sell" title='background fruits' width="auto" height="auto" className={styles.img}/>
-          <Image src={img6} alt="background fruits and products that we sell to show in responsive version" title="responsive fruit background" width="auto" height="auto" className={styles.imgMobile}/>
+          <Image src={img3}  alt="background fruits and products we sell || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_assets/6.jpg " title='background fruits' width="auto" height="auto" className={styles.img}/>
+          <Image src={img6} alt="background fruits and products that we sell to show in responsive version || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_assets/mobile6.jpg " title="responsive fruit background" width="auto" height="auto" className={styles.imgMobile}/>
             <div className={styles.divTexto}>
               <h3>
               We work everyday to bring <br/>

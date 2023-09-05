@@ -13,14 +13,14 @@ const Calendar = () => {
         <div className={styles.divCalendar}>
           <Image
             src={calendar}
-            alt="calendar showing the months in which all fruits are grown"
+            alt="calendar showing the months in which all fruits are grown || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_calendar.png"
             title="crop calendar"
             className={styles.calendarImg}
           />
           
           <Image
             src={CalendarImg}
-            alt="seasonal calendar where all fruits are grown"
+            alt="seasonal calendar where all fruits are grown || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_CalendarInfo.png "
             title="season calendar"
             className={styles.CalendarInfoIMG}
           />
@@ -28,7 +28,7 @@ const Calendar = () => {
             <Image
             src={calendarResponsive}
             alt="responsive crop calendar "
-            title="Calendar showing the months in which all responsive fruits are grown"
+            title="Calendar showing the months in which all responsive fruits are grown || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_calendario_mobile.png "
             className={styles.CalendarResponsive}
           />
         </div>
