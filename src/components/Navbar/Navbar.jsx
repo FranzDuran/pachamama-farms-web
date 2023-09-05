@@ -9,21 +9,16 @@ import iconoOscuro from "./icono-oscuro.png";
 import iconClose from "./icon-close.png";
 import Link from "next/link";
 
-import { useRouter } from 'next/navigation'
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [language, setLanguage] = useState("en"); // Default language is English
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [activeSection, setActiveSection] = useState(null);
 
-  const router = useRouter()
-  /* console.log(router) */
+  const currentURL = window.location.href;
+  const ultimasDosLetras = currentURL.slice(-2);
 
   const toggleMenu = () => {
-    const urlActual = router.asPath;
-    /* console.log(urlActual) */
-
     if (isMenuOpen) {
       // Antes de cerrar el menú, desactiva el scroll suave
       document.documentElement.style.scrollBehavior = "auto";
@@ -90,9 +85,21 @@ const Navbar = () => {
         onClick={handleLogoClick}
       >
         {menuTextColor === "white" ? (
-          <Image src={logoWhite} alt="white Pachamama farms logo for dark backgrounds" title="dark logo"  width="auto" height="auto" />
+          <Image
+            src={logoWhite}
+            alt="white Pachamama farms logo for dark backgrounds"
+            title="dark logo"
+            width="auto"
+            height="auto"
+          />
         ) : (
-          <Image src={logoBlack} alt="white Pachamama farms logo for light backgrounds"  title="clear logo" width="auto" height="auto" />
+          <Image
+            src={logoBlack}
+            alt="white Pachamama farms logo for light backgrounds"
+            title="clear logo"
+            width="auto"
+            height="auto"
+          />
         )}
       </div>
       <div className={styles.menuIzq}>
@@ -140,9 +147,21 @@ const Navbar = () => {
               className={styles.iconx}
             />
           ) : menuTextColor === "white" ? (
-            <Image src={iconoClaro} alt="light hamburger menu icon for dark backgrounds, to open the dropdown menu" title="clear hamburger menu icon" width="auto" height="auto" />
+            <Image
+              src={iconoClaro}
+              alt="light hamburger menu icon for dark backgrounds, to open the dropdown menu"
+              title="clear hamburger menu icon"
+              width="auto"
+              height="auto"
+            />
           ) : (
-            <Image src={iconoOscuro} alt="dark hamburger menu icon for dark backgrounds, to open the dropdown menu" title="dark hamburger menu icon" width="auto" height="auto" />
+            <Image
+              src={iconoOscuro}
+              alt="dark hamburger menu icon for dark backgrounds, to open the dropdown menu"
+              title="dark hamburger menu icon"
+              width="auto"
+              height="auto"
+            />
           )}
         </div>
       </div>
@@ -158,9 +177,7 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          {
-            language === "en" ? "Home" : "Pagina Principal"
-          }
+          {ultimasDosLetras === "es" ? "Inicio" : "Home"}
         </li>
         <li
           onClick={() => {
@@ -168,9 +185,7 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          {
-            language === "en" ? "About us" : "Sobre Nosotros"
-          }
+          {ultimasDosLetras === "es" ? "Sobre Nosotros" : "About us"}
         </li>
         <li
           onClick={() => {
@@ -178,9 +193,7 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          {
-            language === "en" ? "Calendar" : "Calendario"
-          }     
+          {ultimasDosLetras === "es" ? "Calendario" : "Calendar"}
         </li>
         <li
           onClick={() => {
@@ -188,9 +201,7 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          {
-            language === "en" ? "Certifications" : "Certificaciones"
-          } 
+          {ultimasDosLetras === "es" ? "Certificaciones" : "Certifications"}
         </li>
         <li
           onClick={() => {
@@ -198,10 +209,7 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          {
-            language === "en" ? "Our fruits" : "Nuestras frutas"
-          } 
-          
+          {ultimasDosLetras === "es" ? "Nuestras frutas" : "Our fruits"}
         </li>
         <li
           id={styles.borderLi}
@@ -210,10 +218,7 @@ const Navbar = () => {
             toggleMenu();
           }}
         >
-          {
-            language === "en" ? "Contact us" : "Contacta con nosotros"
-          }
-          
+          {ultimasDosLetras === "es" ? "Contáctanos" : "Contact us"}
         </li>
       </ul>
     </nav>
