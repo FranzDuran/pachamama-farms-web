@@ -52,6 +52,8 @@ const Navbar = () => {
       const rect = section.getBoundingClientRect();
       if (rect.top <= 20 && rect.bottom >= 20) {
         setMenuTextColor(section.dataset.textColor || "white");
+        // const newURL = `${window.location.pathname}#prueba}`;
+        // window.history.replaceState({}, document.title, newURL);
       }
     });
   };
@@ -71,7 +73,7 @@ const Navbar = () => {
     document.addEventListener("click", handleDocumentClick);
 
     window.addEventListener("scroll", handleScroll);
-
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("click", handleDocumentClick);
