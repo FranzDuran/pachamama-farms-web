@@ -239,7 +239,8 @@
     padding: 1rem 1.5rem;
   }
   .menu{
-    height: 95vh;
+    height: 100vh;
+    padding: 0;
   }
   .menu li {
     font-size: 18px;
