@@ -8,6 +8,10 @@ import iconoClaro from "./icono-claro.png";
 import iconoOscuro from "./icono-oscuro.png";
 import iconClose from "./icon-close.png";
 import Link from "next/link";
+import { useRouter } from 'next/navigation';
+
+
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,6 +19,7 @@ const Navbar = () => {
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [activeSection, setActiveSection] = useState(null);
 
+  const router = useRouter();
   /* const currentURL2 = window.location.href;
   const ultimasDosLetras = currentURL2.slice(-2); */
 
@@ -47,6 +52,8 @@ const Navbar = () => {
       const rect = section.getBoundingClientRect();
       if (rect.top <= 20 && rect.bottom >= 20) {
         setMenuTextColor(section.dataset.textColor || "white");
+        // const newURL = `${window.location.pathname}#prueba}`;
+        // window.history.replaceState({}, document.title, newURL);
       }
     });
   };
@@ -63,17 +70,18 @@ const Navbar = () => {
         setIsMenuOpen(false);
       }
     };
-
     document.addEventListener("click", handleDocumentClick);
 
     window.addEventListener("scroll", handleScroll);
-
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("click", handleDocumentClick);
     };
   }, []);
 
+
+  
   return (
     <nav
       className={`${styles.navbar} ${
