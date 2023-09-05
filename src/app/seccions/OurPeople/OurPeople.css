@@ -1,0 +1,11 @@
+.swiper-button-prev {
+    color: #ffff !important;
+    margin-left: 14% !important;
+    border: none;
+  }
+  
+  .swiper-button-next {
+    color: #ffff !important;
+    margin-right: 14% !important;
+    border: none;
+  }
