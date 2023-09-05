@@ -1,6 +1,6 @@
-import icon1 from "./assets/icon1.png";
-import icon2 from "./assets/icon2.png";
-import icon3 from "./assets/icon3.png";
+import icon1 from "./assets/sello1.png";
+import icon2 from "./assets/sello2.png";
+import icon3 from "./assets/sello3.png";
 
 export const data = [
     {
