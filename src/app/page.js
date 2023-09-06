@@ -5,7 +5,7 @@ import FloatingIcons from "@/components/FloatingIcons/FloatingIcons";
 import Calendar from "./seccions/calendar/calenadar";
 import WhyPachamamaFarms from "./seccions/WhyPachamamaFarms/WhyPachamamaFarms";
 import Compromise from "./seccions/compromise/compromise";
-import OurFruits from "./seccions/OurFruits/OurFruits";
+//import OurFruits from "./seccions/OurFruits/OurFruits";
 import OurPeople from "./seccions/OurPeople/OurPeople";
 import Testimonials from "./seccions/Testimonials/Testimonials";
 import AboutUs from "./seccions/aboutUs/aboutUs";
@@ -19,7 +19,7 @@ export default function Home() {
       <PackHouse text={'Packhouse'}/>
       <Calendar/>
       <Compromise/>
-      <OurFruits text={'Kent mangos'}/>
+      {/* <OurFruits text={'Kent mangos'}/> */}
       <OurPeople/>
       <Testimonials/>
       <WhyPachamamaFarms/> 
