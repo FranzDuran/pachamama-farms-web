@@ -8,10 +8,7 @@ import iconoClaro from "./icono-claro.png";
 import iconoOscuro from "./icono-oscuro.png";
 import iconClose from "./icon-close.png";
 import Link from "next/link";
-import { useRouter } from 'next/navigation';
-
-
-
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,8 +17,6 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState(null);
 
   const router = useRouter();
-  /* const currentURL2 = window.location.href;
-  const ultimasDosLetras = currentURL2.slice(-2); */
 
   const toggleMenu = () => {
     if (isMenuOpen) {
@@ -58,10 +53,18 @@ const Navbar = () => {
     });
   };
 
-  const handleClickNav = (scrollToId) => {
+  /* const handleClickNav = (scrollToId) => {
     document.getElementById(scrollToId)?.scrollIntoView({ behavior: "smooth" });
 
     setActiveSection(scrollToId);
+  }; */
+  const handleClickNav = (scrollToId) => {
+    const element = document.getElementById(scrollToId);
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setActiveSection(scrollToId);
+    }
   };
 
   useEffect(() => {
@@ -73,15 +76,13 @@ const Navbar = () => {
     document.addEventListener("click", handleDocumentClick);
 
     window.addEventListener("scroll", handleScroll);
-    
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("click", handleDocumentClick);
     };
   }, []);
 
-
-  
   return (
     <nav
       className={`${styles.navbar} ${
@@ -180,53 +181,65 @@ const Navbar = () => {
         }`}
       >
         <li
-          onClick={() => {
+        /* onClick={() => {
             handleClickNav("home");
             toggleMenu();
-          }}
+          }} */
         >
-          {language === "es" ? "Inicio" : "Home"}
+          <Link href="/#home" onClick={() => toggleMenu()}>
+            {language === "es" ? "Inicio" : "Home"}
+          </Link>
         </li>
         <li
-          onClick={() => {
+        /* onClick={() => {
             handleClickNav("about");
             toggleMenu();
-          }}
+          }} */
         >
-          {language === "es" ? "Sobre Nosotros" : "About us"}
+          <Link href="/#about" onClick={() => toggleMenu()}>
+            {language === "es" ? "Sobre Nosotros" : "About us"}
+          </Link>
         </li>
         <li
-          onClick={() => {
+        /* onClick={() => {
             handleClickNav("calendar");
             toggleMenu();
-          }}
+          }} */
         >
-          {language === "es" ? "Calendario" : "Calendar"}
+          <Link href="/#calendar" onClick={() => toggleMenu()}>
+            {language === "es" ? "Calendario" : "Calendar"}
+          </Link>
         </li>
         <li
-          onClick={() => {
+        /* onClick={() => {
             handleClickNav("certifications");
             toggleMenu();
-          }}
+          }} */
         >
-          {language === "es" ? "Certificaciones" : "Certifications"}
+          <Link href="/#certifications" onClick={() => toggleMenu()}>
+            {language === "es" ? "Certificaciones" : "Certifications"}
+          </Link>
         </li>
         <li
-          onClick={() => {
+        /* onClick={() => {
             handleClickNav("fruits");
             toggleMenu();
-          }}
+          }} */
         >
-          {language === "es" ? "Nuestras frutas" : "Our fruits"}
+          <Link href="/#fruits" onClick={() => toggleMenu()} >
+            {language === "es" ? "Nuestras frutas" : "Our fruits"}
+          </Link>
         </li>
         <li
           id={styles.borderLi}
-          onClick={() => {
+          /* onClick={() => {
             handleClickNav("contact");
             toggleMenu();
-          }}
+          }} */
         >
-          {language === "es" ? "Contáctanos" : "Contact us"}
+          <Link href="/#contact" onClick={() => toggleMenu()}>
+            {language === "es" ? "Contáctanos" : "Contact us"}
+          </Link>
         </li>
       </ul>
     </nav>
