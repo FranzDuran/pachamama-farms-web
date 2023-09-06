@@ -1,7 +1,7 @@
 import SwiperReusable from "../../../components/SwiperReusable/SwiperReusable";
-import image1 from "./assets/_DSC9905.jpg";
-import image2 from "./assets/_DSC8669.jpg";
-import image3 from "./assets/_DSC9565.jpg";
+import image1 from "./assets/DSC9905.png";
+import image2 from "./assets/DSC8669.png";
+import image3 from "./assets/DSC9565.png";
 import logoicon from "./assets/logoicon.png";
 
 export default function OurFruits({text}) {
