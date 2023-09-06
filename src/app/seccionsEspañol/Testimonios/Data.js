@@ -7,7 +7,7 @@ export const data = [
         image: image1,
         title: "Las personas son el motor de las granjas de Pachamama.",
         paragraph: "El trato es horizintal, abierto y dispuesto porque Pachamama es la gente que trabaja y vive diariamente. Los conocemos y ellos nos conocen. Somos exigentes y organizados pero aquí todos somos una familia.",
-        subTitle: "Amichai Rozengeld",
+        subTitle: "Amichai Rozenfeld",
         subParagraph: "Cofundador y CEO",
     },
     {
