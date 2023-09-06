@@ -52,7 +52,7 @@ export default function SwiperPachamama() {
           {data.map((item, index) => (
             <SwiperSlide key={index}>
               <div className={styles.cardMobile}>
-                <Image src={item.image} alt="icon where we talk about our excellent work team,Certified guarantee,Innovation" title="icon about our great virtues" width="auto" height="auto" />
+                <Image src={item.image} loading="lazy" alt="icon where we talk about our excellent work team,Certified guarantee,Innovation" title="icon about our great virtues" width="auto" height="auto" />
                 <h2>{item.title}</h2>
                 <p>{item.paragraph}</p>
               </div>

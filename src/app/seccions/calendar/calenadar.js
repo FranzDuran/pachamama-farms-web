@@ -15,6 +15,7 @@ const Calendar = () => {
             src={calendar}
             alt="calendar showing the months in which all fruits are grown || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_calendar.png"
             title="crop calendar"
+            loading="lazy"
             className={styles.calendarImg}
           />
           
@@ -22,6 +23,7 @@ const Calendar = () => {
             src={CalendarImg}
             alt="seasonal calendar where all fruits are grown || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_CalendarInfo.png "
             title="season calendar"
+            loading="lazy"
             className={styles.CalendarInfoIMG}
           />
 
@@ -30,6 +32,7 @@ const Calendar = () => {
             alt="responsive crop calendar "
             title="Calendar showing the months in which all responsive fruits are grown || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_calendario_mobile.png "
             className={styles.CalendarResponsive}
+            loading="lazy"
           />
         </div>
       </section>

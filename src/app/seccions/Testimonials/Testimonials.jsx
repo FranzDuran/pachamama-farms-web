@@ -65,7 +65,7 @@ export default function Testimonials() {
             {data.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className={styles.card}>
-                  <Image src={item.image} title="employee testimonial" alt="testimonial article where they talk about how we work for and for the environment || pachamama_farms_high_quality_exotic_fruits_vegetables_peru" width="auto" height="auto" />
+                  <Image src={item.image} loading="lazy" title="employee testimonial" alt="testimonial article where they talk about how we work for and for the environment || pachamama_farms_high_quality_exotic_fruits_vegetables_peru" width="auto" height="auto" />
                   <div className={styles.text}>
                     <h2>{item.title}</h2>
                     <p>{item.paragraph}</p>

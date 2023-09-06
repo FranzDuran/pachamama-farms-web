@@ -21,6 +21,7 @@ export default function Compromise() {
         className={styles.logos}
         alt="logos of the partners and clients that collaborate with Pachamama Farms || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_logosCompromise.png "
         title="partner and customer logos"
+        loading="lazy"
         />
  
       </article>

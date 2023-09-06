@@ -93,6 +93,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
                   height={20}
                   alt="play logo to start the video of quality fruits and agricultural products"
                   title="play logo"
+                  priority
                   className={styles.logoPlay}
                 />
               </button>
@@ -117,6 +118,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
                   height={20}
                   alt="play logo to start the video of quality fruits and agricultural products "
                   title="play logo"
+                  priority
                   className={styles.logoPlay}
                 />
               </button>
@@ -141,6 +143,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
                   height={20}
                   alt="play logo to start the video of quality fruits and agricultural products"
                   title="play logo"
+                  priority
                   className={styles.logoPlay}
                 />
               </button>
