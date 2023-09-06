@@ -8,7 +8,7 @@ export default function Compromiso() {
     <section
       className={styles.sectionCompromise}
       data-text-color="black"
-      id="certifications"
+      id="certificaciones"
     >
       <article className={styles.articleCompromise}>
         <h3>Nuestro compromiso</h3>

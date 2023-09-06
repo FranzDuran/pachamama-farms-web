@@ -6,7 +6,7 @@ const SobreNosotros = () => {
     <section
       data-text-color="black"
       className={styles.sectionAboutUs}
-      id="about"
+      id="sobre nosotros"
     >
       <article
         className={styles.article}

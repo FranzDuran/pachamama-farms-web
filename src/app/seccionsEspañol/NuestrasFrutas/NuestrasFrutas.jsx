@@ -11,7 +11,7 @@ export default function NuestrasFrutas({text}) {
     cards: [{ image: image1 }, { image: image2 }, { image: image3 }],
   };
   return (
-    <section id="fruits">
+    <section id="frutas">
       <SwiperReusable data={data} />
     </section>
   );

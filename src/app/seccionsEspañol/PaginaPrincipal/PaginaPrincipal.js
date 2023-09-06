@@ -45,7 +45,7 @@ export default function PaginaPrincipal() {
   const [showNavigation, setShowNavigation] = useState(true);
 
   return (
-    <section id="home">
+    <section id="inicio">
       <SwiperComponent
         showNavigation={showNavigation}
         hadleVideo={openVideo}

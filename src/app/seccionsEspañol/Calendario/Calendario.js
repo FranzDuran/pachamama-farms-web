@@ -8,7 +8,7 @@ import imgfondo from "./assets/_DSC9013.png";
 import calendarResponsive from './assets/calendario_mobile.png'
 const Calendario = () => {
   return (
-    <section className={styles.sectionCalendar} id="calendar">
+    <section className={styles.sectionCalendar} id="calendario">
       <section className={styles.divFondo} data-text-color="white">
         <Image src={imgfondo} alt="" title="" className={styles.fondoImg} />
         <div className={styles.divCalendar}>

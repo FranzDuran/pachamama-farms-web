@@ -237,7 +237,7 @@ const Navbar = () => {
             toggleMenu();
           }} */
         >
-          <Link href={language === "es" ? "/es#contáctanos" : "/#contact"} onClick={() => toggleMenu()}>
+          <Link href={language === "es" ? "/es#contactanos" : "/#contact"} onClick={() => toggleMenu()}>
             {language === "es" ? "Contáctanos" : "Contact us"}
           </Link>
         </li>
