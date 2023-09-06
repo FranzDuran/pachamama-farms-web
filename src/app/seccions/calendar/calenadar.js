@@ -3,7 +3,7 @@ import styles from "./calendar.module.css";
 import Image from "next/image";
 import CalendarImg from "./assets/CalendarInfo.png";
 import calendar from "./assets/calendar.png";
-import imgfondo from "./assets/_DSC9013.JPG";
+import imgfondo from "./assets/_DSC9013.jpg";
 import calendarResponsive from './assets/calendario_mobile.png'
 const Calendar = () => {
   return (

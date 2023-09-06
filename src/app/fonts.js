@@ -1,8 +1,7 @@
 // fonts.js
-import { Newsreader, Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
 
-const nw = Newsreader({ subsets: ["latin"] });
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -27,7 +26,6 @@ const periodico = localFont({
 });
 
 const fontsConfig = {
-  nw,
   roboto,
   periodico,
 };

@@ -1,7 +1,7 @@
 import SwiperReusable from "../../../components/SwiperReusable/SwiperReusable";
-import image1 from "./assets/_DSC9905.JPG";
-import image2 from "./assets/_DSC8669.JPG";
-import image3 from "./assets/_DSC9565.JPG";
+import image1 from "./assets/_DSC9905.jpg";
+import image2 from "./assets/_DSC8669.jpg";
+import image3 from "./assets/_DSC9565.jpg";
 import logoicon from "./assets/pronto_nuevas_variedades.png";
 
 export default function NuestrasFrutas({text}) {
