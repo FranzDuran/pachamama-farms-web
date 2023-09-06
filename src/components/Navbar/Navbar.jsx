@@ -186,7 +186,7 @@ const Navbar = () => {
             toggleMenu();
           }} */
         >
-          <Link href="/#home" onClick={() => toggleMenu()}>
+          <Link href={language === "es" ? "/#nicio" : "/#home"} onClick={() => toggleMenu()}>
             {language === "es" ? "Inicio" : "Home"}
           </Link>
         </li>
@@ -196,7 +196,7 @@ const Navbar = () => {
             toggleMenu();
           }} */
         >
-          <Link href="/#about" onClick={() => toggleMenu()}>
+          <Link href={language === "es" ? "/#sobre nosotros" : "/#about"} onClick={() => toggleMenu()}>
             {language === "es" ? "Sobre Nosotros" : "About us"}
           </Link>
         </li>
@@ -206,7 +206,7 @@ const Navbar = () => {
             toggleMenu();
           }} */
         >
-          <Link href="/#calendar" onClick={() => toggleMenu()}>
+          <Link href={language === "es" ? "/#calendario" : "/#calendar"} onClick={() => toggleMenu()}>
             {language === "es" ? "Calendario" : "Calendar"}
           </Link>
         </li>
@@ -216,7 +216,7 @@ const Navbar = () => {
             toggleMenu();
           }} */
         >
-          <Link href="/#certifications" onClick={() => toggleMenu()}>
+          <Link href={language === "es" ? "/#certificaciones" : "/#certifications"} onClick={() => toggleMenu()}>
             {language === "es" ? "Certificaciones" : "Certifications"}
           </Link>
         </li>
@@ -226,7 +226,7 @@ const Navbar = () => {
             toggleMenu();
           }} */
         >
-          <Link href="/#fruits" onClick={() => toggleMenu()} >
+          <Link href={language === "es" ? "/#frutas" : "/#fruits"} onClick={() => toggleMenu()} >
             {language === "es" ? "Nuestras frutas" : "Our fruits"}
           </Link>
         </li>
