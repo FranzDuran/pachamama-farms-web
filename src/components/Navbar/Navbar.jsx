@@ -186,7 +186,7 @@ const Navbar = () => {
             toggleMenu();
           }} */
         >
-          <Link href={language === "es" ? "/#nicio" : "/#home"} onClick={() => toggleMenu()}>
+          <Link href={language === "es" ? "/es#calendar" : "#calendar"} onClick={() => toggleMenu()}>
             {language === "es" ? "Inicio" : "Home"}
           </Link>
         </li>
@@ -196,7 +196,7 @@ const Navbar = () => {
             toggleMenu();
           }} */
         >
-          <Link href={language === "es" ? "/#sobre nosotros" : "/#about"} onClick={() => toggleMenu()}>
+          <Link  href={language === "es" ? "/es#about" : "#about"}  onClick={() => toggleMenu()}>
             {language === "es" ? "Sobre Nosotros" : "About us"}
           </Link>
         </li>
@@ -206,7 +206,7 @@ const Navbar = () => {
             toggleMenu();
           }} */
         >
-          <Link href={language === "es" ? "/#calendario" : "/#calendar"} onClick={() => toggleMenu()}>
+          <Link href={language === "es" ? "/es#calendar" : "#calendar"}  onClick={() => toggleMenu()}>
             {language === "es" ? "Calendario" : "Calendar"}
           </Link>
         </li>
@@ -216,7 +216,7 @@ const Navbar = () => {
             toggleMenu();
           }} */
         >
-          <Link href={language === "es" ? "/#certificaciones" : "/#certifications"} onClick={() => toggleMenu()}>
+          <Link href={language === "es" ? "/es#certifications" : "#certifications"} onClick={() => toggleMenu()}>
             {language === "es" ? "Certificaciones" : "Certifications"}
           </Link>
         </li>
@@ -226,7 +226,7 @@ const Navbar = () => {
             toggleMenu();
           }} */
         >
-          <Link href={language === "es" ? "/#frutas" : "/#fruits"} onClick={() => toggleMenu()} >
+          <Link  href={language === "es" ? "/es#fruits" : "#fruits"}  onClick={() => toggleMenu()} >
             {language === "es" ? "Nuestras frutas" : "Our fruits"}
           </Link>
         </li>
@@ -237,7 +237,7 @@ const Navbar = () => {
             toggleMenu();
           }} */
         >
-          <Link href="/#contact" onClick={() => toggleMenu()}>
+          <Link href={language === "es" ? "/es#contact" : "#contact"} onClick={() => toggleMenu()}>
             {language === "es" ? "Contáctanos" : "Contact us"}
           </Link>
         </li>
