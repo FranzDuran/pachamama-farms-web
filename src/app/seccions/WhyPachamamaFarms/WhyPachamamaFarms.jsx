@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./WhyPachamamaFarms.module.css";
-import image from "./assets/DJI_0289.jpg";
+import image from "./assets/DJI_0289.png";
 import Image from "next/image";
 import { data } from "./Data";
 import SwiperPachamama from "./SwiperPachamama";

@@ -1,6 +1,6 @@
 import SwiperReusable from "../../../components/SwiperReusable/SwiperReusable";
-import image1 from "./assets/image1.jpg";
-import image2 from "./assets/image2.jpg";
+import image1 from "./assets/image1.png";
+import image2 from "./assets/image2.png";
 import logoicon from "./assets/LogoPackHouse.png";
 
 export default function PackHouse({text}) {
