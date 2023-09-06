@@ -1,6 +1,6 @@
 import SwiperReusable from "../../../components/SwiperReusable/SwiperReusable";
-import image1 from "./assets/image1.jpg";
-import image2 from "./assets/image2.jpg";
+import image1 from "./assets/image1.png";
+import image2 from "./assets/image2.png";
 import logoicon from "./assets/con_mas_de_7000m2.png";
 
 export default function Empacadora({text}) {

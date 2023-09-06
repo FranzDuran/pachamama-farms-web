@@ -4,7 +4,7 @@ import Image from "next/image";
 import CalendarImg from "./assets/calendario_estacional.png";
 import calendar from "./assets/calendario_desktop.png";
 import calendarioMobile from "./assets/calendario_mobile-es.png";
-import imgfondo from "./assets/_DSC9013.jpg";
+import imgfondo from "./assets/_DSC9013.png";
 import calendarResponsive from './assets/calendario_mobile.png'
 const Calendario = () => {
   return (

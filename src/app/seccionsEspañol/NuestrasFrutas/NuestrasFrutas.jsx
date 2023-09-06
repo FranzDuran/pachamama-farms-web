@@ -1,6 +1,6 @@
 import SwiperReusable from "../../../components/SwiperReusable/SwiperReusable";
-import image1 from "./assets/_DSC9905.jpg";
-import image2 from "./assets/_DSC8669.jpg";
+import image1 from "./assets/_DSC9905.png";
+import image2 from "./assets/_DSC8669.png";
 import image3 from "./assets/_DSC9565.jpg";
 import logoicon from "./assets/pronto_nuevas_variedades.png";
 
