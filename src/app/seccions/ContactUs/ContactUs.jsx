@@ -1,16 +1,19 @@
 "use client";
 import styles from "./contact.module.css";
+import { usePathname } from 'next/navigation'
 
 export default function ContactUs() {
   const email = "ventas@pachamamafarms.com";
-  /* const currentURL = window.location.href;
-  const ultimasDosLetras = currentURL.slice(-2); */
+
+  const pathname = usePathname()
+  // Determine the id based on the current URL path
+  const id = pathname === '/es' ? 'contactanos' : 'contact';
 
   return (
-    <section className={styles.container} data-text-color="white" id="contact">
+    <section className={styles.container} data-text-color="white" id={id}>
       <div className={styles.content}>
         <div className={styles["small-text"]}>
-          <span>Get in touch {/* {ultimasDosLetras === "es" ? "Contáctanos" : "Get in touch"} */}</span>
+          <span>{pathname === "/es" ? "Contáctanos" : "Get in touch"}</span>
           <span className={styles.line} />
         </div>
         <div className={styles["big-text"]}>

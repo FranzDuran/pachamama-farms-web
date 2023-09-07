@@ -8,7 +8,7 @@ import iconoClaro from "./icono-claro.png";
 import iconoOscuro from "./icono-oscuro.png";
 import iconClose from "./icon-close.png";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ const Navbar = () => {
   const [menuTextColor, setMenuTextColor] = useState("white");
   const [activeSection, setActiveSection] = useState(null);
 
-  const router = useRouter();
+  const pathname = usePathname()
 
   const toggleMenu = () => {
     if (isMenuOpen) {
@@ -181,64 +181,40 @@ const Navbar = () => {
         }`}
       >
         <li
-        /* onClick={() => {
-            handleClickNav("home");
-            toggleMenu();
-          }} */
         >
-          <Link href={language === "es" ? "/es#inicio" : "/#home"} onClick={() => toggleMenu()}>
-            {language === "es" ? "Inicio" : "Home"}
+          <Link href={pathname === "/es" ? "/es#inicio" : "/#home"} onClick={() => toggleMenu()}>
+            {pathname === "/es" ? "Inicio" : "Home"}
           </Link>
         </li>
         <li
-        /* onClick={() => {
-            handleClickNav("about");
-            toggleMenu();
-          }} */
         >
-          <Link  href={language === "es" ? "/es#sobre nosotros" : "/#about"}  onClick={() => toggleMenu()}>
-            {language === "es" ? "Sobre Nosotros" : "About us"}
+          <Link  href={pathname === "/es" ? "/es#sobre nosotros" : "/#about"}  onClick={() => toggleMenu()}>
+            {pathname === "/es" ? "Sobre Nosotros" : "About us"}
           </Link>
         </li>
         <li
-        /* onClick={() => {
-            handleClickNav("calendar");
-            toggleMenu();
-          }} */
         >
-          <Link href={language === "es" ? "/es#calendario" : "/#calendar"}  onClick={() => toggleMenu()}>
-            {language === "es" ? "Calendario" : "Calendar"}
+          <Link href={pathname === "/es" ? "/es#calendario" : "/#calendar"}  onClick={() => toggleMenu()}>
+            {pathname === "/es" ? "Calendario" : "Calendar"}
           </Link>
         </li>
         <li
-        /* onClick={() => {
-            handleClickNav("certifications");
-            toggleMenu();
-          }} */
         >
-          <Link href={language === "es" ? "/es#certificaciones" : "/#certifications"} onClick={() => toggleMenu()}>
-            {language === "es" ? "Certificaciones" : "Certifications"}
+          <Link href={pathname === "/es" ? "/es#certificaciones" : "/#certifications"} onClick={() => toggleMenu()}>
+            {pathname === "/es" ? "Certificaciones" : "Certifications"}
           </Link>
         </li>
         <li
-        /* onClick={() => {
-            handleClickNav("fruits");
-            toggleMenu();
-          }} */
         >
-          <Link  href={language === "es" ? "/es#frutas" : "/#fruits"}  onClick={() => toggleMenu()} >
-            {language === "es" ? "Nuestras frutas" : "Our fruits"}
+          <Link  href={pathname === "/es" ? "/es#frutas" : "/#fruits"}  onClick={() => toggleMenu()} >
+            {pathname === "/es" ? "Nuestras frutas" : "Our fruits"}
           </Link>
         </li>
         <li
           id={styles.borderLi}
-          /* onClick={() => {
-            handleClickNav("contact");
-            toggleMenu();
-          }} */
         >
-          <Link href={language === "es" ? "/es#contactanos" : "/#contact"} onClick={() => toggleMenu()}>
-            {language === "es" ? "Contáctanos" : "Contact us"}
+          <Link href={pathname === "/es" ? "/es#contactanos" : "/#contact"} onClick={() => toggleMenu()}>
+            {pathname === "/es" ? "Contáctanos" : "Contact us"}
           </Link>
         </li>
       </ul>

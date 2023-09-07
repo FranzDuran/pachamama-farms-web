@@ -103,7 +103,7 @@ export default function SwiperCarrousel (){
               }
             : false
         }
-        onSwiper={(swiper) => console.log(swiper)}
+        /* onSwiper={(swiper) => console.log(swiper)} */
       >
         <SwiperSlide>
           <article className={styles.divContenido}>

@@ -73,7 +73,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
               }
             : false
         }
-        onSwiper={(swiper) => console.log(swiper)}
+        /* onSwiper={(swiper) => console.log(swiper)} */
       >
         <SwiperSlide>
           <article

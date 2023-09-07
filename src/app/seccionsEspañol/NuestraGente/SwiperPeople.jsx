@@ -106,7 +106,7 @@ export default function SwiperPeople() {
               }
             : false
         }
-        onSwiper={(swiper) => console.log(swiper)}
+        /* onSwiper={(swiper) => console.log(swiper)} */
 
       >
         <SwiperSlide>
