@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from 'react';
+//import { useEffect } from 'react';
 import PaginaPrincipal from "../seccionsEspañol/PaginaPrincipal/PaginaPrincipal";
 import FloatingIcons from "@/components/FloatingIcons/FloatingIcons";
 import SobreNosotros from "../seccionsEspañol/SobreNosotros/SobreNosotros";
@@ -12,11 +12,11 @@ import NuestraGente from "../seccionsEspañol/NuestraGente/NuestraGente";
 import Testimonios from "../seccionsEspañol/Testimonios/Testimonios";
 import PorquePachamamaFarms from "../seccionsEspañol/PorquePachamamaFarms/PorquePachamamaFarms";
 
-export const metadata = {
+/* export const metadata = {
   title: 'Dedicados a la investigación, desarrollo, producción, empaque y exportación de frutas y verduras exóticas de alta calidad del Perú.',
   description: 'Dedicados a la investigación, desarrollo, producción, empaque y exportación de frutas y verduras exóticas de alta calidad del Perú',
    keywords: 'Pachamama, Farms, alta, calidad, exoticas, frutas, vegetales, peru ',
-};
+}; */
 
 
 const Es = () => {
