@@ -1,5 +1,5 @@
 "use client";
-//import { useEffect } from 'react';
+import { useEffect } from 'react';
 import PaginaPrincipal from "../seccionsEspañol/PaginaPrincipal/PaginaPrincipal";
 import FloatingIcons from "@/components/FloatingIcons/FloatingIcons";
 import SobreNosotros from "../seccionsEspañol/SobreNosotros/SobreNosotros";
@@ -21,7 +21,7 @@ import PorquePachamamaFarms from "../seccionsEspañol/PorquePachamamaFarms/Porqu
 
 const Es = () => {
 
-  /* useEffect(() => {
+  useEffect(() => {
     // Agrega el primer script de Google Tag Manager
     const script1 = document.createElement('script');
     script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-6XH4721CH9';
@@ -42,7 +42,7 @@ const Es = () => {
       `)
     );
     document.head.appendChild(script2);
-  }, []); */
+  }, []);
 
   return (
     <main>
