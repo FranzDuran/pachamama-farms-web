@@ -20,41 +20,31 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import "./OurPeople.css"
+import "./OurPeople.css";
 
 export default function SwiperPeople() {
+  const [reachedEnd, setReachedEnd] = useState(false);
+  const [reachedBeginning, setReachedBeginning] = useState(true);
+  console.log("reachedEnd " + reachedEnd);
+  console.log("reachedBeginning " + reachedBeginning);
 
-  const handleWindowResize = () => {
-    // Aquí defines el ancho máximo para la versión móvil
-    const mobileMaxWidth = 920;
-    const shouldShowNavigation = window.innerWidth > mobileMaxWidth;
-
-    // Actualiza el estado para mostrar u ocultar la navegación
-    setShowNavigation(shouldShowNavigation);
+  const handleReachEnd = () => {
+    setReachedEnd(true);
+    setReachedBeginning(false);
   };
 
-  useEffect(() => {
-    // Agrega un event listener para el cambio de tamaño de la ventana
-    window.addEventListener("resize", handleWindowResize);
-
-    // Llama a la función una vez al inicio para configurar inicialmente el estado
-    handleWindowResize();
-
-    // Limpia el event listener cuando el componente se desmonta
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
-
-  const [showNavigation, setShowNavigation] = useState(true);
+  const handleReachBeginning = () => {
+    setReachedEnd(false);
+    setReachedBeginning(true);
+  };
 
   return (
     <div className="container">
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, A11y]}
-        // spaceBetween={10}
-        // slidesPerView={1}
+        onReachEnd={handleReachEnd}
+        onReachBeginning={handleReachBeginning}
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -89,31 +79,34 @@ export default function SwiperPeople() {
             spaceBetween: 0,
           },
         }}
-        navigation={
-          showNavigation
-            ? {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              }
-            : false
-        }
-        pagination={
-          !showNavigation
-            ? {
-                clickable: true,
-                el: ".paginationSwiper",
-              }
-            : false
-        }
-        /* onSwiper={(swiper) => console.log(swiper)} */
+        navigation={{
+          nextEl: ".btn-button-next",
+          prevEl: ".btn-button-prev",
+        }}
       >
         <SwiperSlide>
-          <article className={styles.divContenido}
+          <article
+            className={styles.divContenido}
             aria-label="article about the workers and how we strive to have the best quality products"
           >
-            
-            <Image src={img1} loading="lazy" alt="worker carrying fruits while working || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_7.png" title="worker carrying fruits" width="auto" height="auto" className={styles.img}/>
-            <Image src={img5} loading="lazy" alt="worker carrying fruits while working  || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_mobile7.jpg" title="worker carrying fruits" width="auto" height="auto" className={styles.imgMobile}/>
+            <Image
+              src={img1}
+              loading="lazy"
+              alt="worker carrying fruits while working || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_7.png"
+              title="worker carrying fruits"
+              width="auto"
+              height="auto"
+              className={styles.img}
+            />
+            <Image
+              src={img5}
+              loading="lazy"
+              alt="worker carrying fruits while working  || pachamama_farms_high_quality_exotic_fruits_vegetables_peru_mobile7.jpg"
+              title="worker carrying fruits"
+              width="auto"
+              height="auto"
+              className={styles.imgMobile}
+            />
             <div className={styles.divTexto}>
               <h3>
                 We’re conviced that
@@ -124,10 +117,28 @@ export default function SwiperPeople() {
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article className={styles.divContenido}
-            aria-label="article about the workers and how we strive to have the best quality products">
-          <Image src={img2} loading="lazy" alt="Female worker checking the quality of fruits. || pachamama_farms_high_quality_exotic_fruits_vegetables_8.jpg" title="Female worker checking the quality" width="auto" height="auto" className={styles.img}/>
-          <Image src={img6} loading="lazy" alt="Female worker checking the quality of fruits. || pachamama_farms_high_quality_exotic_fruits_vegetables_mobile8.jpg" title="Female worker checking the quality" width="auto" height="auto" className={styles.imgMobile}/>
+          <article
+            className={styles.divContenido}
+            aria-label="article about the workers and how we strive to have the best quality products"
+          >
+            <Image
+              src={img2}
+              loading="lazy"
+              alt="Female worker checking the quality of fruits. || pachamama_farms_high_quality_exotic_fruits_vegetables_8.jpg"
+              title="Female worker checking the quality"
+              width="auto"
+              height="auto"
+              className={styles.img}
+            />
+            <Image
+              src={img6}
+              loading="lazy"
+              alt="Female worker checking the quality of fruits. || pachamama_farms_high_quality_exotic_fruits_vegetables_mobile8.jpg"
+              title="Female worker checking the quality"
+              width="auto"
+              height="auto"
+              className={styles.imgMobile}
+            />
             <div className={styles.divTexto}>
               <h3>
                 We’re conviced that
@@ -138,10 +149,28 @@ export default function SwiperPeople() {
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article className={styles.divContenido}
-            aria-label="article about the workers and how we strive to have the best quality products">
-          <Image src={img3} loading="lazy" alt="worker collecting fruits from farm fields || pachamama_farms_high_quality_exotic_fruits_vegetables_9.jpg" title="worker picking fruits" width="auto" height="auto" className={styles.img}/>
-          <Image src={img7} loading="lazy" alt="worker collecting fruits from farm fields || pachamama_farms_high_quality_exotic_fruits_vegetables_mobile9.jpg" title="worker picking fruits" width="auto" height="auto" className={styles.imgMobile}/>
+          <article
+            className={styles.divContenido}
+            aria-label="article about the workers and how we strive to have the best quality products"
+          >
+            <Image
+              src={img3}
+              loading="lazy"
+              alt="worker collecting fruits from farm fields || pachamama_farms_high_quality_exotic_fruits_vegetables_9.jpg"
+              title="worker picking fruits"
+              width="auto"
+              height="auto"
+              className={styles.img}
+            />
+            <Image
+              src={img7}
+              loading="lazy"
+              alt="worker collecting fruits from farm fields || pachamama_farms_high_quality_exotic_fruits_vegetables_mobile9.jpg"
+              title="worker picking fruits"
+              width="auto"
+              height="auto"
+              className={styles.imgMobile}
+            />
             <div className={styles.divTexto}>
               <h3>
                 We’re conviced that
@@ -152,10 +181,28 @@ export default function SwiperPeople() {
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article className={styles.divContenido}
-            aria-label="article about the workers and how we strive to have the best quality products">
-          <Image src={img4} loading="lazy" alt="worker resting after a day of work  || pachamama_farms_high_quality_exotic_fruits_vegetables_10.png" title="female worker resting" width="auto" height="auto" className={styles.img}/>
-          <Image src={img8} loading="lazy" alt="worker resting after a day of work || pachamama_farms_high_quality_exotic_fruits_vegetables_mobile9.jpg" title="female worker resting" width="auto" height="auto" className={styles.imgMobile}/>
+          <article
+            className={styles.divContenido}
+            aria-label="article about the workers and how we strive to have the best quality products"
+          >
+            <Image
+              src={img4}
+              loading="lazy"
+              alt="worker resting after a day of work  || pachamama_farms_high_quality_exotic_fruits_vegetables_10.png"
+              title="female worker resting"
+              width="auto"
+              height="auto"
+              className={styles.img}
+            />
+            <Image
+              src={img8}
+              loading="lazy"
+              alt="worker resting after a day of work || pachamama_farms_high_quality_exotic_fruits_vegetables_mobile9.jpg"
+              title="female worker resting"
+              width="auto"
+              height="auto"
+              className={styles.imgMobile}
+            />
             <div className={styles.divTexto}>
               <h3>
                 We’re conviced that
@@ -166,8 +213,12 @@ export default function SwiperPeople() {
           </article>
         </SwiperSlide>
       </Swiper>
-      <button className="swiper-button-next"></button>
-      <button className="swiper-button-prev"></button>
+      <button className={`btn-button-prev ${[reachedEnd? "activee" : "nonee"]}`}>
+        <i className="ri-arrow-left-s-line"></i>
+      </button>
+      <button className={`btn-button-next ${[reachedBeginning? "activee" : "nonee"]}`}>
+        <i className="ri-arrow-right-s-line"></i>
+      </button>
     </div>
   );
 }

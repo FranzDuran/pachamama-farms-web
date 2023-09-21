@@ -22,12 +22,12 @@
   background-color: white;
 }
 
-.paginationSwiper {
+.pagination-home {
   display: none;
 }
 
 @media screen and (max-width:930px) {
-  .paginationSwiper {
+  .pagination-home {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +37,7 @@
     bottom:4% !important;
   }
 
-  .paginationSwiper .swiper-pagination-bullet {
+  .pagination-home .swiper-pagination-bullet {
     background: #707070;
     height: 10px;
     width: 10px;
@@ -47,7 +47,7 @@
     border-radius: 100%;
   }
 
-  .paginationSwiper .swiper-pagination-bullet-active {
+  .pagination-home .swiper-pagination-bullet-active {
     background: #fff;
     opacity: 1;
   }

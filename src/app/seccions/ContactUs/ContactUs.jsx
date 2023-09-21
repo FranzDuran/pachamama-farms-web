@@ -2,6 +2,7 @@
 import styles from "./contact.module.css";
 import { usePathname } from 'next/navigation'
 
+
 export default function ContactUs() {
   const email = "ventas@pachamamafarms.com";
 
@@ -13,7 +14,7 @@ export default function ContactUs() {
     <section className={styles.container} data-text-color="white" id={id}>
       <div className={styles.content}>
         <div className={styles["small-text"]}>
-          <span>{pathname === "/es" ? "Contáctanos" : "Get in touch"}</span>
+        <span>{pathname === "/es" ? "Contáctanos" : "Get in touch"}</span>
           <span className={styles.line} />
         </div>
         <div className={styles["big-text"]}>

@@ -24,37 +24,27 @@ import "../../seccions/OurPeople/OurPeople.css"
 
 export default function SwiperPeople() {
 
-  
-  const handleWindowResize = () => {
-    // Aquí defines el ancho máximo para la versión móvil
-    const mobileMaxWidth = 920;
-    const shouldShowNavigation = window.innerWidth > mobileMaxWidth;
+  const [reachedEnd, setReachedEnd] = useState(false);
+  const [reachedBeginning, setReachedBeginning] = useState(true);
 
-    // Actualiza el estado para mostrar u ocultar la navegación
-    setShowNavigation(shouldShowNavigation);
+  const handleReachEnd = () => {
+    setReachedEnd(true);
+    setReachedBeginning(false);
   };
 
-  useEffect(() => {
-    // Agrega un event listener para el cambio de tamaño de la ventana
-    window.addEventListener("resize", handleWindowResize);
+  const handleReachBeginning = () => {
+    setReachedEnd(false);
+    setReachedBeginning(true);
+  };
 
-    // Llama a la función una vez al inicio para configurar inicialmente el estado
-    handleWindowResize();
-
-    // Limpia el event listener cuando el componente se desmonta
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
-
-  const [showNavigation, setShowNavigation] = useState(true);
   return (
     <div className="container">
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, A11y]}
-        // spaceBetween={10}
-        // slidesPerView={1}
+        onReachEnd={handleReachEnd}
+        onReachBeginning={handleReachBeginning}
+        
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -90,23 +80,10 @@ export default function SwiperPeople() {
           },
         }}
 
-        navigation={
-          showNavigation
-            ? {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              }
-            : false
-        }
-        pagination={
-          !showNavigation
-            ? {
-                clickable: true,
-                el: ".paginationSwiper",
-              }
-            : false
-        }
-        /* onSwiper={(swiper) => console.log(swiper)} */
+        navigation={{
+          nextEl: ".btn-button-next",
+          prevEl: ".btn-button-prev",
+        }}
 
       >
         <SwiperSlide>
@@ -230,8 +207,12 @@ export default function SwiperPeople() {
           </article>
         </SwiperSlide>
       </Swiper>
-      <button className="swiper-button-next"></button>
-      <button className="swiper-button-prev"></button>
+      <button className={`btn-button-prev ${[reachedEnd? "activee" : "nonee"]}`}>
+        <i className="ri-arrow-left-s-line"></i>
+      </button>
+      <button className={`btn-button-next ${[reachedBeginning? "activee" : "nonee"]}`}>
+        <i className="ri-arrow-right-s-line"></i>
+      </button>
     </div>
   );
 }

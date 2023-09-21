@@ -1,3 +1,4 @@
+"use client";
 // import Swiper core and required modules
 import { Navigation, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,18 +12,14 @@ import PlayImg from "../assets/PLAY.png";
 import Image from "next/image";
 
 // import imagen1 from '../assets/image1.jpg';
- 
 
 import styles from "../home.module.css";
-
 
 export default function SwiperComponent({ showNavigation, hadleVideo }) {
   return (
     <section className="container">
       <Swiper
         modules={[Navigation, Pagination, A11y]}
-        /* spaceBetween={0}
-        slidesPerView={1} */
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -65,15 +62,10 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
               }
             : false
         }
-        pagination={
-          !showNavigation
-            ? {
-                clickable: true,
-                el: ".paginationSwiper",
-              }
-            : false
-        }
-        /* onSwiper={(swiper) => console.log(swiper)} */
+        pagination={{
+          clickable: true,
+          el: ".pagination-home",
+        }}
       >
         <SwiperSlide>
           <article
@@ -102,9 +94,9 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
         </SwiperSlide>
         <SwiperSlide>
           <article
-           className={styles.divContenido2}
-           aria-label="article about fruits with background image text and button to display a modal with a youtube video"
-           >
+            className={styles.divContenido2}
+            aria-label="article about fruits with background image text and button to display a modal with a youtube video"
+          >
             <div className={styles.divTexto}>
               <h2>
                 We feel truly connected <br />
@@ -126,9 +118,10 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
           </article>
         </SwiperSlide>
         <SwiperSlide>
-          <article 
-          className={styles.divContenido3}
-          aria-label="article about fruits with background image text and button to display a modal with a youtube video">
+          <article
+            className={styles.divContenido3}
+            aria-label="article about fruits with background image text and button to display a modal with a youtube video"
+          >
             <div className={styles.divTexto}>
               <h2>
                 We know that only unique places
@@ -153,7 +146,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
       </Swiper>
       <button className="swiper-button-next"></button>
       <button className="swiper-button-prev"></button>
-      <div className="paginationSwiper"></div>
+      <div className="pagination-home"></div>
     </section>
   );
 }

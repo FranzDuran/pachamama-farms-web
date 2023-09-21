@@ -1,3 +1,4 @@
+"use client";
 // import Swiper core and required modules
 import { Navigation, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,8 +20,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
     <section className="container">
       <Swiper
         modules={[Navigation, Pagination, A11y]}
-        /* spaceBetween={0}
-        slidesPerView={1} */
+      
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -63,15 +63,11 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
               }
             : false
         }
-        pagination={
-          !showNavigation
-            ? {
-                clickable: true,
-                el: ".paginationSwiper",
-              }
-            : false
-        }
-        /* onSwiper={(swiper) => console.log(swiper)} */
+        pagination={{
+          clickable: true,
+          el: ".pagination-home",
+        }}
+       
       >
         <SwiperSlide>
           <article
@@ -148,7 +144,7 @@ export default function SwiperComponent({ showNavigation, hadleVideo }) {
       </Swiper>
       <button className="swiper-button-next"></button>
       <button className="swiper-button-prev"></button>
-      <div className="paginationSwiper"></div>
+      <div className="pagination-home"></div>
     </section>
   );
 }

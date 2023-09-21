@@ -4,7 +4,7 @@ export default function Contactanos() {
   const email = "ventas@pachamamafarms.com";
 
   return (
-    <section className={styles.container} data-text-color="white" id="contactanos">
+    <section className={styles.container} data-text-color="white" id="contacto">
       <div className={styles.content}>
         <div className={styles["small-text"]}>
           <span>Contáctanos</span>
